@@ -377,6 +377,7 @@ function traduceFormasPago(dp, emisores) {
     return detalle;    
 }
 
+/*
 function listaComandasRestaurante(req, res) {
     var lst = [], idrestaurante = req.params.idrestaurante;
     
@@ -443,6 +444,77 @@ function listaComandasRestaurante(req, res) {
             }
         });        
     });       
+}
+*/
+
+function listaComandasRestaurante(req, res) {
+    var lst = [], idrestaurante = req.params.idrestaurante;
+
+    EmisoresTarjeta.find({}, (errore, listaet) => {
+        DiccionarioFox.find({}, (e, dictfox) => {
+            if (e) {
+                res.status(500).send({ mensaje: 'Error en el servidor al listar el diccionario para las comandas. ERROR: ' + e });
+            } else {
+                if (dictfox.length == 0) {
+                    res.status(200).send({ mensaje: 'No se encontro nada en el diccionario de fox.' });
+                } else {
+                    const diccionario = dictfox;
+                    Comanda.find({ idestatuscomanda: "59fea7304218672b285ab0e2", debaja: false }, null, { sort: { fecha: 1 } })
+                        .populate('idcliente', ['_id', 'nombre'])
+                        .populate('idtipocomanda', ['_id', 'descripcion', 'imagen'])
+                        .populate('idusuario', ['_id', 'nombre'])
+                        .populate('idestatuscomanda', ['_id', 'descripcion', 'color'])
+                        .populate('idtelefonocliente', ['_id', 'telefono'])
+                        .populate({ path: 'iddireccioncliente', populate: { path: 'idrestaurante', select: '_id nombre' } })
+                        .populate('iddatosfacturacliente', ['_id', 'nit', 'nombre', 'direccion'])
+                        .populate('idtiempoentrega', ['_id', 'tiempo'])
+                        .populate('idrestaurante', ['_id', 'nombre'])
+                        .populate('idmotorista', ['_id', 'nombre'])
+                        .exec((err, lista) => {
+                            if (err) {
+                                res.status(500).send({ mensaje: 'Error en el servidor al listar las comandas del restaurante.' });
+                            } else {
+                                if (lista.length == 0) {
+                                    res.status(200).send({ mensaje: 'No se encontraron comandas para el restaurante.' });
+                                } else {
+                                    lista.forEach(rst => {
+                                        if (
+                                            rst.iddireccioncliente.idrestaurante._id.toString().trim() === idrestaurante.toString().trim() ||
+                                            rst.idrestaurante._id.toString().trim() === idrestaurante.toString().trim()
+                                        ) {
+                                            lst.push(
+                                                {
+                                                    fechahora: moment(rst.fecha, 'YYYY-MM-DD HH:mm:ss').utc().format('DD/MM/YYYY HH:mm:ss'),
+                                                    tracking: parseInt(rst.tracking),
+                                                    id: rst._id,
+                                                    idusuario: rst.idusuario._id,
+                                                    nombreusuario: rst.idusuario.nombre,
+                                                    cliente: rst.idcliente.nombre,
+                                                    telefono: rst.idtelefonocliente.telefono,
+                                                    notas: rst.notas ? rst.notas : '',
+                                                    direccion: rst.iddireccioncliente.direccion +
+                                                        ', zona ' + rst.iddireccioncliente.zona +
+                                                        ', colonia ' + rst.iddireccioncliente.colonia + (rst.iddireccioncliente.codigoacceso ? (', código de acceso ' + rst.iddireccioncliente.codigoacceso) : ''),
+                                                    idrestaurante: rst.idrestaurante ? rst.idrestaurante._id : rst.iddireccioncliente.idrestaurante._id,
+                                                    restaurante: rst.idrestaurante ? rst.idrestaurante.nombre : rst.iddireccioncliente.idrestaurante.nombre,
+                                                    idtipocomanda: rst.idtipocomanda._id,
+                                                    tipocomanda: rst.idtipocomanda.descripcion,
+                                                    detalle: traduceDetalleComanda(rst.detallecomanda, diccionario),
+                                                    detalleformapago: traduceFormasPago(rst.detcobrocomanda, listaet),
+                                                    facturara: rst.detfacturara[0]
+                                                }
+                                            );
+                                        }
+                                    });
+
+                                    res.status(200).send({ mensaje: 'Lista de comandas.', lista: lst });
+                                }
+                            }
+                        });
+                }
+            }
+        });
+    });
 }
 
 function getComandaByTracking(req, res) {
