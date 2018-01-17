@@ -421,12 +421,8 @@ function listaComandasRestaurante(req, res) {
                                                     nombreusuario: rst.idusuario.nombre,
                                                     cliente: rst.idcliente.nombre,
                                                     telefono: rst.idtelefonocliente.telefono,
-                                                    notas: rst.notas ? rst.notas : '',
-                                                    direccion: rst.idtipocomanda._id == '59fff327596e572d9cdac917' ?
-                                                        (rst.iddireccioncliente.direccion +
-                                                            ', zona ' + rst.iddireccioncliente.zona +
-                                                            ', colonia ' + rst.iddireccioncliente.colonia + (rst.iddireccioncliente.codigoacceso ? (', código de acceso ' + rst.iddireccioncliente.codigoacceso) : '')) :
-                                                        'CLIENTE PASA A TRAER A RESTAURANTE',
+                                                    notas: rst.notas ? rst.notas : '',                                                    
+                                                    direccion: rst.iddireccioncliente.direccion + ', zona ' + rst.iddireccioncliente.zona + ', colonia ' + rst.iddireccioncliente.colonia + (rst.iddireccioncliente.codigoacceso ? (', código de acceso ' + rst.iddireccioncliente.codigoacceso) : ''),
                                                     idrestaurante: rst.idrestaurante ? rst.idrestaurante._id : rst.iddireccioncliente.idrestaurante._id,
                                                     restaurante: rst.idrestaurante ? rst.idrestaurante.nombre : rst.iddireccioncliente.idrestaurante.nombre,
                                                     idtipocomanda: rst.idtipocomanda._id,
