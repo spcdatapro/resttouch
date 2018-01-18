@@ -378,7 +378,7 @@ function traduceFormasPago(dp, emisores) {
 }
 
 function listaComandasRestaurante(req, res) {
-    var lst = [], idrestaurante = req.params.idrestaurante;
+    var lst = [], idrestaurante = req.params.idrestaurante, errores = [];
     
     EmisoresTarjeta.find({}, (errore, listaet) => {
         DiccionarioFox.find({}, (e, dictfox) => {
@@ -408,51 +408,47 @@ function listaComandasRestaurante(req, res) {
                                     res.status(200).send({ mensaje: 'No se encontraron comandas para el restaurante.' });
                                 } else {
                                     lista.forEach(rst => {
-                                        try{
-                                            if(!rst.iddireccioncliente.idrestaurante && rst.idrestaurante) {
+                                        try {
+                                            if (!rst.iddireccioncliente.idrestaurante && rst.idrestaurante) {
                                                 rst.iddireccioncliente.idrestaurante = rst.idrestaurante;
-                                            }
-
-                                            if(!rst.idrestaurante && rst.iddireccioncliente.idrestaurante) {
+                                            } else if (!rst.idrestaurante && rst.iddireccioncliente.idrestaurante) {
                                                 rst.idrestaurante = rst.iddireccioncliente.idrestaurante;
+                                            } else if (rst.idrestaurante && rst.iddireccioncliente.idrestaurante) {
+                                                rst.iddireccioncliente.idrestaurante = rst.idrestaurante;
+                                            } else if (!rst.idrestaurante && !rst.iddireccioncliente.idrestaurante) {
+                                                rst.idrestaurante = { 
+                                                    _id: '' 
+                                                };
                                             }
 
-                                            if (
-                                                rst.iddireccioncliente.idrestaurante._id.toString().trim() === idrestaurante.toString().trim() ||
-                                                rst.idrestaurante._id.toString().trim() === idrestaurante.toString().trim()
-                                            ) {
-                                                lst.push(
-                                                    {
-                                                        fechahora: moment(rst.fecha, 'YYYY-MM-DD HH:mm:ss').format('DD/MM/YYYY HH:mm:ss'),
-                                                        tracking: parseInt(rst.tracking),
-                                                        id: rst._id,
-                                                        idusuario: rst.idusuario._id,
-                                                        nombreusuario: rst.idusuario.nombre,
-                                                        cliente: rst.idcliente.nombre,
-                                                        telefono: rst.idtelefonocliente.telefono,
-                                                        notas: rst.notas ? rst.notas : '',
-                                                        direccion: rst.idtipocomanda._id == '59fff327596e572d9cdac917' ?
-                                                            (rst.iddireccioncliente.direccion +
-                                                                ', zona ' + rst.iddireccioncliente.zona +
-                                                                ', colonia ' + rst.iddireccioncliente.colonia + (rst.iddireccioncliente.codigoacceso ? (', código de acceso ' + rst.iddireccioncliente.codigoacceso) : '')) :
-                                                            'CLIENTE PASA A TRAER A RESTAURANTE',
-                                                        idrestaurante: rst.idrestaurante ? rst.idrestaurante._id : rst.iddireccioncliente.idrestaurante._id,
-                                                        restaurante: rst.idrestaurante ? rst.idrestaurante.nombre : rst.iddireccioncliente.idrestaurante.nombre,
-                                                        idtipocomanda: rst.idtipocomanda._id,
-                                                        tipocomanda: rst.idtipocomanda.descripcion,
-                                                        detalle: traduceDetalleComanda(rst.detallecomanda, diccionario),
-                                                        detalleformapago: traduceFormasPago(rst.detcobrocomanda, listaet),
-                                                        facturara: rst.detfacturara[0]
-                                                    }
-                                                );
+                                            if (rst.idrestaurante._id.toString().trim() === idrestaurante.toString().trim()) {
+                                                lst.push({
+                                                    fechahora: moment(rst.fecha, 'YYYY-MM-DD HH:mm:ss').format('DD/MM/YYYY HH:mm:ss'),
+                                                    tracking: parseInt(rst.tracking),
+                                                    id: rst._id,
+                                                    idusuario: rst.idusuario._id,
+                                                    nombreusuario: rst.idusuario.nombre,
+                                                    cliente: rst.idcliente.nombre,
+                                                    telefono: rst.idtelefonocliente.telefono,
+                                                    notas: rst.notas ? rst.notas : '',
+                                                    direccion: rst.idtipocomanda._id == '59fff327596e572d9cdac917' ?
+                                                        (rst.iddireccioncliente.direccion +
+                                                            ', zona ' + rst.iddireccioncliente.zona +
+                                                            ', colonia ' + rst.iddireccioncliente.colonia + (rst.iddireccioncliente.codigoacceso ? (', código de acceso ' + rst.iddireccioncliente.codigoacceso) : '')) : 'CLIENTE PASA A TRAER A RESTAURANTE',
+                                                    idrestaurante: rst.idrestaurante ? rst.idrestaurante._id : rst.iddireccioncliente.idrestaurante._id,
+                                                    restaurante: rst.idrestaurante ? rst.idrestaurante.nombre : rst.iddireccioncliente.idrestaurante.nombre,
+                                                    idtipocomanda: rst.idtipocomanda._id,
+                                                    tipocomanda: rst.idtipocomanda.descripcion,
+                                                    detalle: traduceDetalleComanda(rst.detallecomanda, diccionario),
+                                                    detalleformapago: traduceFormasPago(rst.detcobrocomanda, listaet),
+                                                    facturara: rst.detfacturara[0]
+                                                });
                                             }
-                                        } catch(err) {
-                                            console.log(err);
-                                            console.log(rst);
-                                        }
+                                        } catch (errTry) {
+                                            errores.push(errTry);
+                                        }                                        
                                     });
-
-                                    res.status(200).send({ mensaje: 'Lista de comandas.', lista: lst });
+                                    res.status(200).send({ mensaje: 'Lista de comandas.', lista: lst, errores: errores });
                                 }
                             }
                         });
@@ -463,7 +459,7 @@ function listaComandasRestaurante(req, res) {
 }
 
 function getComandaByTracking(req, res) {
-    var lst = [], noTracking = req.params.tracking;
+    var lst = [], noTracking = req.params.tracking, errores = [];
 
     EmisoresTarjeta.find({}, (errore, listaet) => {
         DiccionarioFox.find({}, (e, dictfox) => {
@@ -496,47 +492,46 @@ function getComandaByTracking(req, res) {
                                         try {
                                             if (!rst.iddireccioncliente.idrestaurante && rst.idrestaurante) {
                                                 rst.iddireccioncliente.idrestaurante = rst.idrestaurante;
-                                            }
-
-                                            if (!rst.idrestaurante && rst.iddireccioncliente.idrestaurante) {
+                                            } else if (!rst.idrestaurante && rst.iddireccioncliente.idrestaurante) {
                                                 rst.idrestaurante = rst.iddireccioncliente.idrestaurante;
+                                            } else if (rst.idrestaurante && rst.iddireccioncliente.idrestaurante) {
+                                                rst.iddireccioncliente.idrestaurante = rst.idrestaurante;
+                                            } else if (!rst.idrestaurante && !rst.iddireccioncliente.idrestaurante) {
+                                                rst.idrestaurante = {
+                                                    _id: ''
+                                                };
                                             }
 
-                                            if (
-                                                rst.iddireccioncliente.idrestaurante._id.toString().trim() === idrestaurante.toString().trim() ||
-                                                rst.idrestaurante._id.toString().trim() === idrestaurante.toString().trim()
-                                            ) {
-                                                lst.push(
-                                                    {
-                                                        fechahora: moment(rst.fecha, 'YYYY-MM-DD HH:mm:ss').format('DD/MM/YYYY HH:mm:ss'),
-                                                        tracking: parseInt(rst.tracking),
-                                                        id: rst._id,
-                                                        idusuario: rst.idusuario._id,
-                                                        nombreusuario: rst.idusuario.nombre,
-                                                        cliente: rst.idcliente.nombre,
-                                                        telefono: rst.idtelefonocliente.telefono,
-                                                        notas: rst.notas ? rst.notas : '',
-                                                        direccion: rst.idtipocomanda._id == '59fff327596e572d9cdac917' ?
-                                                            (rst.iddireccioncliente.direccion +
-                                                                ', zona ' + rst.iddireccioncliente.zona +
-                                                                ', colonia ' + rst.iddireccioncliente.colonia + (rst.iddireccioncliente.codigoacceso ? (', código de acceso ' + rst.iddireccioncliente.codigoacceso) : '')) :
-                                                            'CLIENTE PASA A TRAER A RESTAURANTE',
-                                                        idrestaurante: rst.idrestaurante ? rst.idrestaurante._id : rst.iddireccioncliente.idrestaurante._id,
-                                                        restaurante: rst.idrestaurante ? rst.idrestaurante.nombre : rst.iddireccioncliente.idrestaurante.nombre,
-                                                        idtipocomanda: rst.idtipocomanda._id,
-                                                        tipocomanda: rst.idtipocomanda.descripcion,
-                                                        detalle: traduceDetalleComanda(rst.detallecomanda, diccionario),
-                                                        detalleformapago: traduceFormasPago(rst.detcobrocomanda, listaet),
-                                                        facturara: rst.detfacturara[0]
-                                                    }
-                                                );
-                                            }
-                                        } catch (err) {
-                                            console.log(err);
-                                            console.log(rst);
+                                            lst.push({
+                                                fechahora: moment(rst.fecha, 'YYYY-MM-DD HH:mm:ss').format('DD/MM/YYYY HH:mm:ss'),
+                                                tracking: parseInt(rst.tracking),
+                                                id: rst._id,
+                                                idusuario: rst.idusuario._id,
+                                                nombreusuario: rst.idusuario.nombre,
+                                                cliente: rst.idcliente.nombre,
+                                                telefono: rst.idtelefonocliente.telefono,
+                                                notas: rst.notas ? rst.notas : '',
+                                                direccion: rst.idtipocomanda._id == '59fff327596e572d9cdac917' ?
+                                                    (rst.iddireccioncliente.direccion +
+                                                        ', zona ' + rst.iddireccioncliente.zona +
+                                                        ', colonia ' + rst.iddireccioncliente.colonia + (rst.iddireccioncliente.codigoacceso ? (', código de acceso ' + rst.iddireccioncliente.codigoacceso) : '')) : 'CLIENTE PASA A TRAER A RESTAURANTE',
+                                                idrestaurante: rst.idrestaurante ? rst.idrestaurante._id : rst.iddireccioncliente.idrestaurante._id,
+                                                restaurante: rst.idrestaurante ? rst.idrestaurante.nombre : rst.iddireccioncliente.idrestaurante.nombre,
+                                                idtipocomanda: rst.idtipocomanda._id,
+                                                tipocomanda: rst.idtipocomanda.descripcion,
+                                                detalle: traduceDetalleComanda(rst.detallecomanda, diccionario),
+                                                detalleformapago: traduceFormasPago(rst.detcobrocomanda, listaet),
+                                                facturara: rst.detfacturara[0]
+                                            });                                            
+                                        } catch (errTry) {
+                                            errores.push(errTry);
                                         }
                                     });
-                                    res.status(200).send({ mensaje: 'Lista de comandas.', lista: lst });
+                                    res.status(200).send({
+                                        mensaje: 'Lista de comandas.',
+                                        lista: lst,
+                                        errores: errores
+                                    });
                                 }
                             }
                         });
