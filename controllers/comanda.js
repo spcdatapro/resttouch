@@ -377,6 +377,14 @@ function traduceFormasPago(dp, emisores) {
     return detalle;    
 }
 
+function traduceFacturarA(facta) {
+    facta.monto = facta.monto ? facta.monto : 0;
+    facta.direccion = facta.direccion ? facta.direccion : '';
+    facta.nit = facta.nit ? facta.nit : '';
+    facta.nombre = facta.nombre ? facta.nombre : '';
+    return facta;
+}
+
 function listaComandasRestaurante(req, res) {
     var lst = [], idrestaurante = req.params.idrestaurante, errores = [];
     
@@ -441,7 +449,7 @@ function listaComandasRestaurante(req, res) {
                                                     tipocomanda: rst.idtipocomanda.descripcion,
                                                     detalle: traduceDetalleComanda(rst.detallecomanda, diccionario),
                                                     detalleformapago: traduceFormasPago(rst.detcobrocomanda, listaet),
-                                                    facturara: rst.detfacturara[0]
+                                                    facturara: traduceFacturarA(rst.detfacturara[0])
                                                 });
                                             }
                                         } catch (errTry) {
@@ -521,7 +529,7 @@ function getComandaByTracking(req, res) {
                                                 tipocomanda: rst.idtipocomanda.descripcion,
                                                 detalle: traduceDetalleComanda(rst.detallecomanda, diccionario),
                                                 detalleformapago: traduceFormasPago(rst.detcobrocomanda, listaet),
-                                                facturara: rst.detfacturara[0]
+                                                facturara: traduceFacturarA(rst.detfacturara[0])
                                             });                                            
                                         } catch (errTry) {
                                             errores.push(errTry);
