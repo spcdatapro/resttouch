@@ -9,6 +9,7 @@ var md_auth = require('../middlewares/authenticated');
 api.get('/usr/pruebas-del-controlador', md_auth.ensureAuth, UsuarioController.pruebas);
 api.post('/usr/c', md_auth.ensureAuth, UsuarioController.crear);
 api.put('/usr/u/:id', md_auth.ensureAuth, UsuarioController.modificar);
+//api.put('/usr/u/:id', UsuarioController.modificar);
 api.put('/usr/d/:id', md_auth.ensureAuth, UsuarioController.eliminar);
 api.post('/usr/login', UsuarioController.login);
 api.get('/usr/lstusuarios', md_auth.ensureAuth, UsuarioController.lstusuarios);

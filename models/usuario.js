@@ -9,6 +9,7 @@ var UserSchema = Schema({
     contrasenia: String,
     correoe: {type: String, unique: true},
     roles: [],
+    restaurante: [],
     debaja: Boolean    
 });
 

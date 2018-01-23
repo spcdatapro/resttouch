@@ -9,8 +9,10 @@ api.post('/com/c', md_auth.ensureAuth, ComandaController.crearComanda);
 api.put('/com/u/:id', md_auth.ensureAuth, ComandaController.modificarComanda);
 api.put('/com/d/:id', md_auth.ensureAuth, ComandaController.eliminarComanda);
 api.get('/com/getcomanda/:id', md_auth.ensureAuth, ComandaController.getComanda);
-api.get('/com/lstcomandas/:fdel?/:fal?/:idestatuscomanda?', md_auth.ensureAuth, ComandaController.listaComandas);
+api.get('/com/lstcomandas/:fdel?/:fal?/:idestatuscomanda?/:idrestaurante?', md_auth.ensureAuth, ComandaController.listaComandas);
+api.post('/com/lstcomandas', md_auth.ensureAuth, ComandaController.listaComandasPost);
 api.get('/com/contporest/:fdel/:fal', md_auth.ensureAuth, ComandaController.contadorPorEstatus);
+api.get('/com/lstcomusr/:idusuario', md_auth.ensureAuth, ComandaController.lstComandasUsuario);
 
 // API para FOX
 api.get('/com/lstcomres/:idrestaurante', ComandaController.listaComandasRestaurante);

@@ -88,13 +88,16 @@ function eliminarComanda(req, res){
 }
 
 function listaComandas(req, res){
-    var idestatuscomanda = req.params.idestatuscomanda, fltr = { debaja: false };    
+    var idestatuscomanda = req.params.idestatuscomanda, fltr = { debaja: false };
+    var idrestaurante = req.params.idrestaurante;
     var fdel = moment(req.params.fdel).startOf('day').toDate();
     var fal = moment(req.params.fal).endOf('day').toDate();
-    // console.log(fdel);
-    // console.log(fal);
-    if (idestatuscomanda) { fltr = { idestatuscomanda: idestatuscomanda, debaja:false }; }
+
+    if (idestatuscomanda && idestatuscomanda != '0') { fltr.idestatuscomanda = idestatuscomanda; }
+    if (idrestaurante) { fltr.idrestaurante = idrestaurante; }
     if (fdel && fal) {fltr.fecha = {$lte: fal, $gte: fdel}; }
+
+    // console.log(fltr);
 
     Comanda.find(fltr, null, { sort: { fecha: -1 } })
         .populate('idcliente', ['_id', 'nombre'])
@@ -127,6 +130,110 @@ function listaComandas(req, res){
                                 }
                             }
                         });                        
+                    });
+                    //console.log(lista[0]);
+                    // console.log(lista);
+                    res.status(200).send({ mensaje: 'Lista de comandas.', lista: lista });
+                }
+            }
+        });
+}
+
+function listaComandasPost(req, res) {
+    var filtros = req.body;
+
+    var fltr = { debaja: false };
+
+    if (filtros.fdel && filtros.fal) { 
+        var fdel = moment(filtros.fdel).startOf('day').toDate();
+        var fal = moment(filtros.fal).endOf('day').toDate();
+        fltr.fecha = { $gte: fdel, $lte: fal };
+    }
+
+    if (filtros.idestatuscomanda) {
+        fltr.idestatuscomanda = filtros.idestatuscomanda;
+    }
+
+    if (filtros.restaurantes && filtros.restaurantes.length > 0) { 
+        fltr.idrestaurante = {$in: filtros.restaurantes};
+    }    
+
+    // console.log(fltr);
+
+    Comanda.find(fltr, null, { sort: { fecha: -1 } })
+        .populate('idcliente', ['_id', 'nombre'])
+        .populate('idtipocomanda', ['_id', 'descripcion', 'imagen'])
+        .populate('idusuario', ['_id', 'nombre'])
+        .populate('idestatuscomanda', ['_id', 'descripcion', 'color'])
+        .populate('idtelefonocliente', ['_id', 'telefono'])
+        .populate({ path: 'iddireccioncliente', populate: { path: 'idrestaurante', select: '_id nombre' } })
+        .populate('iddatosfacturacliente', ['_id', 'nit', 'nombre', 'direccion'])
+        .populate('idtiempoentrega', ['_id', 'tiempo'])
+        .populate('idrestaurante', ['_id', 'nombre'])
+        .populate('idmotorista', ['_id', 'nombre'])
+        .exec((err, lista) => {
+            if (err) {
+                res.status(500).send({ mensaje: 'Error en el servidor al listar las comandas. ERROR: ' + err });
+            } else {
+                if (lista.length == 0) {
+                    res.status(200).send({ mensaje: 'No se encontraron comandas.' });
+                } else {
+
+                    lista.forEach((item) => {
+                        item.fecha = moment(item.fecha).toDate();
+                        item.imgpago = [];
+                        item.detcobrocomanda.forEach((fp) => {
+                            if (item.imgpago.length == 0) {
+                                item.imgpago.push(fp.estarjeta ? 'tarjeta' : 'efectivo');
+                            } else {
+                                if (item.imgpago.indexOf(fp.estarjeta ? 'tarjeta' : 'efectivo') < 0) {
+                                    item.imgpago.push(fp.estarjeta ? 'tarjeta' : 'efectivo');
+                                }
+                            }
+                        });
+                    });
+                    //console.log(lista[0]);
+                    // console.log(lista);
+                    res.status(200).send({ mensaje: 'Lista de comandas.', lista: lista });
+                }
+            }
+        });
+}
+
+function lstComandasUsuario(req, res) {
+    var idusuario = req.params.idusuario;
+
+    Comanda.find({ idestatuscomanda: "59fea7dd4218672b285ab0e7", idmotorista: idusuario, debaja: false}, null, { sort: { fecha: 1 } })
+        .populate('idcliente', ['_id', 'nombre'])
+        .populate('idtipocomanda', ['_id', 'descripcion', 'imagen'])
+        .populate('idusuario', ['_id', 'nombre'])
+        .populate('idestatuscomanda', ['_id', 'descripcion', 'color'])
+        .populate('idtelefonocliente', ['_id', 'telefono'])
+        .populate({ path: 'iddireccioncliente', populate: { path: 'idrestaurante', select: '_id nombre' } })
+        .populate('iddatosfacturacliente', ['_id', 'nit', 'nombre', 'direccion'])
+        .populate('idtiempoentrega', ['_id', 'tiempo'])
+        .populate('idrestaurante', ['_id', 'nombre'])
+        .populate('idmotorista', ['_id', 'nombre'])
+        .exec((err, lista) => {
+            if (err) {
+                res.status(500).send({ mensaje: 'Error en el servidor al listar las comandas. ERROR: ' + err });
+            } else {
+                if (lista.length == 0) {
+                    res.status(200).send({ mensaje: 'No se encontraron comandas.' });
+                } else {
+
+                    lista.forEach((item) => {
+                        item.fecha = moment(item.fecha).toDate();
+                        item.imgpago = [];
+                        item.detcobrocomanda.forEach((fp) => {
+                            if (item.imgpago.length == 0) {
+                                item.imgpago.push(fp.estarjeta ? 'tarjeta' : 'efectivo');
+                            } else {
+                                if (item.imgpago.indexOf(fp.estarjeta ? 'tarjeta' : 'efectivo') < 0) {
+                                    item.imgpago.push(fp.estarjeta ? 'tarjeta' : 'efectivo');
+                                }
+                            }
+                        });
                     });
                     //console.log(lista[0]);
                     // console.log(lista);
@@ -1080,7 +1187,7 @@ function contadorPorEstatus(req, res) {
 }
 
 module.exports = {
-    crearComanda, modificarComanda, eliminarComanda, listaComandas, getComanda, lstComandasCliente, contadorPorEstatus,
+    crearComanda, modificarComanda, eliminarComanda, listaComandas, getComanda, lstComandasCliente, contadorPorEstatus, lstComandasUsuario, listaComandasPost,
     // api para FOX
     listaComandasRestaurante, confirmarComanda, resetEstatusComandas, cobroAprobadoComanda, cobroRechazadoComanda,
     produccionComanda, enCaminoComanda, entregadaComanda, confirmarComandaEncargado, getComandaByTracking,

@@ -21,6 +21,7 @@ function crear(req, res){
     usrObj.usuario = params.usuario.toLowerCase();    
     usrObj.correoe = params.correoe;
     usrObj.roles = params.roles;
+    usrObj.restaurante = params.restaurante;
     usrObj.debaja = params.debaja;
 
     usuario.findOne({usuario: usrObj.usuario}, (err, usrExistente) => {
@@ -106,9 +107,9 @@ function modificar(req, res){
     var idusuario = req.params.id;
     var body = req.body;
 
-    if(idusuario != req.usrauth.sub){
-        res.status(500).send({ mensaje: 'No tienes permiso para actualizar el usuario' });
-    }else{
+    // if(idusuario != req.usrauth.sub){
+        //res.status(500).send({ mensaje: 'No tienes permiso para actualizar el usuario' });
+    //}else{
         if(body.contrasenia){
             bcrypt.hash(body.contrasenia, null, null, (err, hash)=>{
                 body.contrasenia = hash;        
@@ -117,7 +118,7 @@ function modificar(req, res){
         }else{
             execUpdate(req, res, idusuario, body);
         }
-    }    
+    //}    
 }
 
 function lstusuarios(req, res){
