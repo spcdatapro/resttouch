@@ -17,6 +17,7 @@ api.get('/com/lstcomusr/:idusuario', md_auth.ensureAuth, ComandaController.lstCo
 // API para FOX
 api.get('/com/lstcomres/:idrestaurante', ComandaController.listaComandasRestaurante);
 api.get('/com/getcomtrack/:tracking', ComandaController.getComandaByTracking);
+api.get('/com/comerror/:id', ComandaController.comandaConProblemas);
 api.get('/com/confcom/:id', ComandaController.confirmarComanda);
 api.get('/com/confcomenc/:id', ComandaController.confirmarComandaEncargado);
 api.get('/com/rescom', ComandaController.resetEstatusComandas);

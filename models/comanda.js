@@ -25,6 +25,7 @@ var ComandaSchema = Schema({
     idrestaurante: { type: Schema.ObjectId, ref: 'restaurante', required: true },
     idmotorista: { type: Schema.ObjectId, ref: 'usuario' },
     imgpago: Array,
+    bitacoraestatus: Array,
     debaja: { type: Boolean, default: false }
 });
 
