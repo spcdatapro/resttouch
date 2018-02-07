@@ -5413,8 +5413,9 @@ var JsReportService = /** @class */ (function () {
     function JsReportService(_http, _sanitizer) {
         this._http = _http;
         this._sanitizer = _sanitizer;
-        this.url = window.location.origin + ':5489/api/report';
-        // this.url = 'http://localhost:5489/api/report';
+        // this.url = 'http://localhost:5489/api/report'; //pruebas locales
+        // this.url = 'http://138.68.248.143:5489/api/report'; // servidor de pruebas
+        this.url = 'http://104.236.58.180:5489/api/report'; // servidor de produccion
     }
     JsReportService.prototype.getPDFReport = function (shortid, obj) {
         var _this = this;

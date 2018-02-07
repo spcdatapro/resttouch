@@ -27,8 +27,8 @@ async function ventasPorOperador(req, res) {
         }
     ];
 
-    var presupuesto = await PresupuestoVentas.findOne({mes: moment(fdel).month() + 1, anio: moment(fdel).year()}).exec();
-    if(!presupuesto){ presupuesto = {presupuesto: 0}; }
+    var presupuesto = await PresupuestoVentas.findOne({mes: moment(fdel).month() + 1, anio: moment(fdel).year()}).exec();    
+    if (!presupuesto) { presupuesto = { presupuesto: 0 }; }
 
     Comanda.aggregate(aggOpts).exec((error, lista) => {
         if (error) {
@@ -187,7 +187,7 @@ async function ventasPorTipoComanda(req, res) {
     ];
 
     var presupuesto = await PresupuestoVentas.findOne({ mes: moment(fdel).month() + 1, anio: moment(fdel).year() }).exec();
-    if (!presupuesto) { presupuesto = { presupuesto: 0 }; }
+    if(!presupuesto) { presupuesto = { presupuesto: 0 }; }
 
     Comanda.aggregate(aggOpts).exec((error, lista) => {
         if (error) {
