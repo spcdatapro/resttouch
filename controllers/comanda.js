@@ -471,7 +471,7 @@ function conteoProductos(det) {
     if (det) {
         det.forEach(function(item){
             try{
-                if (+item.idproducto > 0) {
+                if (item.idproducto.trim() != '') {
                     conteo++;
                 }
             }catch(e){ }
