@@ -5379,9 +5379,9 @@ var FormaPagoService = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GLOBAL; });
 var GLOBAL = {
-    // url: 'http://localhost:3789/api/' // Comentar para servidor de pruebas/produccion
+    url: 'http://localhost:3789/api/' // Comentar para servidor de pruebas/produccion
     // url: 'http://138.68.248.143:3789/api/' // Descomentar para servidor de pruebas
-    url: 'http://104.236.58.180:3789/api/' // Descomentar para servidor de produccion
+    // url: 'http://104.236.58.180:3789/api/' // Descomentar para servidor de produccion
 };
 
 
@@ -5413,8 +5413,8 @@ var JsReportService = /** @class */ (function () {
     function JsReportService(_http, _sanitizer) {
         this._http = _http;
         this._sanitizer = _sanitizer;
-        // this.url = window.location.origin + ':5489/api/report';
-        this.url = 'http://localhost:5489/api/report';
+        this.url = window.location.origin + ':5489/api/report';
+        // this.url = 'http://localhost:5489/api/report';
     }
     JsReportService.prototype.getPDFReport = function (shortid, obj) {
         var _this = this;
