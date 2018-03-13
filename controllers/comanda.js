@@ -502,16 +502,22 @@ function traduceFormasPago(dp, emisores) {
     return detalle;    
 }
 
-function traduceFacturarA(facta) {
-    facta.monto = facta.monto ? facta.monto : 0;
-    facta.direccion = facta.direccion ? facta.direccion : '';
-    facta.nit = facta.nit ? facta.nit : '';
-    facta.nombre = facta.nombre ? facta.nombre : '';
-    return facta;
+function traduceFacturarA(facta, pedido) {
+    var tmp = { monto: pedido.totalcomanda, direccion: 'Ciudad', nit: 'C/F', nombre: 'C/F' };
+    if(facta){
+        facta.monto = facta.monto ? facta.monto : 0;
+        facta.direccion = facta.direccion ? facta.direccion : '';
+        facta.nit = facta.nit ? facta.nit : '';
+        facta.nombre = facta.nombre ? facta.nombre : '';
+        return facta;
+    }
+    return tmp;
 }
 
 function listaComandasRestaurante(req, res) {
     var lst = [], idrestaurante = req.params.idrestaurante, errores = [];
+    var fdel = moment().startOf('day').toDate();
+    var fal = moment().endOf('day').toDate();
     
     EmisoresTarjeta.find({}, (errore, listaet) => {
         DiccionarioFox.find({}, (e, dictfox) => {
@@ -522,7 +528,11 @@ function listaComandasRestaurante(req, res) {
                     res.status(200).send({ mensaje: 'No se encontro nada en el diccionario de fox.' });
                 } else {
                     const diccionario = dictfox;
-                    Comanda.find({ idestatuscomanda: { $in: ["59fea7304218672b285ab0e2", "5a72403fc5bb328b700edc58"] }, debaja: false }, null, { sort: { fecha: 1 } })
+                    Comanda.find({ 
+                        idestatuscomanda: { $in: ["59fea7304218672b285ab0e2", "5a72403fc5bb328b700edc58"] }, 
+                        debaja: false,
+                        fecha: { $gte: fdel, $lte: fal }
+                    }, null, { sort: { fecha: 1 } })
                         .populate('idcliente', ['_id', 'nombre'])
                         .populate('idtipocomanda', ['_id', 'descripcion', 'imagen'])
                         .populate('idusuario', ['_id', 'nombre'])
@@ -565,7 +575,7 @@ function listaComandasRestaurante(req, res) {
                                                     id: rst._id,
                                                     idusuario: rst.idusuario._id,
                                                     nombreusuario: rst.idusuario.nombre,
-                                                    cliente: rst.idcliente.nombre,
+                                                    cliente: rst.idcliente.nombre ? rst.idcliente.nombre : '',
                                                     telefono: rst.idtelefonocliente.telefono,
                                                     notas: rst.notas ? rst.notas : '',
                                                     direccion: rst.idtipocomanda._id == '59fff327596e572d9cdac917' ?
@@ -579,12 +589,12 @@ function listaComandasRestaurante(req, res) {
                                                     detalle: tmpDetalle,
                                                     cantidadlineasdetalle: cantDetalle,
                                                     detalleformapago: traduceFormasPago(rst.detcobrocomanda, listaet),
-                                                    facturara: traduceFacturarA(rst.detfacturara[0]),
-                                                    bitacoraestatus: rst.bitacoraestatus
+                                                    facturara: traduceFacturarA(rst.detfacturara[0], rst),
+                                                    estatuscomanda: rst.idestatuscomanda.descripcion
                                                 });
                                             }
                                         } catch (errTry) {
-                                            errores.push(errTry);
+                                            errores.push(errTry.message);
                                         }                                        
                                     });
                                     res.status(200).send({ mensaje: 'Lista de comandas.', lista: lst, errores: errores });
@@ -665,11 +675,12 @@ function getComandaByTracking(req, res) {
                                                 detalle: tmpDetalle,
                                                 cantidadlineasdetalle: cantDetalle,
                                                 detalleformapago: traduceFormasPago(rst.detcobrocomanda, listaet),
-                                                facturara: traduceFacturarA(rst.detfacturara[0]),
-                                                bitacoraestatus: rst.bitacoraestatus
+                                                facturara: traduceFacturarA(rst.detfacturara[0], rst),
+                                                bitacoraestatus: rst.bitacoraestatus,
+                                                estatuscomanda: rst.idestatuscomanda.descripcion
                                             });                                            
                                         } catch (errTry) {
-                                            errores.push(errTry);
+                                            errores.push(errTry.message);
                                         }
                                     });
                                     res.status(200).send({
@@ -772,6 +783,7 @@ function confirmarComandaEncargado(req, res) {
     });
 }
 
+/*
 function resetEstatusComandas(req, res) {
     Comanda.update({ idestatuscomanda: { $ne: '59fea7f34218672b285ab0e8' } }, { idestatuscomanda: "59fea7304218672b285ab0e2", idmotorista: null }, { multi: true }).exec((err, raw) =>{
         if (err) {
@@ -781,6 +793,7 @@ function resetEstatusComandas(req, res) {
         }
     });
 }
+*/
 
 function cobroAprobadoComanda(req, res) {
     var idcom = req.params.id;
@@ -1271,7 +1284,9 @@ function contadorPorEstatus(req, res) {
 module.exports = {
     crearComanda, modificarComanda, eliminarComanda, listaComandas, getComanda, lstComandasCliente, contadorPorEstatus, lstComandasUsuario, listaComandasPost,
     // api para FOX
-    listaComandasRestaurante, confirmarComanda, resetEstatusComandas, cobroAprobadoComanda, cobroRechazadoComanda,
+    listaComandasRestaurante, confirmarComanda, 
+    //resetEstatusComandas, 
+    cobroAprobadoComanda, cobroRechazadoComanda,
     produccionComanda, enCaminoComanda, entregadaComanda, confirmarComandaEncargado, getComandaByTracking, comandaConProblemas,
     // fin de api para FOX    
     crearDetComanda, modificarDetComanda, eliminarDetComanda, listaDetComanda, getDetComanda,

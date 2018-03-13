@@ -20,7 +20,7 @@ api.get('/com/getcomtrack/:tracking', ComandaController.getComandaByTracking);
 api.get('/com/comerror/:id', ComandaController.comandaConProblemas);
 api.get('/com/confcom/:id', ComandaController.confirmarComanda);
 api.get('/com/confcomenc/:id', ComandaController.confirmarComandaEncargado);
-api.get('/com/rescom', ComandaController.resetEstatusComandas);
+//api.get('/com/rescom', ComandaController.resetEstatusComandas);
 api.get('/com/comaprob/:id', ComandaController.cobroAprobadoComanda);
 api.get('/com/comrech/:id', ComandaController.cobroRechazadoComanda);
 api.get('/com/comprod/:id', ComandaController.produccionComanda);

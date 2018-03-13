@@ -1,6 +1,273 @@
 webpackJsonp(["main"],{
 
-/***/ "../../../../../src/$$_lazy_route_resource lazy recursive":
+/***/ "./node_modules/moment/locale recursive ^\\.\\/.*$":
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./af": "./node_modules/moment/locale/af.js",
+	"./af.js": "./node_modules/moment/locale/af.js",
+	"./ar": "./node_modules/moment/locale/ar.js",
+	"./ar-dz": "./node_modules/moment/locale/ar-dz.js",
+	"./ar-dz.js": "./node_modules/moment/locale/ar-dz.js",
+	"./ar-kw": "./node_modules/moment/locale/ar-kw.js",
+	"./ar-kw.js": "./node_modules/moment/locale/ar-kw.js",
+	"./ar-ly": "./node_modules/moment/locale/ar-ly.js",
+	"./ar-ly.js": "./node_modules/moment/locale/ar-ly.js",
+	"./ar-ma": "./node_modules/moment/locale/ar-ma.js",
+	"./ar-ma.js": "./node_modules/moment/locale/ar-ma.js",
+	"./ar-sa": "./node_modules/moment/locale/ar-sa.js",
+	"./ar-sa.js": "./node_modules/moment/locale/ar-sa.js",
+	"./ar-tn": "./node_modules/moment/locale/ar-tn.js",
+	"./ar-tn.js": "./node_modules/moment/locale/ar-tn.js",
+	"./ar.js": "./node_modules/moment/locale/ar.js",
+	"./az": "./node_modules/moment/locale/az.js",
+	"./az.js": "./node_modules/moment/locale/az.js",
+	"./be": "./node_modules/moment/locale/be.js",
+	"./be.js": "./node_modules/moment/locale/be.js",
+	"./bg": "./node_modules/moment/locale/bg.js",
+	"./bg.js": "./node_modules/moment/locale/bg.js",
+	"./bm": "./node_modules/moment/locale/bm.js",
+	"./bm.js": "./node_modules/moment/locale/bm.js",
+	"./bn": "./node_modules/moment/locale/bn.js",
+	"./bn.js": "./node_modules/moment/locale/bn.js",
+	"./bo": "./node_modules/moment/locale/bo.js",
+	"./bo.js": "./node_modules/moment/locale/bo.js",
+	"./br": "./node_modules/moment/locale/br.js",
+	"./br.js": "./node_modules/moment/locale/br.js",
+	"./bs": "./node_modules/moment/locale/bs.js",
+	"./bs.js": "./node_modules/moment/locale/bs.js",
+	"./ca": "./node_modules/moment/locale/ca.js",
+	"./ca.js": "./node_modules/moment/locale/ca.js",
+	"./cs": "./node_modules/moment/locale/cs.js",
+	"./cs.js": "./node_modules/moment/locale/cs.js",
+	"./cv": "./node_modules/moment/locale/cv.js",
+	"./cv.js": "./node_modules/moment/locale/cv.js",
+	"./cy": "./node_modules/moment/locale/cy.js",
+	"./cy.js": "./node_modules/moment/locale/cy.js",
+	"./da": "./node_modules/moment/locale/da.js",
+	"./da.js": "./node_modules/moment/locale/da.js",
+	"./de": "./node_modules/moment/locale/de.js",
+	"./de-at": "./node_modules/moment/locale/de-at.js",
+	"./de-at.js": "./node_modules/moment/locale/de-at.js",
+	"./de-ch": "./node_modules/moment/locale/de-ch.js",
+	"./de-ch.js": "./node_modules/moment/locale/de-ch.js",
+	"./de.js": "./node_modules/moment/locale/de.js",
+	"./dv": "./node_modules/moment/locale/dv.js",
+	"./dv.js": "./node_modules/moment/locale/dv.js",
+	"./el": "./node_modules/moment/locale/el.js",
+	"./el.js": "./node_modules/moment/locale/el.js",
+	"./en-au": "./node_modules/moment/locale/en-au.js",
+	"./en-au.js": "./node_modules/moment/locale/en-au.js",
+	"./en-ca": "./node_modules/moment/locale/en-ca.js",
+	"./en-ca.js": "./node_modules/moment/locale/en-ca.js",
+	"./en-gb": "./node_modules/moment/locale/en-gb.js",
+	"./en-gb.js": "./node_modules/moment/locale/en-gb.js",
+	"./en-ie": "./node_modules/moment/locale/en-ie.js",
+	"./en-ie.js": "./node_modules/moment/locale/en-ie.js",
+	"./en-il": "./node_modules/moment/locale/en-il.js",
+	"./en-il.js": "./node_modules/moment/locale/en-il.js",
+	"./en-nz": "./node_modules/moment/locale/en-nz.js",
+	"./en-nz.js": "./node_modules/moment/locale/en-nz.js",
+	"./eo": "./node_modules/moment/locale/eo.js",
+	"./eo.js": "./node_modules/moment/locale/eo.js",
+	"./es": "./node_modules/moment/locale/es.js",
+	"./es-do": "./node_modules/moment/locale/es-do.js",
+	"./es-do.js": "./node_modules/moment/locale/es-do.js",
+	"./es-us": "./node_modules/moment/locale/es-us.js",
+	"./es-us.js": "./node_modules/moment/locale/es-us.js",
+	"./es.js": "./node_modules/moment/locale/es.js",
+	"./et": "./node_modules/moment/locale/et.js",
+	"./et.js": "./node_modules/moment/locale/et.js",
+	"./eu": "./node_modules/moment/locale/eu.js",
+	"./eu.js": "./node_modules/moment/locale/eu.js",
+	"./fa": "./node_modules/moment/locale/fa.js",
+	"./fa.js": "./node_modules/moment/locale/fa.js",
+	"./fi": "./node_modules/moment/locale/fi.js",
+	"./fi.js": "./node_modules/moment/locale/fi.js",
+	"./fo": "./node_modules/moment/locale/fo.js",
+	"./fo.js": "./node_modules/moment/locale/fo.js",
+	"./fr": "./node_modules/moment/locale/fr.js",
+	"./fr-ca": "./node_modules/moment/locale/fr-ca.js",
+	"./fr-ca.js": "./node_modules/moment/locale/fr-ca.js",
+	"./fr-ch": "./node_modules/moment/locale/fr-ch.js",
+	"./fr-ch.js": "./node_modules/moment/locale/fr-ch.js",
+	"./fr.js": "./node_modules/moment/locale/fr.js",
+	"./fy": "./node_modules/moment/locale/fy.js",
+	"./fy.js": "./node_modules/moment/locale/fy.js",
+	"./gd": "./node_modules/moment/locale/gd.js",
+	"./gd.js": "./node_modules/moment/locale/gd.js",
+	"./gl": "./node_modules/moment/locale/gl.js",
+	"./gl.js": "./node_modules/moment/locale/gl.js",
+	"./gom-latn": "./node_modules/moment/locale/gom-latn.js",
+	"./gom-latn.js": "./node_modules/moment/locale/gom-latn.js",
+	"./gu": "./node_modules/moment/locale/gu.js",
+	"./gu.js": "./node_modules/moment/locale/gu.js",
+	"./he": "./node_modules/moment/locale/he.js",
+	"./he.js": "./node_modules/moment/locale/he.js",
+	"./hi": "./node_modules/moment/locale/hi.js",
+	"./hi.js": "./node_modules/moment/locale/hi.js",
+	"./hr": "./node_modules/moment/locale/hr.js",
+	"./hr.js": "./node_modules/moment/locale/hr.js",
+	"./hu": "./node_modules/moment/locale/hu.js",
+	"./hu.js": "./node_modules/moment/locale/hu.js",
+	"./hy-am": "./node_modules/moment/locale/hy-am.js",
+	"./hy-am.js": "./node_modules/moment/locale/hy-am.js",
+	"./id": "./node_modules/moment/locale/id.js",
+	"./id.js": "./node_modules/moment/locale/id.js",
+	"./is": "./node_modules/moment/locale/is.js",
+	"./is.js": "./node_modules/moment/locale/is.js",
+	"./it": "./node_modules/moment/locale/it.js",
+	"./it.js": "./node_modules/moment/locale/it.js",
+	"./ja": "./node_modules/moment/locale/ja.js",
+	"./ja.js": "./node_modules/moment/locale/ja.js",
+	"./jv": "./node_modules/moment/locale/jv.js",
+	"./jv.js": "./node_modules/moment/locale/jv.js",
+	"./ka": "./node_modules/moment/locale/ka.js",
+	"./ka.js": "./node_modules/moment/locale/ka.js",
+	"./kk": "./node_modules/moment/locale/kk.js",
+	"./kk.js": "./node_modules/moment/locale/kk.js",
+	"./km": "./node_modules/moment/locale/km.js",
+	"./km.js": "./node_modules/moment/locale/km.js",
+	"./kn": "./node_modules/moment/locale/kn.js",
+	"./kn.js": "./node_modules/moment/locale/kn.js",
+	"./ko": "./node_modules/moment/locale/ko.js",
+	"./ko.js": "./node_modules/moment/locale/ko.js",
+	"./ky": "./node_modules/moment/locale/ky.js",
+	"./ky.js": "./node_modules/moment/locale/ky.js",
+	"./lb": "./node_modules/moment/locale/lb.js",
+	"./lb.js": "./node_modules/moment/locale/lb.js",
+	"./lo": "./node_modules/moment/locale/lo.js",
+	"./lo.js": "./node_modules/moment/locale/lo.js",
+	"./lt": "./node_modules/moment/locale/lt.js",
+	"./lt.js": "./node_modules/moment/locale/lt.js",
+	"./lv": "./node_modules/moment/locale/lv.js",
+	"./lv.js": "./node_modules/moment/locale/lv.js",
+	"./me": "./node_modules/moment/locale/me.js",
+	"./me.js": "./node_modules/moment/locale/me.js",
+	"./mi": "./node_modules/moment/locale/mi.js",
+	"./mi.js": "./node_modules/moment/locale/mi.js",
+	"./mk": "./node_modules/moment/locale/mk.js",
+	"./mk.js": "./node_modules/moment/locale/mk.js",
+	"./ml": "./node_modules/moment/locale/ml.js",
+	"./ml.js": "./node_modules/moment/locale/ml.js",
+	"./mr": "./node_modules/moment/locale/mr.js",
+	"./mr.js": "./node_modules/moment/locale/mr.js",
+	"./ms": "./node_modules/moment/locale/ms.js",
+	"./ms-my": "./node_modules/moment/locale/ms-my.js",
+	"./ms-my.js": "./node_modules/moment/locale/ms-my.js",
+	"./ms.js": "./node_modules/moment/locale/ms.js",
+	"./mt": "./node_modules/moment/locale/mt.js",
+	"./mt.js": "./node_modules/moment/locale/mt.js",
+	"./my": "./node_modules/moment/locale/my.js",
+	"./my.js": "./node_modules/moment/locale/my.js",
+	"./nb": "./node_modules/moment/locale/nb.js",
+	"./nb.js": "./node_modules/moment/locale/nb.js",
+	"./ne": "./node_modules/moment/locale/ne.js",
+	"./ne.js": "./node_modules/moment/locale/ne.js",
+	"./nl": "./node_modules/moment/locale/nl.js",
+	"./nl-be": "./node_modules/moment/locale/nl-be.js",
+	"./nl-be.js": "./node_modules/moment/locale/nl-be.js",
+	"./nl.js": "./node_modules/moment/locale/nl.js",
+	"./nn": "./node_modules/moment/locale/nn.js",
+	"./nn.js": "./node_modules/moment/locale/nn.js",
+	"./pa-in": "./node_modules/moment/locale/pa-in.js",
+	"./pa-in.js": "./node_modules/moment/locale/pa-in.js",
+	"./pl": "./node_modules/moment/locale/pl.js",
+	"./pl.js": "./node_modules/moment/locale/pl.js",
+	"./pt": "./node_modules/moment/locale/pt.js",
+	"./pt-br": "./node_modules/moment/locale/pt-br.js",
+	"./pt-br.js": "./node_modules/moment/locale/pt-br.js",
+	"./pt.js": "./node_modules/moment/locale/pt.js",
+	"./ro": "./node_modules/moment/locale/ro.js",
+	"./ro.js": "./node_modules/moment/locale/ro.js",
+	"./ru": "./node_modules/moment/locale/ru.js",
+	"./ru.js": "./node_modules/moment/locale/ru.js",
+	"./sd": "./node_modules/moment/locale/sd.js",
+	"./sd.js": "./node_modules/moment/locale/sd.js",
+	"./se": "./node_modules/moment/locale/se.js",
+	"./se.js": "./node_modules/moment/locale/se.js",
+	"./si": "./node_modules/moment/locale/si.js",
+	"./si.js": "./node_modules/moment/locale/si.js",
+	"./sk": "./node_modules/moment/locale/sk.js",
+	"./sk.js": "./node_modules/moment/locale/sk.js",
+	"./sl": "./node_modules/moment/locale/sl.js",
+	"./sl.js": "./node_modules/moment/locale/sl.js",
+	"./sq": "./node_modules/moment/locale/sq.js",
+	"./sq.js": "./node_modules/moment/locale/sq.js",
+	"./sr": "./node_modules/moment/locale/sr.js",
+	"./sr-cyrl": "./node_modules/moment/locale/sr-cyrl.js",
+	"./sr-cyrl.js": "./node_modules/moment/locale/sr-cyrl.js",
+	"./sr.js": "./node_modules/moment/locale/sr.js",
+	"./ss": "./node_modules/moment/locale/ss.js",
+	"./ss.js": "./node_modules/moment/locale/ss.js",
+	"./sv": "./node_modules/moment/locale/sv.js",
+	"./sv.js": "./node_modules/moment/locale/sv.js",
+	"./sw": "./node_modules/moment/locale/sw.js",
+	"./sw.js": "./node_modules/moment/locale/sw.js",
+	"./ta": "./node_modules/moment/locale/ta.js",
+	"./ta.js": "./node_modules/moment/locale/ta.js",
+	"./te": "./node_modules/moment/locale/te.js",
+	"./te.js": "./node_modules/moment/locale/te.js",
+	"./tet": "./node_modules/moment/locale/tet.js",
+	"./tet.js": "./node_modules/moment/locale/tet.js",
+	"./tg": "./node_modules/moment/locale/tg.js",
+	"./tg.js": "./node_modules/moment/locale/tg.js",
+	"./th": "./node_modules/moment/locale/th.js",
+	"./th.js": "./node_modules/moment/locale/th.js",
+	"./tl-ph": "./node_modules/moment/locale/tl-ph.js",
+	"./tl-ph.js": "./node_modules/moment/locale/tl-ph.js",
+	"./tlh": "./node_modules/moment/locale/tlh.js",
+	"./tlh.js": "./node_modules/moment/locale/tlh.js",
+	"./tr": "./node_modules/moment/locale/tr.js",
+	"./tr.js": "./node_modules/moment/locale/tr.js",
+	"./tzl": "./node_modules/moment/locale/tzl.js",
+	"./tzl.js": "./node_modules/moment/locale/tzl.js",
+	"./tzm": "./node_modules/moment/locale/tzm.js",
+	"./tzm-latn": "./node_modules/moment/locale/tzm-latn.js",
+	"./tzm-latn.js": "./node_modules/moment/locale/tzm-latn.js",
+	"./tzm.js": "./node_modules/moment/locale/tzm.js",
+	"./ug-cn": "./node_modules/moment/locale/ug-cn.js",
+	"./ug-cn.js": "./node_modules/moment/locale/ug-cn.js",
+	"./uk": "./node_modules/moment/locale/uk.js",
+	"./uk.js": "./node_modules/moment/locale/uk.js",
+	"./ur": "./node_modules/moment/locale/ur.js",
+	"./ur.js": "./node_modules/moment/locale/ur.js",
+	"./uz": "./node_modules/moment/locale/uz.js",
+	"./uz-latn": "./node_modules/moment/locale/uz-latn.js",
+	"./uz-latn.js": "./node_modules/moment/locale/uz-latn.js",
+	"./uz.js": "./node_modules/moment/locale/uz.js",
+	"./vi": "./node_modules/moment/locale/vi.js",
+	"./vi.js": "./node_modules/moment/locale/vi.js",
+	"./x-pseudo": "./node_modules/moment/locale/x-pseudo.js",
+	"./x-pseudo.js": "./node_modules/moment/locale/x-pseudo.js",
+	"./yo": "./node_modules/moment/locale/yo.js",
+	"./yo.js": "./node_modules/moment/locale/yo.js",
+	"./zh-cn": "./node_modules/moment/locale/zh-cn.js",
+	"./zh-cn.js": "./node_modules/moment/locale/zh-cn.js",
+	"./zh-hk": "./node_modules/moment/locale/zh-hk.js",
+	"./zh-hk.js": "./node_modules/moment/locale/zh-hk.js",
+	"./zh-tw": "./node_modules/moment/locale/zh-tw.js",
+	"./zh-tw.js": "./node_modules/moment/locale/zh-tw.js"
+};
+function webpackContext(req) {
+	return __webpack_require__(webpackContextResolve(req));
+};
+function webpackContextResolve(req) {
+	var id = map[req];
+	if(!(id + 1)) // check for number or string
+		throw new Error("Cannot find module '" + req + "'.");
+	return id;
+};
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./node_modules/moment/locale recursive ^\\.\\/.*$";
+
+/***/ }),
+
+/***/ "./src/$$_lazy_route_resource lazy recursive":
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -13,26 +280,26 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = "../../../../../src/$$_lazy_route_resource lazy recursive";
+webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
-/***/ "../../../../../src/app/app.component.html":
+/***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container-fluid\">\r\n    <nav class=\"navbar navbar-light justify-content-between\" style=\"background-color: #F8E0E0;\" *ngIf=\"usuarioActual\">\r\n        <a class=\"navbar-brand\">\r\n            <button type=\"button\" class=\"btn btn-outline-secondary btn-sm\" (click)=\"toggleMenu()\">\r\n                <span class=\"oi oi-menu\" title=\"Mostrar/ocultar menú\" aria-hidden=\"true\"></span>\r\n            </button>\r\n            <img src=\"/assets/logors.svg\" width=\"80\" height=\"30\" class=\"d-inline-block align-top\" alt=\"Rest-Touch\">\r\n            <img src=\"./assets/Logo.jpg\" width=\"30\" height=\"30\" class=\"rounded d-inline-block align-top\" alt=\"\"> Vesuvio\r\n        </a>\r\n        <app-clock></app-clock>\r\n        <button class=\"btn btn-outline-dark my-2 my-sm-0\" type=\"button\" (click)=\"logOut()\">{{usuarioActual.nombre}} - Logout</button>        \r\n    </nav>\r\n    <div class=\"row\">\r\n        <div [ngClass]=\"{'col-2': menuVisible, '': !menuVisible}\" *ngIf=\"usuarioActual && menuVisible\">\r\n            <div style=\"height: 700px; width: 400px;\">\r\n                <tree-root [nodes]=\"arbolMenuApp\" [options]=\"options\">\r\n                    <ng-template #treeNodeWrapperTemplate let-node let-index=\"index\">\r\n                        <div class=\"node-wrapper\" [style.padding-left]=\"node.getNodePadding()\">\r\n                            <tree-node-expander [node]=\"node\"></tree-node-expander>\r\n                            <div class=\"node-content-wrapper\"\r\n                                [class.node-content-wrapper-active]=\"node.isActive\"\r\n                                [class.node-content-wrapper-focused]=\"node.isFocused\"\r\n                                (click)=\"node.mouseAction('click', $event)\"\r\n                                (dblclick)=\"node.mouseAction('dblClick', $event)\"\r\n                                (contextmenu)=\"node.mouseAction('contextMenu', $event)\"\r\n                                (treeDrop)=\"node.onDrop($event)\"\r\n                                [treeAllowDrop]=\"node.allowDrop\"\r\n                                [treeDrag]=\"node\"\r\n                                [treeDragEnabled]=\"node.allowDrag()\">\r\n                                <tree-node-content [node]=\"node\" [index]=\"index\"></tree-node-content>\r\n                                <button type=\"button\" class=\"btn btn-default btn-sm pull-right\" (click)=\"goToUrl(node.data)\" style=\"font-size: 8pt !important;\" *ngIf=\"node.data.url\">\r\n                                    <span class=\"oi oi-chevron-right\" title=\"Ir a {{node.data.name}}\" aria-hidden=\"true\"></span>\r\n                                </button>\r\n                            </div>\r\n                        </div>\r\n                    </ng-template>\r\n                </tree-root>\r\n            </div>            \r\n        </div>         \r\n        <div [ngClass]=\"{'col-10': menuVisible, 'col-12': !menuVisible}\"><router-outlet></router-outlet></div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
-/***/ "../../../../../src/app/app.component.ts":
+/***/ "./src/app/app.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_localstorage_service__ = __webpack_require__("../../../../../src/app/services/localstorage.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_menu_service__ = __webpack_require__("../../../../../src/app/services/menu.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_localstorage_service__ = __webpack_require__("./src/app/services/localstorage.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_menu_service__ = __webpack_require__("./src/app/services/menu.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -88,7 +355,7 @@ var AppComponent = /** @class */ (function () {
     AppComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-root',
-            template: __webpack_require__("../../../../../src/app/app.component.html"),
+            template: __webpack_require__("./src/app/app.component.html"),
             providers: [__WEBPACK_IMPORTED_MODULE_2__services_localstorage_service__["a" /* LocalStorageService */], __WEBPACK_IMPORTED_MODULE_3__services_menu_service__["a" /* MenuService */]]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__services_menu_service__["a" /* MenuService */],
@@ -103,37 +370,37 @@ var AppComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/app.module.ts":
+/***/ "./src/app/app.module.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("../../../platform-browser/esm5/platform-browser.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_animations__ = __webpack_require__("../../../platform-browser/esm5/animations.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__("../../../forms/esm5/forms.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_routing__ = __webpack_require__("../../../../../src/app/app.routing.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_angular2_toaster__ = __webpack_require__("../../../../angular2-toaster/angular2-toaster.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ng_bootstrap_ng_bootstrap__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_angular_tree_component__ = __webpack_require__("../../../../angular-tree-component/dist/angular-tree-component.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_angular2_moment__ = __webpack_require__("../../../../angular2-moment/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__("./node_modules/@angular/platform-browser/esm5/platform-browser.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_animations__ = __webpack_require__("./node_modules/@angular/platform-browser/esm5/animations.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_http__ = __webpack_require__("./node_modules/@angular/http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_routing__ = __webpack_require__("./src/app/app.routing.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_angular2_toaster__ = __webpack_require__("./node_modules/angular2-toaster/angular2-toaster.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ng_bootstrap_ng_bootstrap__ = __webpack_require__("./node_modules/@ng-bootstrap/ng-bootstrap/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_angular_tree_component__ = __webpack_require__("./node_modules/angular-tree-component/dist/angular-tree-component.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_angular2_moment__ = __webpack_require__("./node_modules/angular2-moment/index.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_angular2_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_angular2_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_login_login_component__ = __webpack_require__("../../../../../src/app/components/login/login.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_cliente_lstclientes_component__ = __webpack_require__("../../../../../src/app/components/cliente/lstclientes.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_cliente_cliente_component__ = __webpack_require__("../../../../../src/app/components/cliente/cliente.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_comanda_lstcomandas_component__ = __webpack_require__("../../../../../src/app/components/comanda/lstcomandas.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_comanda_comanda_component__ = __webpack_require__("../../../../../src/app/components/comanda/comanda.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_mnurest_mnurest_component__ = __webpack_require__("../../../../../src/app/components/mnurest/mnurest.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_mntvarios_mntvarios_component__ = __webpack_require__("../../../../../src/app/components/mntvarios/mntvarios.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_diccionariofox_diccionariofox_component__ = __webpack_require__("../../../../../src/app/components/diccionariofox/diccionariofox.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_clock_clock_component__ = __webpack_require__("../../../../../src/app/components/clock/clock.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_usuario_usuario_component__ = __webpack_require__("../../../../../src/app/components/usuario/usuario.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_reportes_visorpdf_component__ = __webpack_require__("../../../../../src/app/components/reportes/visorpdf.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_reportes_ventas_ventasvarios_component__ = __webpack_require__("../../../../../src/app/components/reportes/ventas/ventasvarios.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pipes_filterlist_pipe__ = __webpack_require__("../../../../../src/app/pipes/filterlist.pipe.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__angular_common_http__ = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__app_component__ = __webpack_require__("./src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_login_login_component__ = __webpack_require__("./src/app/components/login/login.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_cliente_lstclientes_component__ = __webpack_require__("./src/app/components/cliente/lstclientes.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_cliente_cliente_component__ = __webpack_require__("./src/app/components/cliente/cliente.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_comanda_lstcomandas_component__ = __webpack_require__("./src/app/components/comanda/lstcomandas.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_comanda_comanda_component__ = __webpack_require__("./src/app/components/comanda/comanda.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_mnurest_mnurest_component__ = __webpack_require__("./src/app/components/mnurest/mnurest.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_mntvarios_mntvarios_component__ = __webpack_require__("./src/app/components/mntvarios/mntvarios.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_diccionariofox_diccionariofox_component__ = __webpack_require__("./src/app/components/diccionariofox/diccionariofox.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_clock_clock_component__ = __webpack_require__("./src/app/components/clock/clock.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_usuario_usuario_component__ = __webpack_require__("./src/app/components/usuario/usuario.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_reportes_visorpdf_component__ = __webpack_require__("./src/app/components/reportes/visorpdf.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_reportes_ventas_ventasvarios_component__ = __webpack_require__("./src/app/components/reportes/ventas/ventasvarios.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pipes_filterlist_pipe__ = __webpack_require__("./src/app/pipes/filterlist.pipe.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -194,22 +461,22 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/app.routing.ts":
+/***/ "./src/app/app.routing.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return appRoutingProviders; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return routing; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_login_login_component__ = __webpack_require__("../../../../../src/app/components/login/login.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_cliente_lstclientes_component__ = __webpack_require__("../../../../../src/app/components/cliente/lstclientes.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_comanda_lstcomandas_component__ = __webpack_require__("../../../../../src/app/components/comanda/lstcomandas.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_comanda_comanda_component__ = __webpack_require__("../../../../../src/app/components/comanda/comanda.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_mnurest_mnurest_component__ = __webpack_require__("../../../../../src/app/components/mnurest/mnurest.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_mntvarios_mntvarios_component__ = __webpack_require__("../../../../../src/app/components/mntvarios/mntvarios.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_diccionariofox_diccionariofox_component__ = __webpack_require__("../../../../../src/app/components/diccionariofox/diccionariofox.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_usuario_usuario_component__ = __webpack_require__("../../../../../src/app/components/usuario/usuario.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_reportes_ventas_ventasvarios_component__ = __webpack_require__("../../../../../src/app/components/reportes/ventas/ventasvarios.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_login_login_component__ = __webpack_require__("./src/app/components/login/login.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_cliente_lstclientes_component__ = __webpack_require__("./src/app/components/cliente/lstclientes.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_comanda_lstcomandas_component__ = __webpack_require__("./src/app/components/comanda/lstcomandas.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_comanda_comanda_component__ = __webpack_require__("./src/app/components/comanda/comanda.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_mnurest_mnurest_component__ = __webpack_require__("./src/app/components/mnurest/mnurest.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_mntvarios_mntvarios_component__ = __webpack_require__("./src/app/components/mntvarios/mntvarios.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_diccionariofox_diccionariofox_component__ = __webpack_require__("./src/app/components/diccionariofox/diccionariofox.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_usuario_usuario_component__ = __webpack_require__("./src/app/components/usuario/usuario.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_reportes_ventas_ventasvarios_component__ = __webpack_require__("./src/app/components/reportes/ventas/ventasvarios.component.ts");
 
 // Componentes
 
@@ -242,32 +509,32 @@ var routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["c" /* RouterModule 
 
 /***/ }),
 
-/***/ "../../../../../src/app/components/cliente/cliente.component.html":
+/***/ "./src/app/components/cliente/cliente.component.html":
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container-fluid\">\r\n    <div class=\"row\">\r\n        <div class=\"col-12\">\r\n            <form #clienteForm=\"ngForm\" (ngSubmit)=\"onSubmit()\">\r\n                <div class=\"row\">\r\n                    <div class=\"col-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"txtcliente\">Nombre:</label>\r\n                            <input name=\"txtCliente\" id=\"txtCliente\" type=\"text\" class=\"form-control mb-2 mr-sm-2 mb-sm-0\" #nombreCliente=\"ngModel\"\r\n                                [(ngModel)]=\"cliente.nombre\" placeholder=\"Nombre\" required />\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-3\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"txtCliFCumple\">Fecha de nacimiento:</label>\r\n                            <input name=\"txtCliFCumple\" id=\"txtCliFCumple\" type=\"date\" class=\"form-control mb-2 mr-sm-2 mb-sm-0\" #fechaCumple=\"ngModel\"\r\n                                [(ngModel)]=\"cliente.cumpleanios\" placeholder=\"Fecha de cumpleaños\" />\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-3\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"txtCliFCumple\">E-mail:</label>\r\n                            <input name=\"txtEMail\" id=\"txtEMail\" type=\"email\" class=\"form-control mb-2 mr-sm-2 mb-sm-0\" #emailCliente=\"ngModel\"\r\n                                [(ngModel)]=\"cliente.correoelectronico\" placeholder=\"E-mail\" />\r\n                        </div>                        \r\n                    </div>\r\n                    <div class=\"col-2\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"chkConHijos\">¿Tiene hijos?</label>\r\n                            <input name=\"chkConHijos\" id=\"chkConHijos\" type=\"checkbox\" class=\"form-control mb-2 mr-sm-2 mb-sm-0\" [checked]=\"cliente.tienehijos\"\r\n                                (change)=\"cliente.tienehijos = !cliente.tienehijos\" />\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\" *ngIf=\"cliente.tienehijos\">\r\n                    <div class=\"col-5\">\r\n                        <div class=\"form-group\">\r\n                            <table class=\"table table-sm table-striped\">\r\n                                <thead>\r\n                                    <tr>\r\n                                        <th colspan=\"2\">\r\n                                            Rango de edades de los hijos&nbsp;\r\n                                            <button type=\"button\" class=\"btn btn-outline-primary btn-sm\" (click)=\"nuevoRangoEdades()\">\r\n                                                <span class=\"oi oi-plus\" title=\"Nuevo rango de edades\" aria-hidden=\"true\"></span>\r\n                                            </button>\r\n                                        </th>\r\n                                    </tr>\r\n                                    <tr>\r\n                                        <th>De</th>\r\n                                        <th>A</th>\r\n                                        <th>&nbsp;</th>\r\n                                    </tr>\r\n                                </thead>\r\n                                <tbody>\r\n                                    <tr *ngFor=\"let r of cliente.rangoedadeshijos; let i = index\">\r\n                                        <td>\r\n                                            <input name=\"txtRDe_{{i}}\" id=\"txtRDe_{{i}}\" class=\"form-control form-control-sm\" #rangoDe=\"ngModel\"\r\n                                                [(ngModel)]=\"r.de\" placeholder=\"De\" required />\r\n                                        </td>\r\n                                        <td>\r\n                                            <input name=\"txtRA_{{i}}\" id=\"txtRA_{{i}}\" class=\"form-control form-control-sm\" #rangoA=\"ngModel\"\r\n                                                [(ngModel)]=\"r.a\" placeholder=\"A\" required />\r\n                                        </td>\r\n                                        <td>\r\n                                            <button type=\"button\" class=\"btn btn-outline-danger btn-sm\" (click)=\"delRangoEdad(i)\">\r\n                                                <span class=\"oi oi-trash\" title=\"Eliminar rango de edades de los hijos\" aria-hidden=\"true\"></span>\r\n                                            </button>\r\n                                        </td>\r\n                                    </tr>\r\n                                </tbody>\r\n                            </table>\r\n                        </div>\r\n                    </div>\r\n                    <!--\r\n                    <div class=\"col-2\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"chkConHijos\">De baja</label>\r\n                            <input name=\"chkDeBaja\" id=\"chkDeBaja\" type=\"checkbox\" class=\"form-control mb-2 mr-sm-2 mb-sm-0\" [checked]=\"cliente.debaja\"\r\n                                (change)=\"cliente.debaja = !cliente.debaja\" />\r\n                        </div>\r\n                    </div>\r\n                    -->\r\n                </div>\r\n                <div class=\"btn-group\" role=\"group\" aria-label=\"...\">\r\n                    <button type=\"submit\" class=\"btn btn-outline-primary\" [disabled]=\"!clienteForm.form.valid\" *ngIf=\"desdePopOver\">\r\n                        <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                    </button>\r\n                    <button type=\"button\" class=\"btn btn-outline-primary btn-sm\" [disabled]=\"!clienteForm.form.valid\" *ngIf=\"!desdePopOver\" (click)=\"updCliente()\">\r\n                        <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                    </button>\r\n                    <button type=\"button\" class=\"btn btn-outline-warning\" (click)=\"closePopOver()\" *ngIf=\"desdePopOver\">\r\n                        <span class=\"oi oi-circle-x\" title=\"Cancelar\" aria-hidden=\"true\"></span>\r\n                    </button>\r\n                </div>                \r\n            </form>\r\n        </div>\r\n    </div>\r\n    <hr *ngIf=\"!desdePopOver\"/>\r\n    <div class=\"row\" *ngIf=\"!desdePopOver\">\r\n        <div class=\"col-4\">\r\n            <div class=\"card\">\r\n                <div class=\"card-header\">\r\n                    <div>\r\n                        Teléfonos&nbsp;\r\n                        <button type=\"button\" class=\"btn btn-outline-primary btn-sm\" (click)=\"nuevoTelefono()\">\r\n                            <span class=\"oi oi-plus\" title=\"Nuevo teléfono\" aria-hidden=\"true\"></span>\r\n                        </button>\r\n                    </div>\r\n                    <div *ngIf=\"editandoTelefonoCliente\">\r\n                        <hr/>\r\n                        <form #frmTelCli=\"ngForm\" (ngSubmit)=\"onSubmitTelCli()\" class=\"form-inline\">\r\n                            <input name=\"txtTelCli\" id=\"txtTelCli\" type=\"text\" class=\"form-control mb-2 mr-sm-2 mb-sm-0 form-control-sm\" style=\"width: 90px\" \r\n                                #telCliente=\"ngModel\" [(ngModel)]=\"telefonoCliente.telefono\" placeholder=\"Teléfono\" required maxlength=\"8\" minlength=\"8\" />\r\n                            <div class=\"btn-group btn-group-sm\">\r\n                                <button type=\"submit\" class=\"btn btn-outline-primary btn-sm\" [disabled]=\"!frmTelCli.form.valid\" *ngIf=\"!telefonoCliente._id\">\r\n                                    <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                                </button>\r\n                                <button type=\"button\" class=\"btn btn-outline-primary btn-sm\" [disabled]=\"!frmTelCli.form.valid\" (click)=\"updTelefonoCli()\" *ngIf=\"telefonoCliente._id\">\r\n                                    <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                                </button>\r\n                                <button type=\"button\" class=\"btn btn-outline-warning btn-sm\" (click)=\"cancelNuevoTelefono()\">\r\n                                    <span class=\"oi oi-circle-x\" title=\"Cancelar\" aria-hidden=\"true\"></span>\r\n                                </button>\r\n                            </div>                            \r\n                        </form>\r\n                    </div>\r\n                </div>\r\n                <ul class=\"list-group list-group-flush\">\r\n                    <li class=\"list-group-item\" *ngFor=\"let tel of telefonosCliente\">\r\n                        {{tel.telefono}}&nbsp;\r\n                        <button type=\"button\" class=\"btn btn-outline-primary btn-sm\" (click)=\"getTelefonoCli(tel._id)\">\r\n                            <span class=\"oi oi-pencil\" title=\"Editar\" aria-hidden=\"true\"></span>\r\n                        </button>\r\n                        <button type=\"button\" class=\"btn btn-outline-success btn-sm\" (click)=\"goToComandaHisto(tel.telefono)\">\r\n                            <span class=\"oi oi-aperture\" title=\"Crear comanda histórica\" aria-hidden=\"true\"></span>\r\n                        </button>\r\n                        <button type=\"button\" class=\"btn btn-outline-danger btn-sm\" (click)=\"delTelefonoCli(tel._id)\">\r\n                            <span class=\"oi oi-trash\" title=\"Eliminar\" aria-hidden=\"true\"></span>\r\n                        </button>\r\n                    </li>\r\n                </ul>            \r\n            </div>\r\n        </div>\r\n        <div class=\"col-8\">\r\n            <div class=\"card\">\r\n                <div class=\"card-header\">\r\n                    <div>\r\n                        Direcciones&nbsp;\r\n                        <button type=\"button\" class=\"btn btn-outline-primary btn-sm\" (click)=\"nuevaDireccion()\">\r\n                            <span class=\"oi oi-plus\" title=\"Nuevo teléfono\" aria-hidden=\"true\"></span>\r\n                        </button>\r\n                    </div>\r\n                    <div *ngIf=\"editandoDireccionCliente\">\r\n                        <hr/>\r\n                        <form #frmDirCli=\"ngForm\" (ngSubmit)=\"onSubmitDirCli()\" class=\"form-inline\">\r\n                            <input name=\"txtDirCli\" id=\"txtDirCli\" type=\"text\" class=\"form-control form-control-sm mb-2 mr-sm-2 mb-sm-0\" #dirCli=\"ngModel\" \r\n                                [(ngModel)]=\"direccionCliente.direccion\" placeholder=\"Dirección\" required/>\r\n                            <input name=\"txtZonaCli\" id=\"txtZonaCli\" type=\"number\" class=\"form-control form-control-sm mb-2 mr-sm-2 mb-sm-0\" #zonaCli=\"ngModel\" \r\n                                [(ngModel)]=\"direccionCliente.zona\" placeholder=\"Zona\" min=\"1\" style=\"width: 75px\" required/>\r\n                            <input name=\"txtColCli\" id=\"txtColCli\" type=\"text\" class=\"form-control form-control-sm mb-2 mr-sm-2 mb-sm-0\" #colCli=\"ngModel\" \r\n                                [(ngModel)]=\"direccionCliente.colonia\" placeholder=\"Colonia\" style=\"width: 175px\" required/>\r\n                            <input name=\"txtCodAccCli\" id=\"txtCodAccCli\" type=\"text\" class=\"form-control form-control-sm mb-2 mr-sm-2 mb-sm-0\" #codAccCli=\"ngModel\" \r\n                                [(ngModel)]=\"direccionCliente.codigoacceso\" placeholder=\"Cód. de acceso\" style=\"width: 115px\"/>\r\n                            <select name=\"selTipoDirCli\" id=\"selTipoDirCli\" class=\"form-control form-control-sm mb-2 mr-sm-2 mb-sm-0\" #tipoDirCli=\"ngModel\" \r\n                                [(ngModel)]=\"direccionCliente.idtipodireccion\" required>\r\n                                <option *ngFor=\"let td of tiposDireccion\" [ngValue]=\"td._id\">{{td.descripcion}}</option>\r\n                            </select>\r\n                            <select name=\"selRestCli\" id=\"selRestCli\" class=\"form-control form-control-sm mb-2 mr-sm-2 mb-sm-0\" #restCli=\"ngModel\" \r\n                                [(ngModel)]=\"direccionCliente.idrestaurante\" required>\r\n                                <option *ngFor=\"let rest of restaurantes\" [ngValue]=\"rest._id\">{{rest.nombre}}</option>\r\n                            </select>\r\n                            <div class=\"btn-group btn-group-sm\">\r\n                                <button type=\"submit\" class=\"btn btn-outline-primary btn-sm\" [disabled]=\"!frmDirCli.form.valid\" *ngIf=\"!direccionCliente._id\">\r\n                                    <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                                </button>\r\n                                <button type=\"button\" class=\"btn btn-outline-primary btn-sm\" [disabled]=\"!frmDirCli.form.valid\" *ngIf=\"direccionCliente._id\" (click)=\"updDirCliente()\">\r\n                                    <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                                </button>\r\n                                <button type=\"button\" class=\"btn btn-outline-warning btn-sm\" (click)=\"cancelNuevaDireccion()\">\r\n                                    <span class=\"oi oi-circle-x\" title=\"Cancelar\" aria-hidden=\"true\"></span>\r\n                                </button>\r\n                            </div>\r\n                        </form>\r\n                    </div>\r\n                </div>\r\n                <div class=\"card-body\" style=\"padding: 0 !important; \">\r\n                    <table class=\"table table-sm table-striped\">\r\n                        <thead class=\"thead-light\">\r\n                            <tr>\r\n                                <th>Dirección</th>\r\n                                <th>Tipo</th>\r\n                                <th>Atiende</th>\r\n                                <th>&nbsp;</th>\r\n                            </tr>\r\n                        </thead>\r\n                        <tbody>\r\n                            <tr *ngFor=\"let dir of direccionesCliente\">\r\n                                <td>\r\n                                    {{dir.direccion}}, zona {{dir.zona}}, colonia {{dir.colonia}}{{dir.codigoacceso && dir.codigoacceso.trim().length > 0 ? (', cód. acceso: ' + dir.codigoacceso) : ''}}\r\n                                </td>\r\n                                <td>\r\n                                    {{dir.idtipodireccion.descripcion}}\r\n                                </td>\r\n                                <td>\r\n                                    {{dir.idrestaurante.nombre}}\r\n                                </td>\r\n                                <td style=\"white-space:nowrap\">\r\n                                    <div class=\"btn-group btn-group-sm\">\r\n                                        <button type=\"button\" class=\"btn btn-outline-primary btn-sm\" (click)=\"getDirCliente(dir._id)\">\r\n                                            <span class=\"oi oi-pencil\" title=\"Editar\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                        <button type=\"button\" class=\"btn btn-outline-danger btn-sm\" (click)=\"delDirCliente(dir._id)\">\r\n                                            <span class=\"oi oi-trash\" title=\"Eliminar\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                    </div>                                    \r\n                                </td>\r\n                            </tr>\r\n                        </tbody>\r\n                    </table>                   \r\n                </div>\r\n            </div>\r\n        </div>        \r\n    </div>\r\n    <div class=\"row\" *ngIf=\"!desdePopOver\" style=\"padding-top: 15px\">\r\n        <div class=\"col-12\">\r\n            <div class=\"card\">\r\n                <div class=\"card-header\">\r\n                    <div>\r\n                        Datos de facturación&nbsp;\r\n                        <button type=\"button\" class=\"btn btn-outline-primary btn-sm\" (click)=\"nuevoDatoFactura()\">\r\n                            <span class=\"oi oi-plus\" title=\"Nuevo dato de facturación\" aria-hidden=\"true\"></span>\r\n                        </button>\r\n                    </div>\r\n                    <div *ngIf=\"editandoDatoFacturaCliente\">\r\n                        <hr/>\r\n                        <form #frmDatoFactCli=\"ngForm\" (ngSubmit)=\"onSubmitDatoFactura()\" class=\"form-inline\">\r\n                            <input name=\"txtNit\" id=\"txtNit\" type=\"text\" class=\"form-control form-control-sm mb-2 mr-sm-2 mb-sm-0\" #nitCli=\"ngModel\"\r\n                                [(ngModel)]=\"datofactCliente.nit\" placeholder=\"N.I.T.\" style=\"width: 125px\" required/>\r\n                            <input name=\"txtNomFact\" id=\"txtNomFact\" type=\"text\" class=\"form-control form-control-sm mb-2 mr-sm-2 mb-sm-0\" #nomFactCli=\"ngModel\"\r\n                                [(ngModel)]=\"datofactCliente.nombre\" placeholder=\"Nombre de facturación\" style=\"width: 275px\" required/>\r\n                            <input name=\"txtDirFact\" id=\"txtDirFact\" type=\"text\" class=\"form-control form-control-sm mb-2 mr-sm-2 mb-sm-0\" #dirFactCli=\"ngModel\"\r\n                                [(ngModel)]=\"datofactCliente.direccion\" placeholder=\"Dirección de facturación\" style=\"width: 275px\" required/>\r\n                            <div class=\"btn-group btn-group-sm\">\r\n                                <button type=\"submit\" class=\"btn btn-outline-primary btn-sm\" [disabled]=\"!frmDatoFactCli.form.valid\" *ngIf=\"!datofactCliente._id\">\r\n                                    <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                                </button>\r\n                                <button type=\"button\" class=\"btn btn-outline-primary btn-sm\" [disabled]=\"!frmDatoFactCli.form.valid\" (click)=\"updDatoFactura()\"  *ngIf=\"datofactCliente._id\">\r\n                                    <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                                </button>\r\n                                <button type=\"button\" class=\"btn btn-outline-warning btn-sm\" (click)=\"cancelNuevoDatoFactura()\">\r\n                                    <span class=\"oi oi-circle-x\" title=\"Cancelar\" aria-hidden=\"true\"></span>\r\n                                </button>\r\n                            </div>\r\n                        </form>\r\n                    </div>\r\n                </div>\r\n                <div class=\"card-body\" style=\"padding: 0 !important; \">\r\n                    <table class=\"table table-sm table-striped\">\r\n                        <thead class=\"thead-light\">\r\n                            <tr>\r\n                                <th>N.I.T.</th>\r\n                                <th>Nombre</th>\r\n                                <th>Dirección</th>\r\n                                <th>&nbsp;</th>\r\n                            </tr>\r\n                        </thead>\r\n                        <tbody>\r\n                            <tr *ngFor=\"let dfact of datosfactCliente\">\r\n                                <td>\r\n                                    {{dfact.nit}}\r\n                                </td>\r\n                                <td>\r\n                                    {{dfact.nombre}}\r\n                                </td>\r\n                                <td>\r\n                                    {{dfact.direccion}}\r\n                                </td>\r\n                                <td style=\"white-space:nowrap\">\r\n                                    <div class=\"btn-group btn-group-sm\">\r\n                                        <button type=\"button\" class=\"btn btn-outline-primary btn-sm\" (click)=\"getDatoFactura(dfact._id)\">\r\n                                            <span class=\"oi oi-pencil\" title=\"Editar\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                        <button type=\"button\" class=\"btn btn-outline-danger btn-sm\" (click)=\"delDatoFactura(dfact._id)\">\r\n                                            <span class=\"oi oi-trash\" title=\"Eliminar\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                    </div>\r\n                                </td>\r\n                            </tr>\r\n                        </tbody>\r\n                    </table>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\" *ngIf=\"!desdePopOver\" style=\"padding-top: 15px\">\r\n        <div class=\"col-12\">\r\n            <div class=\"card\">\r\n                <div class=\"card-header\">\r\n                    <div>\r\n                         Notas del cliente&nbsp;\r\n                        <button type=\"button\" class=\"btn btn-outline-primary btn-sm\" (click)=\"addNotaCliente()\">\r\n                            <span class=\"oi oi-plus\" title=\"Nueva nota\" aria-hidden=\"true\"></span>\r\n                        </button>\r\n                    </div>\r\n                    <div *ngIf=\"editandoNotasCliente\">\r\n                        <hr/>\r\n                        <form #frmNotaCli=\"ngForm\" (ngSubmit)=\"updCliente()\" class=\"form-inline\">                            \r\n                            <textarea name=\"txtNotaCli\" id=\"txtNotaCli\" class=\"form-control form-control-sm mb-2 mr-sm-2 mb-sm-0\" #txtNotaCli=\"ngModel\"\r\n                                [(ngModel)]=\"cliente.notascliente[cliente.notascliente.length - 1].notas\" placeholder=\"Notas\" rows=\"3\" style=\"width: 80%\" required></textarea>\r\n                            <div class=\"btn-group btn-group-sm\">\r\n                                <button type=\"submit\" class=\"btn btn-outline-primary btn-sm\" [disabled]=\"!frmNotaCli.form.valid\">\r\n                                    <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                                </button>\r\n                                <button type=\"button\" class=\"btn btn-outline-warning btn-sm\" (click)=\"delNotaCliente(cliente.notascliente.length - 1)\">\r\n                                    <span class=\"oi oi-circle-x\" title=\"Cancelar\" aria-hidden=\"true\"></span>\r\n                                </button>\r\n                            </div>\r\n                        </form>\r\n                    </div>\r\n                </div>\r\n                <div class=\"card-body\" style=\"padding: 0 !important;\">\r\n                    <table class=\"table table-sm table-striped\">\r\n                        <thead class=\"thead-light\">\r\n                            <tr>\r\n                                <th>Fecha</th>\r\n                                <th>Nota</th>                                \r\n                                <th>&nbsp;</th>\r\n                            </tr>\r\n                        </thead>\r\n                        <tbody>\r\n                            <tr *ngFor=\"let ncli of cliente.notascliente; let i = index\">\r\n                                <td style=\"width: 20%\">\r\n                                    {{ncli.fecha | date:'dd/MM/yyyy HH:mm:ss'}}\r\n                                </td>\r\n                                <td>\r\n                                    <p>{{ncli.notas}}</p>                                    \r\n                                </td>                                \r\n                                <td style=\"width: 5%\">\r\n                                    <button type=\"button\" class=\"btn btn-outline-danger btn-sm\" (click)=\"delNotaCliente(i)\">\r\n                                        <span class=\"oi oi-trash\" title=\"Eliminar nota\" aria-hidden=\"true\"></span>\r\n                                    </button>\r\n                                </td>\r\n                            </tr>\r\n                        </tbody>\r\n                    </table>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<toaster-container [toasterconfig]=\"toasterconfig\"></toaster-container>"
 
 /***/ }),
 
-/***/ "../../../../../src/app/components/cliente/cliente.component.ts":
+/***/ "./src/app/components/cliente/cliente.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ClienteComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_cliente__ = __webpack_require__("../../../../../src/app/models/cliente.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_telefonocliente__ = __webpack_require__("../../../../../src/app/models/telefonocliente.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_direccioncliente__ = __webpack_require__("../../../../../src/app/models/direccioncliente.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_datosfactcliente__ = __webpack_require__("../../../../../src/app/models/datosfactcliente.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__models_notascliente__ = __webpack_require__("../../../../../src/app/models/notascliente.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_rangoedades__ = __webpack_require__("../../../../../src/app/models/rangoedades.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_cliente_service__ = __webpack_require__("../../../../../src/app/services/cliente.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_tipodireccion_service__ = __webpack_require__("../../../../../src/app/services/tipodireccion.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_localstorage_service__ = __webpack_require__("../../../../../src/app/services/localstorage.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_restaurante_service__ = __webpack_require__("../../../../../src/app/services/restaurante.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_angular2_toaster__ = __webpack_require__("../../../../angular2-toaster/angular2-toaster.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_moment__ = __webpack_require__("../../../../moment/moment.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_cliente__ = __webpack_require__("./src/app/models/cliente.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_telefonocliente__ = __webpack_require__("./src/app/models/telefonocliente.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_direccioncliente__ = __webpack_require__("./src/app/models/direccioncliente.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_datosfactcliente__ = __webpack_require__("./src/app/models/datosfactcliente.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__models_notascliente__ = __webpack_require__("./src/app/models/notascliente.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_rangoedades__ = __webpack_require__("./src/app/models/rangoedades.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_cliente_service__ = __webpack_require__("./src/app/services/cliente.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_tipodireccion_service__ = __webpack_require__("./src/app/services/tipodireccion.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_localstorage_service__ = __webpack_require__("./src/app/services/localstorage.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_restaurante_service__ = __webpack_require__("./src/app/services/restaurante.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_angular2_toaster__ = __webpack_require__("./node_modules/angular2-toaster/angular2-toaster.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_moment__ = __webpack_require__("./node_modules/moment/moment.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13_moment__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -645,7 +912,7 @@ var ClienteComponent = /** @class */ (function () {
     ClienteComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-mnt-cliente',
-            template: __webpack_require__("../../../../../src/app/components/cliente/cliente.component.html"),
+            template: __webpack_require__("./src/app/components/cliente/cliente.component.html"),
             providers: [__WEBPACK_IMPORTED_MODULE_8__services_cliente_service__["a" /* ClienteService */], __WEBPACK_IMPORTED_MODULE_10__services_localstorage_service__["a" /* LocalStorageService */], __WEBPACK_IMPORTED_MODULE_9__services_tipodireccion_service__["a" /* TipoDireccionService */], __WEBPACK_IMPORTED_MODULE_11__services_restaurante_service__["a" /* RestauranteService */]]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */],
@@ -663,27 +930,27 @@ var ClienteComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/components/cliente/lstclientes.component.html":
+/***/ "./src/app/components/cliente/lstclientes.component.html":
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container\">\r\n    <ngb-tabset #t=\"ngbTabset\">\r\n        <ngb-tab id=\"tabListaClientes\" title=\"Lista de clientes\">\r\n            <ng-template ngbTabContent>\r\n                <div class=\"row\">\r\n                    <div class=\"col-12\">\r\n                        <table class=\"table table-striped table-hover table-sm\">\r\n                            <thead class=\"thead-light\">\r\n                                <tr>\r\n                                    <th colspan=\"2\">\r\n                                        <form class=\"form-inline\">\r\n                                            <ng-template #mntCliente>\r\n                                                <app-mnt-cliente [cliente]=\"cliente\" [desdePopOver]=\"true\" (refrescaListaClientes)=\"refreshListaClientes(); btnPopCliente.close();\"></app-mnt-cliente>\r\n                                            </ng-template>\r\n                                            <div class=\"input-group\" style=\"width: 50% !important;\">\r\n                                                <input type=\"text\" class=\"form-control\" #fltrCliente=\"ngModel\" [(ngModel)]=\"filtroCliente\"\r\n                                                    [ngModelOptions]=\"{standalone: true}\" placeholder=\"Buscar cliente...\" />\r\n                                                <span class=\"input-group-btn\">\r\n                                                    <button type=\"button\" class=\"btn btn-secondary\" (click)=\"pageChange()\">\r\n                                                        <span class=\"oi oi-magnifying-glass\" title=\"Buscar...\" aria-hidden=\"true\"></span>\r\n                                                    </button>\r\n                                                    <button type=\"button\" class=\"btn btn-secondary\" (click)=\"filtroCliente = null; pageChange()\">\r\n                                                        <span class=\"oi oi-loop-circular\" title=\"Limpiar búsqueda...\" aria-hidden=\"true\"></span>\r\n                                                    </button>\r\n                                                </span>\r\n                                            </div>\r\n                                            &nbsp;\r\n                                            <!--<button type=\"button\" class=\"btn btn-primary\" (click)=\"nuevoCliente(t)\">Agregar cliente</button>-->\r\n                                            <button type=\"button\" class=\"btn btn-primary\" placement=\"bottom\" [ngbPopover]=\"mntCliente\" #btnPopCliente=\"ngbPopover\" triggers=\"manual\" (click)=\"btnPopCliente.open()\" \r\n                                            popoverTitle=\"Agrear/Editar cliente\">Nuevo cliente</button>\r\n                                        </form>\r\n                                    </th>\r\n                                </tr>\r\n                                <tr>\r\n                                    <th>Cliente</th>                                    \r\n                                </tr>\r\n                            </thead>\r\n                            <tfoot>\r\n                                <tr>\r\n                                    <td>\r\n                                        <ngb-pagination [collectionSize]=\"totalItems\"\r\n                                            [(page)]=\"paginaActual\"\r\n                                            [maxSize]=\"15\"\r\n                                            [pageSize]=\"perpage\"\r\n                                            [boundaryLinks]=\"true\"\r\n                                            (pageChange)=\"pageChange()\"\r\n                                            size=\"sm\"\r\n                                        >                                            \r\n                                        </ngb-pagination>\r\n                                    </td>\r\n                                </tr>\r\n                            </tfoot>\r\n                            <tbody>\r\n                                <tr *ngFor=\"let c of clientes\" (click)=\"mantenimientoCliente(t, c)\">\r\n                                    <td>{{c.nombre}}</td>                                    \r\n                                </tr>\r\n                            </tbody>\r\n                        </table>\r\n                    </div>\r\n                </div>                \r\n            </ng-template>\r\n        </ngb-tab>\r\n        <ngb-tab id=\"tabCliente\" title=\"Mantenimiento\">\r\n            <ng-template ngbTabContent style=\"margin-top: 10px\">\r\n                    <app-mnt-cliente [cliente]=\"cliente\" [desdePopOver]=\"false\" \r\n                        [telefonosCliente]=\"telefonosCliente\" \r\n                        [direccionesCliente]=\"direccionesCliente\" \r\n                        [datosfactCliente]=\"datosFacturaCliente\" \r\n                        (refrescaListaClientes)=\"refreshListaClientes()\">\r\n                    </app-mnt-cliente>\r\n            </ng-template>\r\n        </ngb-tab>\r\n    </ngb-tabset>    \r\n</div>\r\n"
 
 /***/ }),
 
-/***/ "../../../../../src/app/components/cliente/lstclientes.component.ts":
+/***/ "./src/app/components/cliente/lstclientes.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListadoClientesComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_cliente__ = __webpack_require__("../../../../../src/app/models/cliente.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_cliente_service__ = __webpack_require__("../../../../../src/app/services/cliente.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_localstorage_service__ = __webpack_require__("../../../../../src/app/services/localstorage.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_angular2_toaster__ = __webpack_require__("../../../../angular2-toaster/angular2-toaster.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ng_bootstrap_ng_bootstrap__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_moment__ = __webpack_require__("../../../../moment/moment.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_cliente__ = __webpack_require__("./src/app/models/cliente.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_cliente_service__ = __webpack_require__("./src/app/services/cliente.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_localstorage_service__ = __webpack_require__("./src/app/services/localstorage.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common__ = __webpack_require__("./node_modules/@angular/common/esm5/common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_angular2_toaster__ = __webpack_require__("./node_modules/angular2-toaster/angular2-toaster.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ng_bootstrap_ng_bootstrap__ = __webpack_require__("./node_modules/@ng-bootstrap/ng-bootstrap/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_moment__ = __webpack_require__("./node_modules/moment/moment.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_moment__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -806,7 +1073,7 @@ var ListadoClientesComponent = /** @class */ (function () {
     ListadoClientesComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-lst-cliente',
-            template: __webpack_require__("../../../../../src/app/components/cliente/lstclientes.component.html"),
+            template: __webpack_require__("./src/app/components/cliente/lstclientes.component.html"),
             providers: [__WEBPACK_IMPORTED_MODULE_3__services_cliente_service__["a" /* ClienteService */], __WEBPACK_IMPORTED_MODULE_4__services_localstorage_service__["a" /* LocalStorageService */], __WEBPACK_IMPORTED_MODULE_7__ng_bootstrap_ng_bootstrap__["c" /* NgbPopoverConfig */], __WEBPACK_IMPORTED_MODULE_5__angular_common__["f" /* Location */]],
             styles: [":host >>> .popover { max-width: 900px; }"]
         }),
@@ -825,20 +1092,20 @@ var ListadoClientesComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/components/clock/clock.component.html":
+/***/ "./src/app/components/clock/clock.component.html":
 /***/ (function(module, exports) {
 
 module.exports = "<span class=\"font-weight-bold\" style=\"font-size: 24pt\">\r\n    {{time | date:'dd/MM/yyyy HH:mm:ss' }}\r\n</span>\r\n"
 
 /***/ }),
 
-/***/ "../../../../../src/app/components/clock/clock.component.ts":
+/***/ "./src/app/components/clock/clock.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ClockComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_clock_service__ = __webpack_require__("../../../../../src/app/services/clock.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_clock_service__ = __webpack_require__("./src/app/services/clock.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -864,7 +1131,7 @@ var ClockComponent = /** @class */ (function () {
     ClockComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-clock',
-            template: __webpack_require__("../../../../../src/app/components/clock/clock.component.html"),
+            template: __webpack_require__("./src/app/components/clock/clock.component.html"),
             providers: [__WEBPACK_IMPORTED_MODULE_1__services_clock_service__["a" /* ClockService */]]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_clock_service__["a" /* ClockService */]])
@@ -876,49 +1143,49 @@ var ClockComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/components/comanda/comanda.component.html":
+/***/ "./src/app/components/comanda/comanda.component.html":
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container-fluid\">\r\n    <h3>Comanda de {{clienteObj.nombre}} <span *ngIf=\"eshistorica\">(Histórica)</span></h3>\r\n    <div class=\"row\">\r\n        <div class=\"col-8\">\r\n            <table>\r\n                <tbody>\r\n                    <tr>\r\n                        <th class=\"text-right\">Dirección de entrega:</th>\r\n                        <td style=\"padding-left: 0.25em\">\r\n                            <button class=\"btn btn-outline-primary btn-sm\" (click)=\"selectDireccionesCliente(modalSelDireccionCliente)\">\r\n                                {{direccionClienteObj.direccion}}, zona {{direccionClienteObj.zona}}, colonia {{direccionClienteObj.colonia}} {{direccionClienteObj.codigoacceso\r\n                                ? (', código de acceso: ' + direccionClienteObj.codigoacceso) : ''}}\r\n                            </button>\r\n                        </td>\r\n                    </tr>\r\n                    <tr>\r\n                        <th class=\"text-right\">Teléfono:</th>\r\n                        <td style=\"padding-left: 0.25em\">\r\n                            <button type=\"button\" class=\"btn btn-outline-primary btn-sm\">\r\n                                {{telefonoClienteObj.telefono}}\r\n                            </button>\r\n                        </td>\r\n                    </tr>\r\n                    <tr>\r\n                        <th class=\"text-right\">Tipo:</th>\r\n                        <td style=\"padding-left: 0.25em; white-space: nowrap;\">\r\n                            <button type=\"button\" class=\"btn btn-outline-primary btn-sm\" style=\"width: 110px;\" *ngFor=\"let tcom of lstTiposComanda\" (click)=\"setTipoComanda(tcom)\">\r\n                                {{tcom.descripcion}}\r\n                            </button>\r\n                        </td>\r\n                    </tr>\r\n                    <tr>\r\n                        <th class=\"text-right\">Facturar a:</th>\r\n                        <td style=\"padding-left: 0.25em; white-space: nowrap;\">                            \r\n                            <button type=\"button\" class=\"btn btn-outline-primary btn-sm\" (click)=\"setFacturarA(modalSelFacturarA)\">\r\n                                {{comanda.detfacturara && comanda.detfacturara.length > 0 ? comanda.detfacturara[0].nombre : ''}}, \r\n                                {{comanda.detfacturara && comanda.detfacturara.length > 0 ? comanda.detfacturara[0].nit : ''}}, \r\n                                {{comanda.detfacturara && comanda.detfacturara.length > 0 ? comanda.detfacturara[0].direccion : ''}}\r\n                            </button>\r\n                        </td>\r\n                    </tr>\r\n                </tbody>\r\n            </table>\r\n        </div>\r\n        <div class=\"col-4\">\r\n            <table>\r\n                <tbody>\r\n                    <tr>\r\n                        <td colspan=\"2\" class=\"text-right\">\r\n                            <button type=\"button\" class=\"btn btn-outline-success btn-sm btn-block\" (click)=\"verHistorialCliente(modalHistorialCliente)\" *ngIf=\"!eshistorica\">Ver historial</button>\r\n                        </td>\r\n                    </tr>\r\n                    <tr>\r\n                        <th class=\"text-right\">Tiempo ofrecido:</th>\r\n                        <td>\r\n                            <select name=\"selTiempoEntrega\" id=\"selTiempoEntrega\" [(ngModel)]=\"comanda.idtiempoentrega\" class=\"form-control form-control-sm\" #tiempoEntrega required>\r\n                                <option *ngFor=\"let tent of tiempos\" value=\"{{tent._id}}\">{{tent.tiempo}}</option>\r\n                            </select>\r\n                        </td>\r\n                    </tr>\r\n                    <tr>\r\n                        <th class=\"text-right\">Atiende:</th>\r\n                        <td>\r\n                            <select name=\"selAtiende\" id=\"selAtiende\" [(ngModel)]=\"comanda.idrestaurante\" class=\"form-control form-control-sm\" #atiende required>\r\n                                <option *ngFor=\"let rst of restaurantes\" value=\"{{rst._id}}\">{{rst.nombre}}</option>\r\n                            </select>\r\n                        </td>\r\n                    </tr>\r\n                    <tr *ngIf=\"eshistorica\">\r\n                        <th class=\"text-right\">Fecha:</th>\r\n                        <td>\r\n                            <input type=\"date\" #txtFComanda=\"ngModel\" [(ngModel)]=\"comanda.fecha\" id=\"txtFComanda\" name=\"txtFComanda\" class=\"form-control form-control-sm\" placeholder=\"Fecha de comanda\" />\r\n                        </td>\r\n                    </tr>\r\n                </tbody>\r\n            </table>\r\n        </div>\r\n    </div>\r\n    <hr/>\r\n    <div class=\"row\">\r\n        <div class=\"col-6\">\r\n            <div class=\"card\">\r\n                <h5 class=\"card-header\">Menú</h5>\r\n                <div class=\"card-body\" style=\"padding: 0 !important;\">                    \r\n                    <ul class=\"list-group list-group-flush\">\r\n                        <li class=\"list-group-item\" *ngFor=\"let crt of carta\">\r\n                            <span style=\"padding-right: 1px !important; padding-top: 1px !important\" *ngFor=\"let btn of crt\">\r\n                                <button  class=\"btn btn-sm btn-outline-secondary\" style=\"font-weight: bold;\" (click)=\"loadCarta(modalComponentes, (btn.nivel + 1), btn._id, btn)\">\r\n                                    {{btn.descripcion}}\r\n                                </button>\r\n                            </span>\r\n                        </li>\r\n                    </ul>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"col-6\">\r\n            <div class=\"card\">\r\n                <h5 class=\"card-header\">\r\n                    Pedido&nbsp;\r\n                    <span class=\"badge badge-info\">{{lblTipoComanda | lowercase}}</span>&nbsp;\r\n                    <button type=\"button\" class=\"btn btn-sm btn-outline-primary\" (click)=\"pideNotasPedido(modalNotasPedido)\">Notas del pedido</button>\r\n                </h5>\r\n                <div class=\"card-body\" style=\"height: 350px; overflow-y:auto;\">\r\n                    <small>\r\n                        <table style=\"width: 100%; border-collapse: collapse !important;\">\r\n                            <tr *ngFor=\"let dc of detalleComanda; let i = index\" style=\"border-bottom: solid 0.1em lightgray;\">\r\n                                <td class=\"align-top\">                                \r\n                                    <table style=\"width: 100%; border-collapse: collapse !important;\">\r\n                                        <tr>\r\n                                            <td colspan=\"2\" class=\"align-top\">\r\n                                                <!-- Inicia tabla de extras/notas sobre productos completos -->\r\n                                                <table style=\"width: 100%; border-collapse: collapse !important;\">\r\n                                                    <tr>                                                        \r\n                                                        <td colspan=\"2\" class=\"align-top\" style=\"white-space: nowrap !important; \">\r\n                                                            <div class=\"input-group input-group-sm\">\r\n                                                                <input type=\"number\" #txtCantProd=\"ngModel\" [(ngModel)]=\"dc.cantidad\" id=\"txtCantProd_{{i}}\" name=\"txtCantProd_{{i}}\" \r\n                                                                    class=\"form-control\" placeholder=\"Cantidad\" aria-describedby=\"desc-prod\" (change)=\"calculaTotales()\" (blur)=\"calculaTotales()\" />\r\n                                                                <span class=\"input-group-addon\" id=\"desc-prod\" style=\"width: 85%\">{{dc.descripcion}}</span>\r\n                                                            </div>\r\n                                                        </td>\r\n                                                    </tr>\r\n                                                    <tr *ngFor=\"let dce of dc.extrasnotas; let l = index\">\r\n                                                        <td class=\"align-top\" style=\"padding-left: 2em; \" [style.white-space]=\"dce.esextra ? 'nowrap' : 'normal'\">\r\n                                                            <span *ngIf=\"dce.esextra\">\r\n                                                                <strong style=\"font-size: 12pt\">+</strong> {{dce.descripcion}}</span>\r\n                                                            <p *ngIf=\"!dce.esextra\">\r\n                                                                <strong>N:</strong> {{dce.notas}}</p>\r\n                                                        </td>\r\n                                                        <td class=\"align-top text-right\">\r\n                                                            <button type=\"button\" class=\"btn btn-sm btn-danger\" style=\"font-size: 8pt\" (click)=\"removeExtraNotaProd(i, l)\">\r\n                                                                <span class=\"oi oi-trash\" title=\"Eliminar\" aria-hidden=\"true\"></span>\r\n                                                            </button>\r\n                                                        </td>\r\n                                                    </tr>\r\n                                                </table>                                               \r\n                                                <!-- Fin de tabla de extras/notas sobre productos completos -->\r\n                                            </td>\r\n                                        </tr>\r\n                                        <tr *ngFor=\"let cmp of dc.componentes; let j = index\">\r\n                                            <td class=\"align-top\" style=\"width: 75%; padding-left: 2em;\">\r\n                                                <!-- Inicia tabla de extras/notas sobre componentes -->\r\n                                                <table style=\"width: 100%; border-collapse: collapse !important;\">\r\n                                                    <tr>\r\n                                                        <td colspan=\"2\" class=\"align-top\">{{cmp.descripcion}}</td>\r\n                                                    </tr>\r\n                                                    <tr *ngFor=\"let extcmp of cmp.extrasnotas; let k = index\">\r\n                                                        <td class=\"align-top\" style=\"padding-left: 3em; \" [style.white-space]=\"extcmp.esextra ? 'nowrap' : 'normal'\">\r\n                                                            <span *ngIf=\"extcmp.esextra\"><strong style=\"font-size: 12pt\">+</strong> {{extcmp.descripcion}}</span>\r\n                                                            <p *ngIf=\"!extcmp.esextra\"><strong>N:</strong> {{extcmp.notas}}</p>\r\n                                                        </td>\r\n                                                        <td class=\"align-top text-right\">\r\n                                                            <button type=\"button\" class=\"btn btn-sm btn-danger\" style=\"font-size: 8pt\" (click)=\"removeExtraNota(i, j, k)\">\r\n                                                                <span class=\"oi oi-trash\" title=\"Eliminar\" aria-hidden=\"true\"></span>\r\n                                                            </button>\r\n                                                        </td>\r\n                                                    </tr>                                                \r\n                                                </table>\r\n                                                <!-- Finaliza tabla de extras/notas sobre componentes -->\r\n                                            </td>\r\n                                            <td class=\"align-top\" style=\"white-space: nowrap\">\r\n                                                <button type=\"button\" class=\"btn btn-sm btn-outline-primary\" style=\"font-size: 8pt\" *ngIf=\"dc.tieneextras\" (click)=\"pideExtras(modalExtras, i, j)\">Extras</button>\r\n                                                <button type=\"button\" class=\"btn btn-sm btn-outline-primary\" style=\"font-size: 8pt\" (click)=\"pideNotas(modalNotas, i, j)\">Notas</button>\r\n                                            </td>\r\n                                        </tr>\r\n                                    </table>\r\n                                </td>                                \r\n                                <td class=\"align-top\" style=\"white-space:nowrap\">\r\n                                    <div class=\"btn-group btn-group-sm\">\r\n                                        <button type=\"button\" class=\"btn btn-sm btn-outline-primary\" style=\"font-size: 8pt\" *ngIf=\"dc.tieneextras\" (click)=\"pideExtrasProducto(modalExtrasProducto, i)\">Extras</button>\r\n                                        <button type=\"button\" class=\"btn btn-sm btn-outline-primary\" style=\"font-size: 8pt\" (click)=\"pideNotasProducto(modalNotasProducto, i)\">Notas</button>\r\n                                        <button type=\"button\" class=\"btn btn-sm btn-outline-primary\" style=\"font-size: 8pt\" (click)=\"editaComponentes(dc, i, modalEditaComponentes)\">\r\n                                            <span class=\"oi oi-pencil\" title=\"Editar\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                        <button type=\"button\" class=\"btn btn-sm btn-danger\" style=\"font-size: 8pt\" (click)=\"removeItemPedido(i)\">\r\n                                            <span class=\"oi oi-trash\" title=\"Eliminar\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                    </div>                                   \r\n                                </td>\r\n                                <td class=\"align-top text-right\">{{dc.precio | number:'1.2-2'}}&nbsp;c/u</td>\r\n                            </tr>\r\n                        </table>\r\n                    </small>\r\n                </div>\r\n                <div class=\"card-footer\">\r\n                    <div style=\"width:100%; text-align: right; font-weight: bold;\">\r\n                        <span>Total a pagar: {{comanda.totalcomanda | number:'1.2-2'}}</span>\r\n                    </div>\r\n                </div>\r\n                <div class=\"card-footer text-right\" style=\"padding: 0 !important;\">\r\n                    <div class=\"btn-group btn-group-sm text-right\">\r\n                        <button type=\"button\" class=\"btn btn-warning btn-sm\" (click)=\"cancelaPedido()\" *ngIf=\"!eshistorica\">Cancelar</button>\r\n                        <button type=\"button\" class=\"btn btn-success btn-sm\" *ngIf=\"comanda.totalcomanda > 0 && !eshistorica\" (click)=\"terminarPedido(modalPagar, modalConfirmEnd)\" \r\n                            [disabled]=\"!comanda.idtipocomanda || !comanda.idrestaurante || !comanda.idtiempoentrega\">\r\n                            Terminar\r\n                        </button>\r\n                        <button type=\"button\" class=\"btn btn-success btn-sm\" *ngIf=\"comanda.totalcomanda > 0 && eshistorica\" (click)=\"guardarHistorica()\" \r\n                            [disabled]=\"!comanda.idtipocomanda || !comanda.idrestaurante || !comanda.idtiempoentrega || !comanda.fecha\">\r\n                            Guardar histórica\r\n                        </button>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <hr/>\r\n    <div class=\"row\" *ngIf=\"!eshistorica\">\r\n        <div class=\"col-12\">\r\n            <table class=\"table table-hover table-sm table-striped\">\r\n                <thead>\r\n                    <tr>\r\n                        <th colspan=\"3\">Recordatorios al operador</th>\r\n                    </tr>\r\n                    <tr>\r\n                        <th>Del</th>\r\n                        <th>Al</th>\r\n                        <th>Recordatorio</th>\r\n                    </tr>\r\n                </thead>\r\n                <tbody>\r\n                    <tr *ngFor=\"let b of bans\">\r\n                        <td>{{(b.fechadel | date:'dd/MM/yyyy') || ''}}</td>\r\n                        <td>{{(b.fechaal | date:'dd/MM/yyyy') || ''}}</td>\r\n                        <td><p>{{b.banner}}</p></td>\r\n                    </tr>\r\n                </tbody>\r\n            </table>\r\n        </div>\r\n    </div>\r\n</div>\r\n<ng-template #modalSelDireccionCliente let-c=\"close\" let-d=\"dismiss\">\r\n    <div class=\"modal-header\">\r\n        <h4 class=\"modal-title\">¿Cuál es la dirección de entrega?</h4>\r\n        <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"d('Cross click')\">\r\n            <span aria-hidden=\"true\">&times;</span>\r\n        </button>\r\n    </div>\r\n    <div class=\"modal-body\">\r\n        <div class=\"card\">       \r\n            <div class=\"card-body\" style=\"padding: 0 !important; \">                \r\n                <table class=\"table table-hover table-sm table-bordered\">\r\n                    <tbody>\r\n                        <tr>\r\n                            <td>\r\n                                <select name=\"selTipoDirCli\" id=\"selTipoDirCli\" class=\"form-control form-control-sm\" #tipoDirCli=\"ngModel\"\r\n                                    [(ngModel)]=\"direccionClienteNueva.idtipodireccion\">\r\n                                    <option *ngFor=\"let td of tiposDireccion\" [ngValue]=\"td._id\">{{td.descripcion}}</option>\r\n                                </select>\r\n                            </td>\r\n                            <td>\r\n                                <input name=\"txtDirCli\" id=\"txtDirCli\" type=\"text\" class=\"form-control form-control-sm\" #dirCli=\"ngModel\"\r\n                                    [(ngModel)]=\"direccionClienteNueva.direccion\" placeholder=\"Dirección\"/>\r\n                            </td>\r\n                            <td>\r\n                                <input name=\"txtZonaCli\" id=\"txtZonaCli\" type=\"number\" class=\"form-control form-control-sm\" #zonaCli=\"ngModel\"\r\n                                    [(ngModel)]=\"direccionClienteNueva.zona\" placeholder=\"Zona\" min=\"0\"/>\r\n                            </td>\r\n                            <td>\r\n                                <input name=\"txtColCli\" id=\"txtColCli\" type=\"text\" class=\"form-control form-control-sm\" #colCli=\"ngModel\"\r\n                                    [(ngModel)]=\"direccionClienteNueva.colonia\" placeholder=\"Colonia\"/>\r\n                            </td>\r\n                            <td>\r\n                                <input name=\"txtCodAccCli\" id=\"txtCodAccCli\" type=\"text\" class=\"form-control form-control-sm\" #codAccCli=\"ngModel\"\r\n                                    [(ngModel)]=\"direccionClienteNueva.codigoacceso\" placeholder=\"Cód. de acceso\"/>\r\n                            </td>                            \r\n                            <td>\r\n                                <select name=\"selRestCli\" id=\"selRestCli\" class=\"form-control form-control-sm\" #restCli=\"ngModel\" [(ngModel)]=\"direccionClienteNueva.idrestaurante\">\r\n                                    <option *ngFor=\"let rest of restaurantes\" [ngValue]=\"rest._id\">{{rest.nombre}}</option>\r\n                                </select>\r\n                            </td>\r\n                            <td>\r\n                                <button type=\"button\" class=\"btn btn-outline-primary btn-sm\" (click)=\"nuevaDireccionEntrega(); c(null);\">\r\n                                    <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                                </button>\r\n                            </td>\r\n                        </tr>\r\n                        <tr *ngFor=\"let dir of direccionesCliente\" (click)=\"c(dir)\">\r\n                            <td>{{dir.idtipodireccion.descripcion}}</td>\r\n                            <td colspan=\"5\" style=\"white-space:nowrap; \">\r\n                                {{dir.direccion}}, zona {{dir.zona}}, colonia {{dir.colonia}}{{dir.codigoacceso ? (', código de acceso: ' + dir.codigoacceso)\r\n                                : ''}}\r\n                            </td>\r\n                            <td>&nbsp;</td>\r\n                        </tr>\r\n                    </tbody>\r\n                </table>                \r\n            </div>            \r\n        </div>\r\n    </div>\r\n</ng-template>\r\n<ng-template #modalHistorialCliente let-c=\"close\" let-d=\"dismiss\">\r\n    <div class=\"modal-header\">\r\n        <h4 class=\"modal-title\">Historial de {{clienteObj.nombre}}</h4>\r\n        <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"d('Cross click')\">\r\n            <span aria-hidden=\"true\">&times;</span>\r\n        </button>\r\n    </div>\r\n    <div class=\"modal-body\" style=\"height: 650px; overflow-y:auto; \">\r\n        <small>\r\n            <div class=\"card\" *ngFor=\"let histo of histoCliente\">\r\n                <div class=\"card-header font-weight-bold\">{{histo.fecha | date:'dd/MM/yyyy'}}</div>\r\n                <div class=\"card-body\" style=\"padding: 0 !important;\">\r\n                    <table style=\"width: 100%; border-collapse:collapse; border: solid 0.1em lightgray\">\r\n                        <tr style=\"background-color: #FFFEE0\" *ngFor=\"let det of histo.detallecomanda\">\r\n                            <td>\r\n                                <table style=\"width: 100%; border-collapse:collapse;\">\r\n                                    <tr>\r\n                                        <td>{{det.cantidad}} {{det.descripcion}}</td>\r\n                                    </tr>\r\n                                    <tr *ngFor=\"let compo of det.componentes\">\r\n                                        <td style=\"padding-left: 1.5em\">\r\n                                            <table style=\"width: 100%; border-collapse:collapse;\">\r\n                                                <tr>\r\n                                                    <td>{{compo.descripcion}}</td>\r\n                                                </tr>\r\n                                                <tr *ngFor=\"let ext of compo.extrasnotas\">\r\n                                                    <td style=\"padding-left: 1.5em\">\r\n                                                        <span *ngIf=\"ext.esextra\">\r\n                                                            <strong style=\"font-size: 12pt\">+</strong> {{ext.descripcion}}\r\n                                                        </span>\r\n                                                        <p *ngIf=\"!ext.esextra\">\r\n                                                            <strong>N:</strong> {{ext.notas}}\r\n                                                        </p>\r\n                                                    </td>\r\n                                                </tr>\r\n                                            </table>\r\n                                        </td>\r\n                                    </tr>\r\n                                </table>\r\n                            </td>\r\n                        </tr>\r\n                    </table>\r\n                </div>\r\n                <div class=\"card-footer text-right\">\r\n                    <button type=\"button\" class=\"btn btn-outline-success btn-sm\" (click)=\"c(histo)\">Duplicar</button>\r\n                </div>\r\n            </div>\r\n        </small>        \r\n    </div>\r\n</ng-template>\r\n<ng-template #modalComponentes let-c=\"close\" let-d=\"dismiss\">\r\n    <div class=\"modal-header\">\r\n        <h4 class=\"modal-title\">Componentes de {{detalleComanda[detalleComanda.length - 1].descripcion}}</h4>\r\n        <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"d('Cross click')\">\r\n            <span aria-hidden=\"true\">&times;</span>\r\n        </button>\r\n    </div>\r\n    <div class=\"modal-body\">\r\n        <div class=\"card\">            \r\n            <div class=\"card-body\" style=\"height: 350px; overflow-y:auto; padding: 0 !important; \">\r\n                <button type=\"button\" class=\"btn btn-block btn-outline-secondary btn-sm\" *ngFor=\"let cim of componentesItemMenu; let i = index\" (click)=\"toggleComponente(null, cim.idcomponente)\" \r\n                    [disabled]=\"detalleComanda[this.detalleComanda.length - 1].componentes.length == detalleComanda[detalleComanda.length - 1].limitecomponentes\">\r\n                    {{cim.idcomponente.descripcion}}\r\n                </button>\r\n                <!--\r\n                <table class=\"table table-hover table-sm\">\r\n                    <tr *ngFor=\"let cim of componentesItemMenu; let i = index\">\r\n                        <td>{{cim.idcomponente.descripcion}}</td>\r\n                        <td>\r\n                            <input #cb id=\"chkCompo_{{i}}\" name=\"chkCompo_{{i}}\" type=\"checkbox\" class=\"form-control\" \r\n                                (change)=\"toggleComponente($event, cim.idcomponente)\"\r\n                                [disabled]=\"!cb.checked && detalleComanda[this.detalleComanda.length - 1].componentes.length == detalleComanda[detalleComanda.length - 1].limitecomponentes\"/>\r\n                        </td>\r\n                    </tr>\r\n                </table>\r\n                -->\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"modal-footer\">\r\n        <button type=\"button\" class=\"btn btn-outline-dark\" (click)=\"c('Close click')\" [disabled]=\"detalleComanda[detalleComanda.length - 1].componentes.length == 0\">Terminar</button>\r\n    </div>\r\n</ng-template>\r\n<ng-template #modalEditaComponentes let-c=\"close\" let-d=\"dismiss\">\r\n    <div class=\"modal-header\">\r\n        <h4 class=\"modal-title\">Componentes de {{detcom.descripcion}}</h4>\r\n        <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"d('Cross click')\">\r\n            <span aria-hidden=\"true\">&times;</span>\r\n        </button>\r\n    </div>\r\n    <div class=\"modal-body\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\" style=\"height: 350px; overflow-y:auto; padding: 0 !important; \">\r\n                <button type=\"button\" class=\"btn btn-block btn-outline-secondary btn-sm\" *ngFor=\"let cim of componentesItemMenu; let i = index\"\r\n                    (click)=\"toggleComponenteEdit(null, cim.idcomponente)\" [disabled]=\"detcom.componentes.length == detcom.limitecomponentes\">\r\n                    {{cim.idcomponente.descripcion}}\r\n                </button>\r\n                <!--\r\n                <table class=\"table table-hover table-sm\">\r\n                    <tr *ngFor=\"let cim of componentesItemMenu; let i = index\">\r\n                        <td>{{cim.idcomponente.descripcion}}</td>\r\n                        <td>\r\n                            <input #cbe id=\"chkCompoE_{{i}}\" name=\"chkCompoE_{{i}}\" type=\"checkbox\" class=\"form-control\" (change)=\"toggleComponenteEdit($event, cim.idcomponente)\"\r\n                                [disabled]=\"!cbe.checked && detcom.componentes.length == detcom.limitecomponentes\"\r\n                            />\r\n                        </td>\r\n                    </tr>\r\n                </table>\r\n                -->\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"modal-footer\">\r\n        <button type=\"button\" class=\"btn btn-outline-dark\" (click)=\"c('Close click')\" [disabled]=\"detcom.componentes.length == 0\">Terminar</button>\r\n    </div>\r\n</ng-template>\r\n<ng-template #modalExtras let-c=\"close\" let-d=\"dismiss\">\r\n    <div class=\"modal-header\">\r\n        <h4 class=\"modal-title\">Extras</h4>\r\n        <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"d('Cross click')\">\r\n            <span aria-hidden=\"true\">&times;</span>\r\n        </button>\r\n    </div>\r\n    <div class=\"modal-body\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\" style=\"height: 350px; overflow-y:auto; padding: 0 !important; \">\r\n                <table class=\"table table-hover table-sm\">\r\n                    <tr *ngFor=\"let ext of lstComposExtras; let i = index\">\r\n                        <td>{{ext.descripcion}}</td>\r\n                        <td>\r\n                            <input #cbext id=\"chkExt_{{i}}\" name=\"chkExt_{{i}}\" type=\"checkbox\" class=\"form-control\" (change)=\"toggleExtras($event, ext)\"/>\r\n                        </td>\r\n                    </tr>\r\n                </table>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"modal-footer\">\r\n        <button type=\"button\" class=\"btn btn-outline-dark\" (click)=\"c('Close click')\">Terminar</button>\r\n    </div>\r\n</ng-template>\r\n<ng-template #modalNotas let-c=\"close\" let-d=\"dismiss\">\r\n    <div class=\"modal-header\">\r\n        <h4 class=\"modal-title\">Nota</h4>\r\n        <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"d('Cross click')\">\r\n            <span aria-hidden=\"true\">&times;</span>\r\n        </button>\r\n    </div>\r\n    <div class=\"modal-body\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\" style=\"height: 350px; overflow-y:auto; padding: 0 !important; \">\r\n                <textarea #txtDetCompoNotas id=\"txtDetCompoNotas\" name=\"txtDetCompoNotas\" class=\"form-control\" style=\"height: 100%\"></textarea>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"modal-footer\">\r\n        <button type=\"button\" class=\"btn btn-outline-dark\" (click)=\"c(txtDetCompoNotas.value)\">Terminar</button>\r\n    </div>\r\n</ng-template>\r\n<ng-template #modalExtrasProducto let-c=\"close\" let-d=\"dismiss\">\r\n    <div class=\"modal-header\">\r\n        <h4 class=\"modal-title\">Extras</h4>\r\n        <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"d('Cross click')\">\r\n            <span aria-hidden=\"true\">&times;</span>\r\n        </button>\r\n    </div>\r\n    <div class=\"modal-body\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\" style=\"height: 350px; overflow-y:auto; padding: 0 !important; \">\r\n                <table class=\"table table-hover table-sm\">\r\n                    <tr *ngFor=\"let ext of lstComposExtras; let i = index\">\r\n                        <td>{{ext.descripcion}}</td>\r\n                        <td>\r\n                            <input #cbextprod id=\"chkExtProd_{{i}}\" name=\"chkExtProd_{{i}}\" type=\"checkbox\" class=\"form-control\" (change)=\"toggleExtrasProducto($event, ext)\"\r\n                            />\r\n                        </td>\r\n                    </tr>\r\n                </table>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"modal-footer\">\r\n        <button type=\"button\" class=\"btn btn-outline-dark\" (click)=\"c('Close click')\">Terminar</button>\r\n    </div>\r\n</ng-template>\r\n<ng-template #modalNotasProducto let-c=\"close\" let-d=\"dismiss\">\r\n    <div class=\"modal-header\">\r\n        <h4 class=\"modal-title\">Nota del producto</h4>\r\n        <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"d('Cross click')\">\r\n            <span aria-hidden=\"true\">&times;</span>\r\n        </button>\r\n    </div>\r\n    <div class=\"modal-body\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\" style=\"height: 350px; overflow-y:auto; padding: 0 !important; \">\r\n                <textarea #txtNotProd id=\"txtNotProd\" name=\"txtNotProd\" class=\"form-control\" style=\"height: 100%\"></textarea>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"modal-footer\">\r\n        <button type=\"button\" class=\"btn btn-outline-dark\" (click)=\"c(txtNotProd.value)\">Terminar</button>\r\n    </div>\r\n</ng-template>\r\n<ng-template #modalNotasPedido let-c=\"close\" let-d=\"dismiss\">\r\n    <div class=\"modal-header\">\r\n        <h4 class=\"modal-title\">Notas del pedido</h4>\r\n        <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"d('Cross click')\">\r\n            <span aria-hidden=\"true\">&times;</span>\r\n        </button>\r\n    </div>\r\n    <div class=\"modal-body\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\" style=\"height: 350px; overflow-y:auto; padding: 0 !important; \">\r\n                <textarea #txtNotPedido=\"ngModel\" [(ngModel)]=\"comanda.notas\" id=\"txtNotPedido\" name=\"txtNotPedido\" class=\"form-control\" style=\"height: 100%\"></textarea>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"modal-footer\">\r\n        <button type=\"button\" class=\"btn btn-outline-dark\" (click)=\"c('')\">Terminar</button>\r\n    </div>\r\n</ng-template>\r\n<ng-template #modalPagar let-c=\"close\" let-d=\"dismiss\">\r\n    <div class=\"modal-header\">\r\n        <h4 class=\"modal-title\">Datos de facturación</h4>\r\n        <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"d('Cross click')\">\r\n            <span aria-hidden=\"true\">&times;</span>\r\n        </button>\r\n    </div>\r\n    <div class=\"modal-body\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\" style=\"height: 600px; overflow-y:auto; padding: 0.2em !important; \">\r\n                <table style=\"width: 100%; border-collapse: collapse\">\r\n                    <tr>                        \r\n                        <td>\r\n                            <ul class=\"list-group list-group-flush\">\r\n                                <li class=\"list-group-item text-center\">\r\n                                    <span style=\"padding-right: 1px !important; padding-top: 1px !important\" *ngFor=\"let fps of lstFormasPago\">\r\n                                        <button class=\"btn btn-sm btn-outline-primary\" style=\"font-weight: bold;\" (click)=\"addFormaPago(fps)\" [disabled]=\"+saldocomanda == 0\">\r\n                                            {{fps.descripcion}}\r\n                                        </button>\r\n                                    </span>\r\n                                </li>\r\n                            </ul>\r\n                        </td>\r\n                    </tr>\r\n                    <tr *ngFor=\"let dcc of detallescobcom; let i = index\">\r\n                        <td *ngIf=\"dcc.detcobro.length > 0\">\r\n                            <table style=\"width: 100%; border-collapse:collapse\">\r\n                                <tr>\r\n                                    <td colspan=\"7\">\r\n                                        <strong>{{dcc.descripcion}}</strong>\r\n                                    </td>\r\n                                </tr>\r\n                                <tr *ngIf=\"dcc.estarjeta\">\r\n                                    <th colspan=\"4\" class=\"small font-weight-bold\"></th>\r\n                                    <th colspan=\"2\" class=\"small font-weight-bold text-center\">Vencimiento</th>                                    \r\n                                    <th class=\"small font-weight-bold\"></th>\r\n                                </tr>\r\n                                <tr>\r\n                                    <th class=\"small font-weight-bold\">Monto</th>\r\n                                    <th class=\"small font-weight-bold\">%</th>                                    \r\n                                    <th class=\"small font-weight-bold\" *ngIf=\"!dcc.estarjeta && !dcc.condocumento && !dcc.escortesia\">Vuelto para</th>\r\n                                    <th class=\"small font-weight-bold\" *ngIf=\"!dcc.estarjeta && !dcc.condocumento && !dcc.escortesia\">Vuelto</th>                                    \r\n                                    <th class=\"small font-weight-bold\" *ngIf=\"dcc.estarjeta\">Emisor</th>\r\n                                    <th class=\"small font-weight-bold\" *ngIf=\"dcc.estarjeta\">No.</th>\r\n                                    <th class=\"small font-weight-bold\" *ngIf=\"dcc.estarjeta\">Mes</th>\r\n                                    <th class=\"small font-weight-bold\" *ngIf=\"dcc.estarjeta\">Año</th>\r\n                                    <th class=\"small font-weight-bold\" *ngIf=\"dcc.estarjeta\">Nombre</th>\r\n                                </tr>                                \r\n                                <tr *ngFor=\"let detc of dcc.detcobro; let j = index\">\r\n                                    <td>                                        \r\n                                        <input type=\"number\" #txtMonto=\"ngModel\" [(ngModel)]=\"detc.monto\" id=\"txtMonto_{{j}}\" name=\"txtMonto_{{j}}\" class=\"form-control form-control-sm\" \r\n                                            (change)=\"recalcPorcentaje(txtMonto, txtPorcentaje, i, j)\" (blur)=\"recalcPorcentaje(txtMonto, txtPorcentaje, i, j)\" \r\n                                            placeholder=\"Monto\" [style.width]=\"detc.estarjeta ? '90px' : ''\"/>\r\n                                    </td>\r\n                                    <td>\r\n                                        <input type=\"number\" #txtPorcentaje=\"ngModel\" [(ngModel)]=\"detc.porcentaje\" id=\"txtPorcentaje_{{j}}\" name=\"txtPorcentaje_{{j}}\" class=\"form-control form-control-sm\" \r\n                                            (change)=\"recalcMonto(txtMonto, txtPorcentaje, i, j)\" (blur)=\"recalcMonto(txtMonto, txtPorcentaje, i, j)\" placeholder=\"Porcentaje del monto\" \r\n                                            max=\"100.00\" [style.width]=\"detc.estarjeta ? '75px' : ''\"/>\r\n                                    </td>\r\n                                    <!-- Inicia columnas para cuando es efectivo -->\r\n                                    <td *ngIf=\"!detc.estarjeta && !detc.condocumento && !detc.escortesia\">\r\n                                        <input type=\"text\" #vueltoPara=\"ngModel\" [(ngModel)]=\"detc.vueltopara\" id=\"selVlt_{{j}}\" name=\"selVlt_{{j}}\"\r\n                                            class=\"form-control form-control-sm\" (change)=\"calcVuelto(i, j)\" placeholder=\"Vuelto para\"/>\r\n                                        <!--    \r\n                                        <select name=\"selVlt_{{j}}\" id=\"selVlt_{{j}}\" [(ngModel)]=\"detc.vueltopara\" class=\"form-control form-control-sm\" #vueltoPara\r\n                                            [required]=\"!detc.estarjeta && !detc.condocumento && !detc.escortesia\" (change)=\"calcVuelto(i, j)\">\r\n                                            <option *ngFor=\"let v of vlts\" value=\"{{v.valor}}\">{{v.descripcion}}</option>\r\n                                        </select>\r\n                                        -->\r\n                                    </td>\r\n                                    <td [colSpan]=\"!detc.estarjeta && !detc.condocumento && !detc.escortesia ? 3 : 1\" *ngIf=\"!detc.estarjeta && !detc.condocumento && !detc.escortesia\">\r\n                                        <input type=\"number\" #txtVuelto=\"ngModel\" [(ngModel)]=\"detc.vuelto\" id=\"txtVuelto_{{j}}\" name=\"txtVuelto_{{j}}\" class=\"form-control form-control-sm\"\r\n                                            placeholder=\"Vuelto\" disabled=\"true\"/>\r\n                                    </td>\r\n                                    <!-- Fin de columnas para cuando es efectivo -->\r\n                                    <!--Inicia columnas para cuando es tarjeta-->\r\n                                    <td *ngIf=\"detc.estarjeta\">                                        \r\n                                        <select name=\"selEmisor_{{j}}\" id=\"selEmisor_{{j}}\" [(ngModel)]=\"detc.idemisor\" class=\"form-control form-control-sm\" #selEmisor \r\n                                            style=\"width: 100%\" [required]=\"detc.estarjeta\">\r\n                                            <option *ngFor=\"let etcd of lstEmisoresTarjeta\" value=\"{{etcd._id}}\">{{etcd.nombre}}</option>\r\n                                        </select>\r\n                                    </td>\r\n                                    <td *ngIf=\"detc.estarjeta\">                                        \r\n                                        <input type=\"number\" #txtNumT=\"ngModel\" [(ngModel)]=\"detc.numero\" id=\"txtNumT_{{j}}\" name=\"txtNumT_{{j}}\" class=\"form-control form-control-sm\" \r\n                                            style=\"width: 170px\" placeholder=\"No. de tarjeta\" [required]=\"detc.estarjeta\"/>\r\n                                    </td>\r\n                                    <td *ngIf=\"detc.estarjeta\">                                        \r\n                                        <input type=\"number\" #txtMesVT=\"ngModel\" [(ngModel)]=\"detc.mesvence\" id=\"txtMesVT_{{j}}\" name=\"txtMesVT_{{j}}\" class=\"form-control form-control-sm\"\r\n                                            placeholder=\"Mes\" min=\"1\" max=\"12\" [required]=\"detc.estarjeta\"/>\r\n                                    </td>\r\n                                    <td *ngIf=\"detc.estarjeta\">                                        \r\n                                        <input type=\"number\" #txtAnioVT=\"ngModel\" [(ngModel)]=\"detc.aniovence\" id=\"txtAnioVT_{{j}}\" name=\"txtAnioVT_{{j}}\" class=\"form-control form-control-sm\"\r\n                                            placeholder=\"Año\" [required]=\"detc.estarjeta\" min=\"0\" max=\"99\"/>\r\n                                    </td>\r\n                                    <td *ngIf=\"detc.estarjeta\">\r\n                                        <input type=\"Text\" #txtNomT=\"ngModel\" [(ngModel)]=\"detc.nombretarjeta\" id=\"txtNomT_{{j}}\" name=\"txtNomT_{{j}}\" class=\"form-control form-control-sm\"\r\n                                            placeholder=\"Nombre en tarjeta\" [required]=\"detc.estarjeta\" />\r\n                                    </td>\r\n                                    <td class=\"text-nowrap\">\r\n                                        <button type=\"button\" class=\"btn btn-outline-primary btn-sm\" (click)=\"addDetTarjeta(i, j)\" *ngIf=\"j == 0 && detc.estarjeta\" [disabled]=\"+saldocomanda == 0\">\r\n                                            <span class=\"oi oi-plus\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                        <button type=\"button\" class=\"btn btn-outline-danger btn-sm\" (click)=\"delDetTarjeta(i, j)\">\r\n                                            <span class=\"oi oi-trash\" title=\"Eliminar\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                    </td>\r\n                                    <!--Fin de columnas para cuando es tarjeta-->\r\n                                    <!-- Cuando es con documento -->\r\n                                    <td *ngIf=\"detc.condocumento\">\r\n                                        <input type=\"text\" #txtNoDoc=\"ngModel\" [(ngModel)]=\"detc.numdocumento\" id=\"txtNoDoc_{{j}}\" name=\"txtNoDoc_{{j}}\" class=\"form-control form-control-sm\"\r\n                                            placeholder=\"No. de documento\" [required]=\"detc.condocumento\" minlength=\"1\" />\r\n                                    </td>\r\n                                    <!-- Fin de cuando es con documento -->\r\n                                    <!--Cuando es cortesía-->\r\n                                    <td *ngIf=\"detc.escortesia\">\r\n                                        <input type=\"text\" #txtNoDoc=\"ngModel\" [(ngModel)]=\"detc.aprobadopor\" id=\"txtNoDoc_{{j}}\" name=\"txtNoDoc_{{j}}\" class=\"form-control form-control-sm\"\r\n                                            placeholder=\"Aprobado por\" [required]=\"detc.escortesia\" minlength=\"1\" />\r\n                                    </td>\r\n                                    <!--Fin de cuando es cortesía-->\r\n                                </tr>\r\n                            </table>                            \r\n                        </td>\r\n                    </tr>\r\n                </table>                \r\n            </div>\r\n        </div>\r\n        <div class=\"card\" *ngIf=\"false\">\r\n            <div class=\"card-body\" style=\"height: 250px; overflow-y:auto; padding: 0.2em !important; \">\r\n                <div class=\"row\">\r\n                    <div class=\"col-6\" style=\"padding: 0 !important;\">                        \r\n                        <div class=\"card-header font-weight-bold\">¿A quién facturar?</div>\r\n                        <ul class=\"list-group list-group-flush\">\r\n                            <li class=\"list-group-item\" *ngFor=\"let dfact of datosfactCliente\" (click)=\"addFacturarA(dfact)\">\r\n                                <!-- [style.pointer-events]=\"+saldofacta == 0 ? 'none' : 'auto'\" -->\r\n                                <span class=\"font-weight-bold\">{{dfact.nombre}}</span> / <span>{{dfact.nit}}</span><br/>\r\n                                <small>\r\n                                    <span>{{dfact.direccion}}</span>\r\n                                </small>                                    \r\n                            </li>\r\n                        </ul>\r\n                    </div>\r\n                    <div class=\"col-6\" style=\"padding-top: 0 !important; padding-bottom: 0 !important; padding-left: 0 !important;\">\r\n                        <div class=\"card-header font-weight-bold\">Facturar a</div>\r\n                        <table class=\"table table-hover table-sm\">\r\n                            <tr *ngFor=\"let dfc of comanda.detfacturara; let i = index\">\r\n                                <td>{{dfc.nombre}}</td>\r\n                                <td>{{dfc.nit}}</td>\r\n                                <td>\r\n                                    <input type=\"number\" #txtMontoFA=\"ngModel\" [(ngModel)]=\"dfc.monto\" id=\"txtMontoFA_{{i}}\" name=\"txtMontoFA_{{i}}\" class=\"form-control form-control-sm\" \r\n                                        (change)=\"recalcSaldoFactA()\" (blur)=\"recalcSaldoFactA()\" placeholder=\"Monto\" disabled=\"true\"/>\r\n                                </td>\r\n                                <td>\r\n                                    <button type=\"button\" class=\"btn btn-outline-danger btn-sm\" (click)=\"delDetFactA(i)\">\r\n                                        <span class=\"oi oi-trash\" title=\"Eliminar\" aria-hidden=\"true\"></span>\r\n                                    </button>\r\n                                </td>\r\n                            </tr>\r\n                        </table>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"modal-footer\">\r\n        <table style=\"width: 100%; border-collapse:collapse\">\r\n            <tr>\r\n                <td class=\"font-weight-bold text-right\" [style.color]=\"+saldocomanda == 0 ? '#58FA58': '#FA5858'\">\r\n                    Saldo pendiente de pedido:\r\n                </td>\r\n                <td class=\"font-weight-bold text-right\" [style.color]=\"+saldocomanda == 0 ? '#58FA58': '#FA5858'\">\r\n                    {{saldocomanda | number:'1.2-2'}}\r\n                </td>\r\n                <!--\r\n                <td class=\"font-weight-bold text-right\" [style.color]=\"+saldofacta == 0 ? '#58FA58': '#FA5858'\">\r\n                    Saldo pendiente de facturar a:\r\n                </td>\r\n                <td class=\"font-weight-bold text-right\" [style.color]=\"+saldofacta == 0 ? '#58FA58': '#FA5858'\">\r\n                    {{saldofacta | number:'1.2-2'}}\r\n                </td>\r\n                -->\r\n                <td class=\"text-right\">\r\n                    <button type=\"button\" class=\"btn btn-outline-dark\" (click)=\"c('Terminar pedido.')\" [disabled]=\"+saldocomanda > 0\">Terminar pedido</button>\r\n                </td>\r\n            </tr>\r\n        </table>\r\n    </div>\r\n</ng-template>\r\n<ng-template #modalConfirmEnd let-c=\"close\" let-d=\"dismiss\">\r\n    <div class=\"modal-header\">\r\n        <h4 class=\"modal-title\">Terminar pedido</h4>\r\n        <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"d('Cross click')\">\r\n            <span aria-hidden=\"true\">&times;</span>\r\n        </button>\r\n    </div>\r\n    <div class=\"modal-body\">\r\n        <div class=\"text-center\">\r\n            <span class=\"font-weight-bold\">¿Seguro(a) de finalizar el pedido?</span>\r\n        </div>        \r\n    </div>\r\n    <div class=\"modal-footer\">\r\n        <button type=\"button\" class=\"btn btn-outline-dark\" (click)=\"d('Cancelar')\">Cancelar</button>\r\n        <button type=\"button\" class=\"btn btn-outline-success\" (click)=\"c('Terminar')\">Aceptar</button>\r\n    </div>\r\n</ng-template>\r\n<ng-template #modalSelFacturarA let-c=\"close\" let-d=\"dismiss\">\r\n    <div class=\"modal-header\">\r\n        <h4 class=\"modal-title\">¿A quién desea facturar?</h4>\r\n        <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"d('Cross click')\">\r\n            <span aria-hidden=\"true\">&times;</span>\r\n        </button>\r\n    </div>\r\n    <div class=\"modal-body\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\" style=\"padding: 0 !important; \">\r\n                <table class=\"table table-hover table-sm table-bordered\">\r\n                    <tbody>\r\n                        <tr>\r\n                            <td>\r\n                                <input name=\"txtNomFact\" id=\"txtNomFact\" type=\"text\" class=\"form-control form-control-sm\" #nombreFacturaCliente=\"ngModel\"\r\n                                    [(ngModel)]=\"datofactClienteObj.nombre\" placeholder=\"Nombre\" />\r\n                            </td>\r\n                            <td>\r\n                                <input name=\"txtNit\" id=\"txtNit\" type=\"text\" class=\"form-control form-control-sm\" #nitCliente=\"ngModel\" [(ngModel)]=\"datofactClienteObj.nit\"\r\n                                    placeholder=\"N.I.T.\" />\r\n                            </td>\r\n                            <td>\r\n                                <input name=\"txtDirFact\" id=\"txtDirFact\" type=\"text\" class=\"form-control form-control-sm\" #direccionFacturaCliente=\"ngModel\"\r\n                                    [(ngModel)]=\"datofactClienteObj.direccion\" placeholder=\"Dirección\" />\r\n                            </td>\r\n                            <td>\r\n                                <button type=\"button\" class=\"btn btn-outline-primary btn-sm\" (click)=\"nuevoFacturarA(); c(null);\">\r\n                                    <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                                </button>\r\n                            </td>\r\n                        </tr>\r\n                        <tr *ngFor=\"let fa of datosfactCliente\" (click)=\"c(fa)\">\r\n                            <td>{{fa.nombre}}</td>\r\n                            <td>{{fa.nit}}</td>\r\n                            <td>{{fa.direccion}}</td>\r\n                            <td>&nbsp;</td>\r\n                        </tr>\r\n                    </tbody>\r\n                </table>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</ng-template>\r\n<toaster-container [toasterconfig]=\"toasterconfig\"></toaster-container>"
 
 /***/ }),
 
-/***/ "../../../../../src/app/components/comanda/comanda.component.ts":
+/***/ "./src/app/components/comanda/comanda.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComandaComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_cliente__ = __webpack_require__("../../../../../src/app/models/cliente.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_telefonocliente__ = __webpack_require__("../../../../../src/app/models/telefonocliente.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_direccioncliente__ = __webpack_require__("../../../../../src/app/models/direccioncliente.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_datosfactcliente__ = __webpack_require__("../../../../../src/app/models/datosfactcliente.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__models_comanda__ = __webpack_require__("../../../../../src/app/models/comanda.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_detallecomanda__ = __webpack_require__("../../../../../src/app/models/detallecomanda.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__models_detcompdetcomanda__ = __webpack_require__("../../../../../src/app/models/detcompdetcomanda.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__models_extrasnotascomanda__ = __webpack_require__("../../../../../src/app/models/extrasnotascomanda.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__models_detcobrocomanda__ = __webpack_require__("../../../../../src/app/models/detcobrocomanda.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__models_detcobro__ = __webpack_require__("../../../../../src/app/models/detcobro.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__models_detfacturara__ = __webpack_require__("../../../../../src/app/models/detfacturara.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_cliente_service__ = __webpack_require__("../../../../../src/app/services/cliente.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__services_tipodireccion_service__ = __webpack_require__("../../../../../src/app/services/tipodireccion.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__services_localstorage_service__ = __webpack_require__("../../../../../src/app/services/localstorage.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__services_restaurante_service__ = __webpack_require__("../../../../../src/app/services/restaurante.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__services_menurest_service__ = __webpack_require__("../../../../../src/app/services/menurest.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__services_menurestcomponente_service__ = __webpack_require__("../../../../../src/app/services/menurestcomponente.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__services_componente_service__ = __webpack_require__("../../../../../src/app/services/componente.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__services_formapago_service__ = __webpack_require__("../../../../../src/app/services/formapago.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__services_emisortarjeta_service__ = __webpack_require__("../../../../../src/app/services/emisortarjeta.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__services_comanda_service__ = __webpack_require__("../../../../../src/app/services/comanda.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__services_tipocomanda_service__ = __webpack_require__("../../../../../src/app/services/tipocomanda.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__services_banner_service__ = __webpack_require__("../../../../../src/app/services/banner.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__services_vuelto_service__ = __webpack_require__("../../../../../src/app/services/vuelto.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__services_razoncortesia_service__ = __webpack_require__("../../../../../src/app/services/razoncortesia.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__services_tiempoentrega_service__ = __webpack_require__("../../../../../src/app/services/tiempoentrega.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__ng_bootstrap_ng_bootstrap__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29_angular2_toaster__ = __webpack_require__("../../../../angular2-toaster/angular2-toaster.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30_moment__ = __webpack_require__("../../../../moment/moment.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_cliente__ = __webpack_require__("./src/app/models/cliente.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_telefonocliente__ = __webpack_require__("./src/app/models/telefonocliente.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_direccioncliente__ = __webpack_require__("./src/app/models/direccioncliente.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_datosfactcliente__ = __webpack_require__("./src/app/models/datosfactcliente.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__models_comanda__ = __webpack_require__("./src/app/models/comanda.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_detallecomanda__ = __webpack_require__("./src/app/models/detallecomanda.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__models_detcompdetcomanda__ = __webpack_require__("./src/app/models/detcompdetcomanda.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__models_extrasnotascomanda__ = __webpack_require__("./src/app/models/extrasnotascomanda.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__models_detcobrocomanda__ = __webpack_require__("./src/app/models/detcobrocomanda.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__models_detcobro__ = __webpack_require__("./src/app/models/detcobro.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__models_detfacturara__ = __webpack_require__("./src/app/models/detfacturara.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_cliente_service__ = __webpack_require__("./src/app/services/cliente.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__services_tipodireccion_service__ = __webpack_require__("./src/app/services/tipodireccion.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__services_localstorage_service__ = __webpack_require__("./src/app/services/localstorage.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__services_restaurante_service__ = __webpack_require__("./src/app/services/restaurante.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__services_menurest_service__ = __webpack_require__("./src/app/services/menurest.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__services_menurestcomponente_service__ = __webpack_require__("./src/app/services/menurestcomponente.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__services_componente_service__ = __webpack_require__("./src/app/services/componente.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__services_formapago_service__ = __webpack_require__("./src/app/services/formapago.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__services_emisortarjeta_service__ = __webpack_require__("./src/app/services/emisortarjeta.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__services_comanda_service__ = __webpack_require__("./src/app/services/comanda.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__services_tipocomanda_service__ = __webpack_require__("./src/app/services/tipocomanda.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__services_banner_service__ = __webpack_require__("./src/app/services/banner.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__services_vuelto_service__ = __webpack_require__("./src/app/services/vuelto.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__services_razoncortesia_service__ = __webpack_require__("./src/app/services/razoncortesia.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__services_tiempoentrega_service__ = __webpack_require__("./src/app/services/tiempoentrega.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__ng_bootstrap_ng_bootstrap__ = __webpack_require__("./node_modules/@ng-bootstrap/ng-bootstrap/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29_angular2_toaster__ = __webpack_require__("./node_modules/angular2-toaster/angular2-toaster.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30_moment__ = __webpack_require__("./node_modules/moment/moment.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_30_moment__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1696,7 +1963,7 @@ var ComandaComponent = /** @class */ (function () {
     ComandaComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-comanda',
-            template: __webpack_require__("../../../../../src/app/components/comanda/comanda.component.html"),
+            template: __webpack_require__("./src/app/components/comanda/comanda.component.html"),
             encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None,
             providers: [
                 __WEBPACK_IMPORTED_MODULE_13__services_cliente_service__["a" /* ClienteService */], __WEBPACK_IMPORTED_MODULE_15__services_localstorage_service__["a" /* LocalStorageService */], __WEBPACK_IMPORTED_MODULE_14__services_tipodireccion_service__["a" /* TipoDireccionService */], __WEBPACK_IMPORTED_MODULE_16__services_restaurante_service__["a" /* RestauranteService */], __WEBPACK_IMPORTED_MODULE_17__services_menurest_service__["a" /* MenuRestauranteService */],
@@ -1732,37 +1999,37 @@ var ComandaComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/components/comanda/lstcomandas.component.html":
+/***/ "./src/app/components/comanda/lstcomandas.component.html":
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container-fluid\" style=\"margin-top: 10px\">\r\n    <div class=\"row\">\r\n        <div class=\"col-3\">\r\n            <input id=\"srchCli\" type=\"text\" class=\"form-control\" minlength=\"8\" maxlength=\"8\" pattern=\"[0-9]+\" (keyup.enter)=\"buscarCliente(modalSelCliente, modalNuevoCliente)\" \r\n                #srchCli=\"ngModel\" [(ngModel)]=\"telABuscar\" placeholder=\"Teléfono del cliente...\"/>\r\n        </div>\r\n    </div>    \r\n    <hr/>\r\n    <div class=\"row\">\r\n        <div class=\"col-12\">\r\n            <div>\r\n                <span style=\"padding-right: 2px !important\" *ngFor=\"let cnt of contadores\">\r\n                    <button type=\"button\" class=\"btn\" [style.background-color]=\"cnt._id.color\" style=\"color: lightgray; font-weight: bold\" (click)=\"loadComandasEnhanced(cnt._id._id)\">\r\n                        {{cnt._id.descripcion}}\r\n                        <span class=\"badge badge-dark badge-pill\">{{cnt.count}}</span>\r\n                    </button>\r\n                </span>\r\n                <span style=\"padding-right: 2px !important\">\r\n                    <button type=\"button\" class=\"btn btn-primary\" style=\"color: lightgray; font-weight: bold\" (click)=\"loadComandasEnhanced()\" *ngIf=\"contadores.length > 0\">\r\n                        Todas\r\n                    </button>\r\n                </span>\r\n            </div>            \r\n        </div>\r\n    </div>\r\n    <div class=\"row justify-content-center\" style=\"padding-top: 10px;\">\r\n        <div class=\"col-5\">\r\n            <input type=\"text\" class=\"form-control\" #fltrCliente=\"ngModel\" [(ngModel)]=\"filtroCliente\"\r\n                [ngModelOptions]=\"{standalone: true}\" placeholder=\"Buscar comanda por nombre de cliente...\" />\r\n        </div>\r\n        <div class=\"col-1 text-right font-weight-bold\">Del:</div>\r\n        <div class=\"col-2\">\r\n            <input type=\"date\" class=\"form-control\" #fltrFDel=\"ngModel\" [(ngModel)]=\"fdel\" [ngModelOptions]=\"{standalone: true}\" placeholder=\"Del\" required/>\r\n        </div>\r\n        <div class=\"col-1 text-right font-weight-bold\">Al:</div>\r\n        <div class=\"col-3\">\r\n            <div class=\"input-group\">\r\n                <input type=\"date\" class=\"form-control\" #fltrFAl=\"ngModel\" [(ngModel)]=\"fal\" [ngModelOptions]=\"{standalone: true}\" placeholder=\"Al\" required/>\r\n                <span class=\"input-group-btn\">\r\n                    <button type=\"button\" class=\"btn btn-secondary\" (click)=\"loadComandasEnhanced(); loadContadores()\">\r\n                        <span class=\"oi oi-magnifying-glass\" title=\"Filtrar por fechas\" aria-hidden=\"true\"></span>\r\n                    </button>\r\n                </span>\r\n            </div>            \r\n        </div>\r\n    </div>\r\n    <hr/>\r\n    <div class=\"row\" *ngFor=\"let cmd of listaComandas | filterList:'idcliente.nombre':filtroCliente; let i = index\">\r\n        <div class=\"col-2\">\r\n            <table style=\"width: 100%; border-collapse: collapse;\">\r\n                <tr>\r\n                    <td>\r\n                        <span class=\"font-weight-bold\" style=\"font-size: 1.5em !important;\">\r\n                             {{cmd.fechafintoma | date:'HH:mm:ss'}}\r\n                        </span>                        \r\n                    </td>\r\n                </tr>\r\n                <tr>\r\n                    <td>{{cmd.fechafintoma | date:'dd/MM/yyyy'}}</td>\r\n                </tr>\r\n                <tr>\r\n                    <td>                        \r\n                        <img class=\"rounded\" src=\"../../../assets/{{cmd.idtipocomanda.imagen}}\" alt=\"{{cmd.idtipocomanda.descripcion}}\">\r\n                    </td>\r\n                </tr>\r\n                <tr>\r\n                    <td class=\"text-center font-weight-bold\" style=\"padding-top: 1em; font-size: 1.25em\">\r\n                        Total: Q {{cmd.totalcomanda | number:'1.2-2'}}<br/>\r\n                        <img class=\"rounded\" *ngFor=\"let ifp of cmd.imgpago\" src=\"../../../assets/{{ifp}}.png\" alt=\"FP\">\r\n                    </td>\r\n                </tr>\r\n            </table>\r\n        </div>\r\n        <div class=\"col-10\">            \r\n            <table style=\"width: 100%; border-collapse: collapse;\">\r\n                <tr>\r\n                    <td colspan=\"2\">\r\n                        <h4>\r\n                            Orden No. {{cmd.tracking | number:'1.0-0'}} a nombre de {{cmd.idcliente.nombre}}&nbsp;\r\n                            <button type=\"button\" class=\"btn btn-outline-secondary btn-sm\" (click)=\"verDetCobro(cmd, modalDetCobroComanda)\">Detalle de cobro</button>\r\n                        </h4>                        \r\n                    </td>\r\n                </tr>\r\n                <tr>\r\n                    <td class=\"font-weight-bold\" style=\"vertical-align: top\">Transcurrido:</td>\r\n                    <td style=\"padding-left: 0.15em; vertical-align: top; font-weight: bold;\">{{cmd.fechafintoma | amTimeAgo:true}}</td>\r\n                </tr>\r\n                <tr>\r\n                    <td class=\"font-weight-bold\" style=\"vertical-align: top\">Teléfono:</td>\r\n                    <td style=\"padding-left: 0.15em; vertical-align: top;\">{{cmd.idtelefonocliente.telefono}}</td>\r\n                </tr>\r\n                <tr>\r\n                    <td class=\"font-weight-bold\" style=\"vertical-align: top;\">Atendió:</td>\r\n                    <td style=\"padding-left: 0.15em; vertical-align: top;\">{{cmd.idusuario.nombre}}</td>\r\n                </tr>\r\n                <tr>\r\n                    <td class=\"font-weight-bold\" style=\"vertical-align: top;\">Entregar en:</td>\r\n                    <td style=\"padding-left: 0.15em; vertical-align: top;\">\r\n                         {{cmd.iddireccioncliente.direccion}}, zona {{cmd.iddireccioncliente.zona}}, colonia {{cmd.iddireccioncliente.colonia}} \r\n                         {{cmd.iddireccioncliente.codigoacceso ? (', código de acceso: ' + cmd.iddireccioncliente.codigoacceso) : ''}}\r\n                    </td>\r\n                </tr>\r\n                <tr>\r\n                    <td class=\"font-weight-bold\" style=\"vertical-align: top;\">Restaurante:</td>\r\n                    <td style=\"padding-left: 0.15em; vertical-align: top;\">\r\n                        {{cmd.idrestaurante ? cmd.idrestaurante.nombre : cmd.iddireccioncliente.idrestaurante.nombre}}\r\n                    </td>\r\n                </tr>\r\n                <tr>\r\n                    <td class=\"font-weight-bold\" style=\"vertical-align: top;\">Tiempo ofrecido:</td>\r\n                    <td style=\"padding-left: 0.15em; vertical-align: top;\">\r\n                        {{cmd.idtiempoentrega ? cmd.idtiempoentrega.tiempo : ''}}\r\n                    </td>\r\n                </tr>\r\n                <tr>\r\n                    <td class=\"font-weight-bold\" style=\"vertical-align: top;\">Motorista:</td>\r\n                    <td style=\"padding-left: 0.15em; vertical-align: top;\">{{cmd.idmotorista ? cmd.idmotorista.nombre : ''}}</td>\r\n                </tr>\r\n                <tr>\r\n                    <td class=\"font-weight-bold\" style=\"vertical-align: top;\">Observaciones:</td>\r\n                    <td style=\"padding-left: 0.15em; vertical-align: top;\">\r\n                        <p>{{cmd.notas || 'No tiene'}}</p>\r\n                    </td>\r\n                </tr>\r\n                <tr>\r\n                    <td class=\"font-weight-bold\" colspan=\"2\" [style.color]=\"cmd.idestatuscomanda.color\">\r\n                        <h3>{{cmd.idestatuscomanda.descripcion}}</h3>\r\n                    </td>                    \r\n                </tr>\r\n                <tr>\r\n                    <td colspan=\"2\">                        \r\n                        <table style=\"width: 100%; border-collapse:collapse; border: solid 0.1em lightgray\">\r\n                            <tr style=\"background-color: #FFFEE0\" *ngFor=\"let det of cmd.detallecomanda\">\r\n                                <td>                                   \r\n                                    <table style=\"width: 100%; border-collapse:collapse;\">\r\n                                        <tr>                                            \r\n                                            <td>                                                \r\n                                                <table style=\"width: 100%; border-collapse: collapse;\">\r\n                                                    <tr>\r\n                                                        <td class=\"align-top\">{{det.cantidad}} {{det.descripcion}}</td>\r\n                                                    </tr>\r\n                                                    <tr *ngFor=\"let dce of det.extrasnotas\">\r\n                                                        <td class=\"align-top\" style=\"padding-left: 2em;\">\r\n                                                            <span *ngIf=\"dce.esextra\">\r\n                                                                <strong style=\"font-size: 12pt\">+</strong> {{dce.descripcion}}</span>\r\n                                                            <p *ngIf=\"!dce.esextra\">\r\n                                                                <strong>N:</strong> {{dce.notas}}</p>\r\n                                                        </td>                                                        \r\n                                                    </tr>\r\n                                                </table>\r\n                                            </td>\r\n                                        </tr>\r\n                                        <tr *ngFor=\"let compo of det.componentes\">\r\n                                            <td style=\"padding-left: 2em\">\r\n                                                <table style=\"width: 100%; border-collapse:collapse;\">\r\n                                                    <tr>\r\n                                                        <td>{{compo.descripcion}}</td>                                                        \r\n                                                    </tr>\r\n                                                    <tr *ngFor=\"let ext of compo.extrasnotas\">\r\n                                                        <td style=\"padding-left: 1em\">\r\n                                                            <span *ngIf=\"ext.esextra\">\r\n                                                                <strong style=\"font-size: 12pt\">+</strong> {{ext.descripcion}}\r\n                                                            </span>\r\n                                                            <p *ngIf=\"!ext.esextra\">\r\n                                                                <strong>N:</strong> {{ext.notas}}\r\n                                                            </p>\r\n                                                        </td>                                                        \r\n                                                    </tr>\r\n                                                </table>                                                \r\n                                            </td>\r\n                                        </tr>\r\n                                    </table>\r\n                                </td>                                \r\n                            </tr>\r\n                        </table>\r\n                    </td>\r\n                </tr>\r\n            </table>\r\n        </div>\r\n    </div>\r\n</div>\r\n<ng-template #modalSelCliente let-c=\"close\" let-d=\"dismiss\">\r\n    <div class=\"modal-header\">\r\n        <h4 class=\"modal-title\">¿Quién está llamando?</h4>\r\n        <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"d('Cross click')\">\r\n            <span aria-hidden=\"true\">&times;</span>\r\n        </button>\r\n    </div>\r\n    <div class=\"modal-body\">\r\n        <div class=\"card\">\r\n            <ul class=\"list-group list-group-flush\">                 \r\n                <li class=\"list-group-item\" *ngFor=\"let cli of listaClientes\" (click)=\"c(cli._id)\">{{cli.nombre}}</li>\r\n            </ul>\r\n        </div>\r\n    </div>    \r\n</ng-template>\r\n<ng-template #modalDetCobroComanda let-c=\"close\" let-d=\"dismiss\">\r\n    <div class=\"modal-header\">\r\n        <h4 class=\"modal-title\">Detalles de cobro</h4>\r\n        <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"d('Cross click')\">\r\n            <span aria-hidden=\"true\">&times;</span>\r\n        </button>\r\n    </div>\r\n    <div class=\"modal-body\" style=\"height: 700px; overflow-y:auto\">\r\n        <table class=\"table table-hover table-sm table-striped\">\r\n            <thead>\r\n                <tr>\r\n                    <th colspan=\"3\">Formas de pago</th>\r\n                </tr>\r\n            </thead>\r\n            <tfoot>\r\n                <tr>\r\n                    <th class=\"text-right\" colspan=\"2\">Total de comanda:</th>\r\n                    <th class=\"text-right\" style=\"border-bottom: double 0.25em lightgray !important;\">{{comandaSelected.totalcomanda | number:'1.2-2'}}</th>\r\n                </tr>\r\n            </tfoot>\r\n            <tbody>\r\n                <tr *ngFor=\"let fp of resumenCobro\">\r\n                    <td>\r\n                        <img class=\"rounded\" src=\"{{fp.imagen}}\" alt=\"{{fp.descripcion}}\">\r\n                    </td>\r\n                    <td>{{fp.descripcion}}</td>\r\n                    <td class=\"text-right\">{{fp.monto | number:'1.2-2'}}</td>\r\n                </tr>                \r\n            </tbody>\r\n        </table>\r\n        <hr/>\r\n        <table class=\"table table-hover table-sm table-striped\">\r\n            <thead>\r\n                <tr>\r\n                    <th colspan=\"3\">Facturar a</th>\r\n                </tr>\r\n                <tr>\r\n                    <th>N.I.T.</th>\r\n                    <th>Nombre</th>\r\n                    <th class=\"text-right\">Monto</th>\r\n                </tr>\r\n            </thead>\r\n            <tfoot>\r\n                <tr>\r\n                    <th colspan=\"2\" class=\"text-right\">Total de comanda:</th>\r\n                    <th class=\"text-right\" style=\"border-bottom: double 0.25em lightgray !important;\">{{comandaSelected.totalcomanda | number:'1.2-2'}}</th>\r\n                </tr>\r\n            </tfoot>\r\n            <tbody>\r\n                <tr *ngFor=\"let facta of comandaSelected.detfacturara\">\r\n                    <td>{{facta.nit}}</td>\r\n                    <td>{{facta.nombre}}</td>\r\n                    <td class=\"text-right\">{{facta.monto | number:'1.2-2'}}</td>\r\n                </tr>                \r\n            </tbody>\r\n        </table>\r\n    </div>\r\n</ng-template>\r\n<ng-template #modalNuevoCliente let-c=\"close\" let-d=\"dismiss\">\r\n    <div class=\"modal-header\">\r\n        <h4 class=\"modal-title\">Datos de cliente</h4>\r\n        <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"d('Cross click')\">\r\n            <span aria-hidden=\"true\">&times;</span>\r\n        </button>\r\n    </div>\r\n    <div class=\"modal-body\">\r\n        <div class=\"card\">\r\n            <div class=\"card-header\">Nombre y teléfono:</div>\r\n            <div class=\"card-body\">\r\n                <div class=\"row\">\r\n                    <div class=\"col-8\">\r\n                        <input id=\"txtNombreCliente\" name=\"txtNombreCliente\" #nombreCliente=\"ngModel\" [(ngModel)]=\"clienteNuevo.nombre\" type=\"text\"\r\n                            class=\"form-control form-control-sm\" placeholder=\"Nombre\" />\r\n                    </div>\r\n                    <div class=\"col-4\">\r\n                        <input id=\"txtTelefonoCliente\" name=\"txtTelefonoCliente\" #telefonoCliente=\"ngModel\" [(ngModel)]=\"telefonoNuevo.telefono\"\r\n                            type=\"text\" minlength=\"8\" maxlength=\"8\" class=\"form-control form-control-sm\" placeholder=\"Teléfono\"/>\r\n                    </div>\r\n                </div>\r\n                \r\n            </div>\r\n        </div>        \r\n        <div class=\"card\">\r\n            <div class=\"card-header\">Dirección:</div>\r\n            <div class=\"card-body\">\r\n                <div class=\"row\">\r\n                    <div class=\"col-12\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"txtDirCli\">Dirección:</label>\r\n                            <input name=\"txtDirCli\" id=\"txtDirCli\" type=\"text\" class=\"form-control form-control-sm\" #direccionCliente=\"ngModel\" [(ngModel)]=\"direccionNueva.direccion\"\r\n                                placeholder=\"Dirección\" />\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"txtZonaCli\">Zona:</label>\r\n                            <input name=\"txtZonaCli\" id=\"txtZonaCli\" type=\"number\" class=\"form-control form-control-sm\" #zonaCliente=\"ngModel\" [(ngModel)]=\"direccionNueva.zona\"\r\n                                placeholder=\"Zona\" min=\"0\" />\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"txtColoniaCli\">Colonia:</label>\r\n                            <input name=\"txtColoniaCli\" id=\"txtColoniaCli\" type=\"text\" class=\"form-control form-control-sm\" #coloniaCliente=\"ngModel\"\r\n                                [(ngModel)]=\"direccionNueva.colonia\" placeholder=\"Colonia\" />\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"txtCodAccCli\">Código de acceso:</label>\r\n                            <input name=\"txtCodAccCli\" id=\"txtCodAccCli\" type=\"text\" class=\"form-control form-control-sm\" #codigoaccesoCliente=\"ngModel\"\r\n                                [(ngModel)]=\"direccionNueva.codigoacceso\" placeholder=\"Código de acceso\" />\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"col-6\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"selTipoDirCli\">Tipo de dirección:</label>\r\n                            <select name=\"selTipoDirCli\" id=\"selTipoDirCli\" class=\"form-control form-control-sm\" #tipoDireccionCliente=\"ngModel\"\r\n                                [(ngModel)]=\"direccionNueva.idtipodireccion\">\r\n                                <option *ngFor=\"let td of tiposDireccion\" [ngValue]=\"td._id\">{{td.descripcion}}</option>\r\n                            </select>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-6\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"selRestCli\">Atiende:</label>\r\n                            <select name=\"selRestCli\" id=\"selRestCli\" class=\"form-control form-control-sm\" #restauranteCliente=\"ngModel\" [(ngModel)]=\"direccionNueva.idrestaurante\">\r\n                                <option *ngFor=\"let rest of restaurantes\" [ngValue]=\"rest._id\">{{rest.nombre}}</option>\r\n                            </select>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"card\">\r\n            <div class=\"card-header\">Datos de facturación:</div>\r\n            <div class=\"card-body\">\r\n                <div class=\"row\">\r\n                    <div class=\"col-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"txtNit\">N.I.T.:</label>\r\n                            <input name=\"txtNit\" id=\"txtNit\" type=\"text\" class=\"form-control form-control-sm\" #nitCliente=\"ngModel\"\r\n                                [(ngModel)]=\"facturaNueva.nit\" placeholder=\"N.I.T.\"/>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"txtNomFact\">Nombre:</label>\r\n                            <input name=\"txtNomFact\" id=\"txtNomFact\" type=\"text\" class=\"form-control form-control-sm\" #nombreFacturaCliente=\"ngModel\"\r\n                                [(ngModel)]=\"facturaNueva.nombre\" placeholder=\"Nombre\"/>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"txtDirFact\">Dirección:</label>\r\n                            <input name=\"txtDirFact\" id=\"txtDirFact\" type=\"text\" class=\"form-control form-control-sm\" #direccionFacturaCliente=\"ngModel\"\r\n                                [(ngModel)]=\"facturaNueva.direccion\" placeholder=\"Dirección\"/>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"modal-footer justify-content-end\">\r\n        <div class=\"btn-group-sm\">\r\n            <button type=\"button\" class=\"btn btn-sm btn-outline-warning\" (click)=\"d('')\">Cancelar</button>\r\n            <button type=\"button\" class=\"btn btn-sm btn-outline-success\" (click)=\"c('')\">Guardar y continuar...</button>\r\n        </div>\r\n    </div>\r\n</ng-template>\r\n<toaster-container [toasterconfig]=\"toasterconfig\"></toaster-container>"
 
 /***/ }),
 
-/***/ "../../../../../src/app/components/comanda/lstcomandas.component.ts":
+/***/ "./src/app/components/comanda/lstcomandas.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListaComandasComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_cliente__ = __webpack_require__("../../../../../src/app/models/cliente.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_telefonocliente__ = __webpack_require__("../../../../../src/app/models/telefonocliente.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_direccioncliente__ = __webpack_require__("../../../../../src/app/models/direccioncliente.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_datosfactcliente__ = __webpack_require__("../../../../../src/app/models/datosfactcliente.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__models_comanda__ = __webpack_require__("../../../../../src/app/models/comanda.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_cliente_service__ = __webpack_require__("../../../../../src/app/services/cliente.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_comanda_service__ = __webpack_require__("../../../../../src/app/services/comanda.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_localstorage_service__ = __webpack_require__("../../../../../src/app/services/localstorage.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_tipodireccion_service__ = __webpack_require__("../../../../../src/app/services/tipodireccion.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_restaurante_service__ = __webpack_require__("../../../../../src/app/services/restaurante.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_angular2_toaster__ = __webpack_require__("../../../../angular2-toaster/angular2-toaster.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ng_bootstrap_ng_bootstrap__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_rxjs_Observable__ = __webpack_require__("../../../../rxjs/_esm5/Observable.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_rxjs_add_observable_interval__ = __webpack_require__("../../../../rxjs/_esm5/add/observable/interval.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_moment__ = __webpack_require__("../../../../moment/moment.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_cliente__ = __webpack_require__("./src/app/models/cliente.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_telefonocliente__ = __webpack_require__("./src/app/models/telefonocliente.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_direccioncliente__ = __webpack_require__("./src/app/models/direccioncliente.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_datosfactcliente__ = __webpack_require__("./src/app/models/datosfactcliente.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__models_comanda__ = __webpack_require__("./src/app/models/comanda.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_cliente_service__ = __webpack_require__("./src/app/services/cliente.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_comanda_service__ = __webpack_require__("./src/app/services/comanda.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_localstorage_service__ = __webpack_require__("./src/app/services/localstorage.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_tipodireccion_service__ = __webpack_require__("./src/app/services/tipodireccion.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_restaurante_service__ = __webpack_require__("./src/app/services/restaurante.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_angular2_toaster__ = __webpack_require__("./node_modules/angular2-toaster/angular2-toaster.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ng_bootstrap_ng_bootstrap__ = __webpack_require__("./node_modules/@ng-bootstrap/ng-bootstrap/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_rxjs_Observable__ = __webpack_require__("./node_modules/rxjs/_esm5/Observable.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_rxjs_add_observable_interval__ = __webpack_require__("./node_modules/rxjs/_esm5/add/observable/interval.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_moment__ = __webpack_require__("./node_modules/moment/moment.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_16_moment__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_moment_locale_es__ = __webpack_require__("../../../../moment/locale/es.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_moment_locale_es__ = __webpack_require__("./node_modules/moment/locale/es.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17_moment_locale_es___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_17_moment_locale_es__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1979,7 +2246,7 @@ var ListaComandasComponent = /** @class */ (function () {
     ListaComandasComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-lista-comandas',
-            template: __webpack_require__("../../../../../src/app/components/comanda/lstcomandas.component.html"),
+            template: __webpack_require__("./src/app/components/comanda/lstcomandas.component.html"),
             encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None,
             providers: [
                 __WEBPACK_IMPORTED_MODULE_7__services_cliente_service__["a" /* ClienteService */], __WEBPACK_IMPORTED_MODULE_9__services_localstorage_service__["a" /* LocalStorageService */], __WEBPACK_IMPORTED_MODULE_8__services_comanda_service__["a" /* ComandaService */], __WEBPACK_IMPORTED_MODULE_10__services_tipodireccion_service__["a" /* TipoDireccionService */], __WEBPACK_IMPORTED_MODULE_11__services_restaurante_service__["a" /* RestauranteService */]
@@ -2003,23 +2270,23 @@ var ListaComandasComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/components/diccionariofox/diccionariofox.component.html":
+/***/ "./src/app/components/diccionariofox/diccionariofox.component.html":
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container-fluid\">\r\n    <table class=\"table table-bordered table-hover table-sm\">\r\n        <thead>\r\n            <tr>\r\n                <th>Ruta</th>\r\n                <th>Prod./Comp.</th>\r\n                <th>Id fox</th>\r\n                <th>Detalle</th>\r\n                <th>Power</th>\r\n                <th>Id partición</th>\r\n                <th>Id tipo precio</th>\r\n                <th></th>\r\n            </tr>\r\n        </thead>\r\n        <tbody>\r\n            <tr *ngFor=\"let df of dictfox; let i = index\">\r\n                <td style=\"white-space: nowrap;\">\r\n                    {{df.descripcion}}\r\n                </td>\r\n                <td>{{df.idmongodb ? 'P' : 'C'}}</td>\r\n                <td>\r\n                    <input type=\"number\" #txtIdFox=\"ngModel\" [(ngModel)]=\"df.idfox\" id=\"txtIdFox_{{i}}\" name=\"txtIdFox_{{i}}\" class=\"form-control form-control-sm\" placeholder=\"Id Fox\"/>\r\n                </td>\r\n                <td>\r\n                    <input type=\"number\" #txtDetalle=\"ngModel\" [(ngModel)]=\"df.detalle\" id=\"txtDetalle_{{i}}\" name=\"txtDetalle_{{i}}\" class=\"form-control form-control-sm\" \r\n                        min=\"0\" max=\"1\" placeholder=\"Detalle\" />\r\n                </td>\r\n                <td>\r\n                    <input type=\"number\" #txtPower=\"ngModel\" [(ngModel)]=\"df.power\" id=\"txtPower_{{i}}\" name=\"txtPower_{{i}}\" class=\"form-control form-control-sm\"\r\n                        min=\"0\" max=\"1\" placeholder=\"Power\" />                    \r\n                </td>\r\n                <td>\r\n                    <input type=\"number\" #txtIdPart=\"ngModel\" [(ngModel)]=\"df.idparticion\" id=\"txtIdPart_{{i}}\" name=\"txtIdPart_{{i}}\" class=\"form-control form-control-sm\" placeholder=\"Id partición\" />\r\n                </td>\r\n                <td>\r\n                    <input type=\"number\" #txtIdTP=\"ngModel\" [(ngModel)]=\"df.idtipoprecio\" id=\"txtIdTP_{{i}}\" name=\"txtIdTP_{{i}}\" class=\"form-control form-control-sm\" placeholder=\"Id tipo precio\" />\r\n                </td>\r\n                <td>\r\n                    <button type=\"button\" class=\"btn btn-outline-primary btn-sm\" (click)=\"saveDictFox(df)\">\r\n                        <span class=\"oi oi-check\" title=\"Guardar {{df.descripcion}}\" aria-hidden=\"true\"></span>\r\n                    </button>\r\n                </td>\r\n            </tr>\r\n        </tbody>\r\n    </table>\r\n</div>\r\n<toaster-container [toasterconfig]=\"toasterconfig\"></toaster-container>"
 
 /***/ }),
 
-/***/ "../../../../../src/app/components/diccionariofox/diccionariofox.component.ts":
+/***/ "./src/app/components/diccionariofox/diccionariofox.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DiccionarioFoxComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_localstorage_service__ = __webpack_require__("../../../../../src/app/services/localstorage.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_diccionariofox_service__ = __webpack_require__("../../../../../src/app/services/diccionariofox.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angular2_toaster__ = __webpack_require__("../../../../angular2-toaster/angular2-toaster.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_localstorage_service__ = __webpack_require__("./src/app/services/localstorage.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_diccionariofox_service__ = __webpack_require__("./src/app/services/diccionariofox.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angular2_toaster__ = __webpack_require__("./node_modules/angular2-toaster/angular2-toaster.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2081,7 +2348,7 @@ var DiccionarioFoxComponent = /** @class */ (function () {
     DiccionarioFoxComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-diccionario-fox',
-            template: __webpack_require__("../../../../../src/app/components/diccionariofox/diccionariofox.component.html"),
+            template: __webpack_require__("./src/app/components/diccionariofox/diccionariofox.component.html"),
             providers: [__WEBPACK_IMPORTED_MODULE_2__services_localstorage_service__["a" /* LocalStorageService */], __WEBPACK_IMPORTED_MODULE_3__services_diccionariofox_service__["a" /* DiccionarioFoxService */]]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */],
@@ -2097,24 +2364,24 @@ var DiccionarioFoxComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/components/login/login.component.html":
+/***/ "./src/app/components/login/login.component.html":
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container-fluid justify-content-center\" style=\"margin-top: 50px; \">\r\n    <div class=\"row justify-content-center\">\r\n        <div class=\"col-5\">\r\n            <div class=\"card\">\r\n                <img class=\"card-img-top\" src=\"../../../assets/logors.svg\" width=\"100\" height=\"70\" alt=\"Rest-touch Pro\">                                                \r\n                <div class=\"card-header text-center\">\r\n                    <h3>\r\n                        <img class=\"rounded\" src=\"../../../assets/Logo.jpg\" width=\"40\" height=\"40\" alt=\"Vesuvio\"> VESUVIO\r\n                    </h3>\r\n                </div>\r\n                <div class=\"card-body\">\r\n                    <form #loginForm=\"ngForm\" (ngSubmit)=\"onSubmit()\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"txtUsuario\"><strong>Usuario:</strong></label>\r\n                            <input name=\"txtUsuario\" id=\"txtUsuario\" #usr=\"ngModel\" [(ngModel)]=\"usuario.usuario\" type=\"text\" class=\"form-control\" placeholder=\"Ingrese su usuario\" required/>\r\n                        </div>\r\n                        <div class=\"form-group\">\r\n                            <label for=\"txtPass\"><strong>Contraseña:</strong></label>\r\n                            <input name=\"txtPass\" id=\"txtPass\" #contrasenia=\"ngModel\" [(ngModel)]=\"usuario.contrasenia\" type=\"password\" class=\"form-control\" placeholder=\"Contraseña\" required/>\r\n                        </div>\r\n                        <button type=\"submit\" class=\"btn btn-default\" [disabled]=\"!loginForm.form.valid\">Ingresar</button>\r\n                    </form>                    \r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<toaster-container [toasterconfig]=\"toasterconfig\"></toaster-container>"
 
 /***/ }),
 
-/***/ "../../../../../src/app/components/login/login.component.ts":
+/***/ "./src/app/components/login/login.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_usuario__ = __webpack_require__("../../../../../src/app/models/usuario.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_usuario_service__ = __webpack_require__("../../../../../src/app/services/usuario.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_localstorage_service__ = __webpack_require__("../../../../../src/app/services/localstorage.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angular2_toaster__ = __webpack_require__("../../../../angular2-toaster/angular2-toaster.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_usuario__ = __webpack_require__("./src/app/models/usuario.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_usuario_service__ = __webpack_require__("./src/app/services/usuario.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_localstorage_service__ = __webpack_require__("./src/app/services/localstorage.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angular2_toaster__ = __webpack_require__("./node_modules/angular2-toaster/angular2-toaster.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2165,7 +2432,7 @@ var LoginComponent = /** @class */ (function () {
     LoginComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-log-in',
-            template: __webpack_require__("../../../../../src/app/components/login/login.component.html"),
+            template: __webpack_require__("./src/app/components/login/login.component.html"),
             providers: [__WEBPACK_IMPORTED_MODULE_3__services_usuario_service__["a" /* UsuarioService */], __WEBPACK_IMPORTED_MODULE_4__services_localstorage_service__["a" /* LocalStorageService */]]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */],
@@ -2181,44 +2448,44 @@ var LoginComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/components/mntvarios/mntvarios.component.html":
+/***/ "./src/app/components/mntvarios/mntvarios.component.html":
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container-fluid\">\r\n    <ngb-tabset>\r\n        <ngb-tab title=\"Restaurantes\">\r\n            <ng-template ngbTabContent>\r\n                <table class=\"table table-striped table-hover table-sm\">\r\n                    <thead>\r\n                        <tr>\r\n                            <th colspan=\"2\">\r\n                                <form #frmRestaurante=\"ngForm\" (ngSubmit)=\"onSubmitRest()\" class=\"form-inline\">\r\n                                    <input name=\"txtNomRest\" id=\"txtNomRest\" type=\"text\" class=\"form-control mb-2 mr-sm-2 mb-sm-0 form-control-sm\" style=\"width: 50%\" \r\n                                        #nombreRest=\"ngModel\" [(ngModel)]=\"restaurante.nombre\" placeholder=\"Nombre del restaurante\" required [disabled]=\"restaurante.debaja\" />                                    \r\n                                    <div class=\"btn-group btn-group-sm\">\r\n                                        <button type=\"submit\" class=\"btn btn-primary btn-sm\" [disabled]=\"!frmRestaurante.form.valid || restaurante.debaja\" *ngIf=\"!restaurante._id\">\r\n                                            <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                        <button type=\"button\" class=\"btn btn-primary btn-sm\" [disabled]=\"!frmRestaurante.form.valid || restaurante.debaja\" *ngIf=\"restaurante._id\" (click)=\"updRestaurante()\">\r\n                                            <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                        <button type=\"button\" class=\"btn btn-danger btn-sm\" [disabled]=\"restaurante.debaja\" *ngIf=\"restaurante._id\" (click)=\"delRestaurante()\">\r\n                                            <span class=\"oi oi-trash\" title=\"Dar de baja\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                        <button type=\"button\" class=\"btn btn-primary btn-sm\" *ngIf=\"restaurante._id\" (click)=\"nuevoRestaurante()\">\r\n                                            <span class=\"oi oi-plus\" title=\"Nuevo\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                    </div>\r\n                                </form>\r\n                            </th>\r\n                        </tr>\r\n                        <tr>\r\n                            <th>Nombre</th>\r\n                            <th>De baja</th>                            \r\n                        </tr>\r\n                    </thead>\r\n                    <tbody>\r\n                        <tr *ngFor=\"let r of restaurantes\" (click)=\"getRestaurante(r._id)\">\r\n                            <td>{{r.nombre}}</td>\r\n                            <td>{{r.debaja ? 'Sí' : ''}}</td>                            \r\n                        </tr>\r\n                    </tbody>\r\n                </table>\r\n            </ng-template>\r\n        </ngb-tab>\r\n        <ngb-tab title=\"Tipos de dirección\">\r\n            <ng-template ngbTabContent>\r\n                <table class=\"table table-striped table-hover table-sm\">\r\n                    <thead>\r\n                        <tr>\r\n                            <th colspan=\"2\">\r\n                                <form #frmTipoDir=\"ngForm\" (ngSubmit)=\"onSubmitTipoDireccion()\" class=\"form-inline\">\r\n                                    <input name=\"txtDescTDir\" id=\"txtDescTDir\" type=\"text\" class=\"form-control mb-2 mr-sm-2 mb-sm-0 form-control-sm\" style=\"width: 50%\" \r\n                                        #tipoDir=\"ngModel\" [(ngModel)]=\"tipoDireccion.descripcion\" placeholder=\"Descripción del tipo de dirección\" required [disabled]=\"tipoDireccion.debaja\" />\r\n                                    <div class=\"btn-group btn-group-sm\">\r\n                                        <button type=\"submit\" class=\"btn btn-primary btn-sm\" [disabled]=\"!frmTipoDir.form.valid || tipoDireccion.debaja\" *ngIf=\"!tipoDireccion._id\">\r\n                                            <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                        <button type=\"button\" class=\"btn btn-primary btn-sm\" [disabled]=\"!frmTipoDir.form.valid || tipoDireccion.debaja\" *ngIf=\"tipoDireccion._id\" (click)=\"updTipoDireccion()\">\r\n                                            <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                        <button type=\"button\" class=\"btn btn-danger btn-sm\" [disabled]=\"tipoDireccion.debaja\" *ngIf=\"tipoDireccion._id\" (click)=\"delTipoDireccion()\">\r\n                                            <span class=\"oi oi-trash\" title=\"Dar de baja\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                        <button type=\"button\" class=\"btn btn-primary btn-sm\" *ngIf=\"tipoDireccion._id\" (click)=\"nuevoTipoDireccion()\">\r\n                                            <span class=\"oi oi-plus\" title=\"Nuevo\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                    </div>\r\n                                </form>\r\n                            </th>\r\n                        </tr>\r\n                        <tr>\r\n                            <th>Descripción</th>\r\n                            <th>De baja</th>\r\n                        </tr>\r\n                    </thead>\r\n                    <tbody>\r\n                        <tr *ngFor=\"let td of tiposDireccion\" (click)=\"getTipoDireccion(td._id)\">\r\n                            <td>{{td.descripcion}}</td>\r\n                            <td>{{td.debaja ? 'Sí' : ''}}</td>\r\n                        </tr>\r\n                    </tbody>\r\n                </table>\r\n            </ng-template>\r\n        </ngb-tab>\r\n        <ngb-tab title=\"Componentes\">\r\n            <ng-template ngbTabContent>\r\n                <table class=\"table table-striped table-hover table-sm\">\r\n                    <thead>\r\n                        <tr>\r\n                            <th colspan=\"2\">\r\n                                <form #frmCompo=\"ngForm\" (ngSubmit)=\"onSubmitComponente()\" class=\"form-inline\">\r\n                                    <input name=\"txtDescCompo\" id=\"txtDescCompo\" type=\"text\" class=\"form-control mb-2 mr-sm-2 mb-sm-0 form-control-sm\" style=\"width: 50%\"\r\n                                        #compoDesc=\"ngModel\" [(ngModel)]=\"compo.descripcion\" placeholder=\"Descripción del componente\"\r\n                                        required [disabled]=\"compo.debaja\" />\r\n                                    <div class=\"col-auto\">\r\n                                        <div class=\"form-check mb-2 mb-sm-0\">\r\n                                            <label class=\"form-check-label\">\r\n                                                <input name=\"chkComoExt\" id=\"chkComoExt\" type=\"checkbox\" class=\"form-check-input\" #comoExtraMnu=\"ngModel\" [(ngModel)]=\"compo.comoextra\" [disabled]=\"compo.debaja\"/> Como extra\r\n                                            </label>\r\n                                        </div>\r\n                                    </div>\r\n                                    <div class=\"col-auto\">\r\n                                        <div class=\"form-check mb-2 mb-sm-0\">\r\n                                            <label class=\"form-check-label\">\r\n                                                <input name=\"chkSeCobra\" id=\"chkSeCobra\" type=\"checkbox\" class=\"form-check-input\" #seCobra=\"ngModel\" [(ngModel)]=\"compo.secobra\"\r\n                                                    [disabled]=\"compo.debaja\" /> ¿Se cobra?\r\n                                            </label>\r\n                                        </div>\r\n                                    </div>\r\n                                    <div class=\"btn-group btn-group-sm\">\r\n                                        <button type=\"submit\" class=\"btn btn-primary btn-sm\" [disabled]=\"!frmCompo.form.valid || compo.debaja\" *ngIf=\"!compo._id\">\r\n                                            <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                        <button type=\"button\" class=\"btn btn-primary btn-sm\" [disabled]=\"!frmCompo.form.valid || compo.debaja\" *ngIf=\"compo._id\"\r\n                                            (click)=\"updComponente()\">\r\n                                            <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                        <button type=\"button\" class=\"btn btn-danger btn-sm\" [disabled]=\"compo.debaja\" *ngIf=\"compo._id\" (click)=\"delComponente()\">\r\n                                            <span class=\"oi oi-trash\" title=\"Dar de baja\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                        <button type=\"button\" class=\"btn btn-primary btn-sm\" *ngIf=\"compo._id\" (click)=\"nuevoComponente()\">\r\n                                            <span class=\"oi oi-plus\" title=\"Nuevo\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                    </div>\r\n                                </form>\r\n                            </th>\r\n                        </tr>\r\n                        <tr>\r\n                            <th>Descripción</th>\r\n                            <th>Como extra</th>\r\n                            <th>¿Se cobra?</th>\r\n                            <th>De baja</th>\r\n                        </tr>\r\n                    </thead>\r\n                    <tbody>\r\n                        <tr *ngFor=\"let cmp of compos\" (click)=\"getComponente(cmp._id)\">\r\n                            <td>{{cmp.descripcion}}</td>\r\n                            <td>{{cmp.comoextra ? 'Sí' : ''}}</td>\r\n                            <td>{{cmp.secobra ? 'Sí' : ''}}</td>\r\n                            <td>{{cmp.debaja ? 'Sí' : ''}}</td>\r\n                        </tr>\r\n                    </tbody>\r\n                </table>\r\n            </ng-template>\r\n        </ngb-tab>\r\n        <ngb-tab title=\"Formas de pago\">\r\n            <ng-template ngbTabContent>\r\n                <table class=\"table table-striped table-hover table-sm\">\r\n                    <thead>\r\n                        <tr>\r\n                            <th colspan=\"2\">\r\n                                <form #frmFP=\"ngForm\" (ngSubmit)=\"onSubmitFormaPago()\" class=\"form-inline\">\r\n                                    <input name=\"txtDescFP\" id=\"txtDescFP\" type=\"text\" class=\"form-control mb-2 mr-sm-2 mb-sm-0 form-control-sm\" style=\"width: 30%\"\r\n                                        #fPDesc=\"ngModel\" [(ngModel)]=\"formaPago.descripcion\" placeholder=\"Descripción de la forma de pago\"\r\n                                        required [disabled]=\"formaPago.debaja\" />\r\n                                    <input name=\"txtOrdenFP\" id=\"txtOrdenFP\" type=\"text\" class=\"form-control mb-2 mr-sm-2 mb-sm-0 form-control-sm\" style=\"width: 10%\"\r\n                                        #fpOrden=\"ngModel\" [(ngModel)]=\"formaPago.orden\" placeholder=\"Orden\" required [disabled]=\"formaPago.debaja\"/>\r\n                                    <div class=\"col-auto\">\r\n                                        <div class=\"form-check mb-2 mb-sm-0\">\r\n                                            <label class=\"form-check-label\">\r\n                                                <input name=\"chkEsTFP\" id=\"chkEsTFP\" type=\"checkbox\" class=\"form-check-input\" #fpT=\"ngModel\" [(ngModel)]=\"formaPago.estarjeta\" \r\n                                                    [disabled]=\"formaPago.debaja\"/> Es tarjeta\r\n                                            </label>\r\n                                        </div>\r\n                                    </div>\r\n                                    <div class=\"col-auto\">\r\n                                        <div class=\"form-check mb-2 mb-sm-0\">\r\n                                            <label class=\"form-check-label\">\r\n                                                <input name=\"chkEsCort\" id=\"chkEsCort\" type=\"checkbox\" class=\"form-check-input\" #esCort=\"ngModel\" [(ngModel)]=\"formaPago.escortesia\"\r\n                                                    [disabled]=\"formaPago.debaja\"/> Es cortesia\r\n                                            </label>\r\n                                        </div>\r\n                                    </div>\r\n                                    <div class=\"col-auto\">\r\n                                        <div class=\"form-check mb-2 mb-sm-0\">\r\n                                            <label class=\"form-check-label\">\r\n                                                <input name=\"chkEsConDoc\" id=\"chkEsConDoc\" type=\"checkbox\" class=\"form-check-input\" #esConDoc=\"ngModel\" [(ngModel)]=\"formaPago.condocumento\"\r\n                                                    [disabled]=\"formaPago.debaja\" /> Con documento\r\n                                            </label>\r\n                                        </div>\r\n                                    </div>\r\n                                    <div class=\"btn-group btn-group-sm\">\r\n                                        <button type=\"submit\" class=\"btn btn-primary btn-sm\" [disabled]=\"!frmFP.form.valid || formaPago.debaja\" *ngIf=\"!formaPago._id\">\r\n                                            <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                        <button type=\"button\" class=\"btn btn-primary btn-sm\" [disabled]=\"!frmFP.form.valid || formaPago.debaja\" *ngIf=\"formaPago._id\" (click)=\"updFormaPago()\">\r\n                                            <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                        <button type=\"button\" class=\"btn btn-danger btn-sm\" [disabled]=\"formaPago.debaja\" *ngIf=\"formaPago._id\" (click)=\"delFormaPago()\">\r\n                                            <span class=\"oi oi-trash\" title=\"Dar de baja\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                        <button type=\"button\" class=\"btn btn-primary btn-sm\" *ngIf=\"formaPago._id\" (click)=\"nuevaFormaPago()\">\r\n                                            <span class=\"oi oi-plus\" title=\"Nuevo\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                    </div>\r\n                                </form>\r\n                            </th>\r\n                        </tr>\r\n                        <tr>\r\n                            <th>Descripción</th>\r\n                            <th>Orden</th>\r\n                            <th>Tarjeta</th>\r\n                            <th>Cortesía</th>\r\n                            <th>Documento</th>\r\n                            <th>De baja</th>\r\n                        </tr>\r\n                    </thead>\r\n                    <tbody>\r\n                        <tr *ngFor=\"let fp of formasPago\" (click)=\"getFormaPago(fp._id)\">\r\n                            <td>{{fp.descripcion}}</td>\r\n                            <td>{{fp.orden}}</td>\r\n                            <td>{{fp.estarjeta ? 'Sí' : ''}}</td>\r\n                            <td>{{fp.escortesia ? 'Sí' : ''}}</td>\r\n                            <td>{{fp.condocumento ? 'Sí' : ''}}</td>\r\n                            <td>{{fp.debaja ? 'Sí' : ''}}</td>\r\n                        </tr>\r\n                    </tbody>\r\n                </table>\r\n            </ng-template>\r\n        </ngb-tab>\r\n        <ngb-tab title=\"Emisores de tarjetas\">\r\n            <ng-template ngbTabContent>\r\n                <table class=\"table table-striped table-hover table-sm\">\r\n                    <thead>\r\n                        <tr>\r\n                            <th colspan=\"2\">\r\n                                <form #frmET=\"ngForm\" (ngSubmit)=\"onSubmitEmisorTarjeta()\" class=\"form-inline\">\r\n                                    <input name=\"txtNomET\" id=\"txtNomET\" type=\"text\" class=\"form-control mb-2 mr-sm-2 mb-sm-0 form-control-sm\" style=\"width: 50%\"\r\n                                        #nomET=\"ngModel\" [(ngModel)]=\"emisor.nombre\" placeholder=\"Nombre del emisor de la tarjeta\"\r\n                                        required [disabled]=\"emisor.debaja\" />                                    \r\n                                    <div class=\"btn-group btn-group-sm\">\r\n                                        <button type=\"submit\" class=\"btn btn-primary btn-sm\" [disabled]=\"!frmET.form.valid || emisor.debaja\" *ngIf=\"!emisor._id\">\r\n                                            <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                        <button type=\"button\" class=\"btn btn-primary btn-sm\" [disabled]=\"!frmET.form.valid || emisor.debaja\" *ngIf=\"emisor._id\"\r\n                                            (click)=\"updEmisorTarjeta()\">\r\n                                            <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                        <button type=\"button\" class=\"btn btn-danger btn-sm\" [disabled]=\"emisor.debaja\" *ngIf=\"emisor._id\" (click)=\"delEmisorTarjeta()\">\r\n                                            <span class=\"oi oi-trash\" title=\"Dar de baja\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                        <button type=\"button\" class=\"btn btn-primary btn-sm\" *ngIf=\"emisor._id\" (click)=\"nuevoEmisorTarjeta()\">\r\n                                            <span class=\"oi oi-plus\" title=\"Nuevo\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                    </div>\r\n                                </form>\r\n                            </th>\r\n                        </tr>\r\n                        <tr>\r\n                            <th>Nombre</th>                            \r\n                            <th>De baja</th>\r\n                        </tr>\r\n                    </thead>\r\n                    <tbody>\r\n                        <tr *ngFor=\"let et of emisores\" (click)=\"getEmisorTarjeta(et._id)\">\r\n                            <td>{{et.nombre}}</td>                            \r\n                            <td>{{et.debaja ? 'Sí' : ''}}</td>\r\n                        </tr>\r\n                    </tbody>\r\n                </table>\r\n            </ng-template>\r\n        </ngb-tab>\r\n        <ngb-tab title=\"Recordatorios al operador\">\r\n            <ng-template ngbTabContent>\r\n                <table class=\"table table-striped table-hover table-sm\">\r\n                    <thead>\r\n                        <tr>\r\n                            <th colspan=\"2\">\r\n                                <form #frmBan=\"ngForm\" (ngSubmit)=\"onSubmitBanner()\" class=\"form-inline\">\r\n                                    <div class=\"col-auto\">\r\n                                        <div class=\"form-check mb-2 mb-sm-0\">\r\n                                            <label class=\"form-check-label\">\r\n                                                <input name=\"chkEsPermanente\" id=\"chkEsPermanente\" type=\"checkbox\" class=\"form-check-input\" #esPermanente=\"ngModel\" [(ngModel)]=\"ban.espermanente\"\r\n                                                    [disabled]=\"ban.debaja\" /> Es permanente\r\n                                            </label>\r\n                                        </div>\r\n                                    </div>\r\n                                    <input name=\"txtBanFDel\" id=\"txtBanFDel\" type=\"date\" class=\"form-control mb-2 mr-sm-2 mb-sm-0 form-control-sm\" \r\n                                        #banFDel=\"ngModel\" [(ngModel)]=\"ban.fechadel\" placeholder=\"Del\" *ngIf=\"!ban.espermanente\" [disabled]=\"ban.debaja\" /><br *ngIf=\"ban.espermanente\"/>\r\n                                    <input name=\"txtBanFAl\" id=\"txtBanFAl\" type=\"date\" class=\"form-control mb-2 mr-sm-2 mb-sm-0 form-control-sm\" #banFAl=\"ngModel\"\r\n                                        [(ngModel)]=\"ban.fechaal\" placeholder=\"Al\" *ngIf=\"!ban.espermanente\" [disabled]=\"ban.debaja\" /><br *ngIf=\"!ban.espermanente\" />\r\n                                    <textarea name=\"txtBanStr\" id=\"txtBanStr\" class=\"form-control mb-2 mr-sm-2 mb-sm-0 form-control-sm\" #banStr=\"ngModel\"\r\n                                        [(ngModel)]=\"ban.banner\" placeholder=\"Recordatorios...\" style=\"width: 75%\" rows=\"2\" maxlength=\"5000\" [disabled]=\"ban.debaja\">\r\n                                    </textarea>\r\n                                    <div class=\"btn-group btn-group-sm\">\r\n                                        <button type=\"submit\" class=\"btn btn-primary btn-sm\" [disabled]=\"!frmBan.form.valid || ban.debaja\" *ngIf=\"!ban._id\">\r\n                                            <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                        <button type=\"button\" class=\"btn btn-primary btn-sm\" [disabled]=\"!frmBan.form.valid || ban.debaja\" *ngIf=\"ban._id\" (click)=\"updBanner()\">\r\n                                            <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                        <button type=\"button\" class=\"btn btn-danger btn-sm\" [disabled]=\"ban.debaja\" *ngIf=\"ban._id\" (click)=\"delBanner()\">\r\n                                            <span class=\"oi oi-trash\" title=\"Dar de baja\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                        <button type=\"button\" class=\"btn btn-primary btn-sm\" *ngIf=\"ban._id\" (click)=\"nuevoBanner()\">\r\n                                            <span class=\"oi oi-plus\" title=\"Nuevo\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                    </div>\r\n                                </form>\r\n                            </th>\r\n                        </tr>\r\n                        <tr>\r\n                            <th>Creado</th>\r\n                            <th>Permanente</th>\r\n                            <th>Del</th>\r\n                            <th>Al</th>\r\n                            <th>Recordatorio</th>\r\n                            <th>De baja</th>\r\n                        </tr>\r\n                    </thead>\r\n                    <tbody>\r\n                        <tr *ngFor=\"let obj of bans\" (click)=\"getBanner(obj._id)\">\r\n                            <td>{{obj.fechacrea | date:'dd/MM/yyyy HH:mm:ss'}} por {{obj.idusrcrea.nombre}}</td>\r\n                            <td>{{obj.espermanente ? 'Sí': ''}}</td>\r\n                            <td>{{(obj.fechadel | date:'dd/MM/yyyy') || ''}}</td>\r\n                            <td>{{(obj.fechaal | date:'dd/MM/yyyy') || ''}}</td>\r\n                            <td>\r\n                                <p>\r\n                                    {{obj.banner}}\r\n                                </p>\r\n                            </td>\r\n                            <td>{{obj.debaja ? 'Sí': ''}}</td>\r\n                        </tr>\r\n                    </tbody>\r\n                </table>\r\n            </ng-template>\r\n        </ngb-tab>\r\n        <ngb-tab title=\"Vueltos\">\r\n            <ng-template ngbTabContent>\r\n                <table class=\"table table-striped table-hover table-sm\">\r\n                    <thead>\r\n                        <tr>\r\n                            <th colspan=\"2\">\r\n                                <form #frmVlt=\"ngForm\" (ngSubmit)=\"onSubmitVuelto()\" class=\"form-inline\">\r\n                                    <input name=\"txtDescV\" id=\"txtDescV\" type=\"text\" class=\"form-control mb-2 mr-sm-2 mb-sm-0 form-control-sm\" style=\"width: 50%\"\r\n                                        #descVuelto=\"ngModel\" [(ngModel)]=\"vlt.descripcion\" placeholder=\"Descripción del vuelto\" required [disabled]=\"vlt.debaja\" />\r\n                                    <input name=\"txtValV\" id=\"txtValV\" type=\"number\" class=\"form-control mb-2 mr-sm-2 mb-sm-0 form-control-sm\" style=\"width: 25%\"\r\n                                        #valVuelto=\"ngModel\" [(ngModel)]=\"vlt.valor\" placeholder=\"Valor del vuelto\" required [disabled]=\"vlt.debaja\"/>\r\n                                    <div class=\"btn-group btn-group-sm\">\r\n                                        <button type=\"submit\" class=\"btn btn-primary btn-sm\" [disabled]=\"!frmVlt.form.valid || vlt.debaja\" *ngIf=\"!vlt._id\">\r\n                                            <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                        <button type=\"button\" class=\"btn btn-primary btn-sm\" [disabled]=\"!frmVlt.form.valid || vlt.debaja\" *ngIf=\"vlt._id\" (click)=\"updVuelto()\">\r\n                                            <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                        <button type=\"button\" class=\"btn btn-danger btn-sm\" [disabled]=\"vlt.debaja\" *ngIf=\"vlt._id\" (click)=\"delVuelto()\">\r\n                                            <span class=\"oi oi-trash\" title=\"Dar de baja\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                        <button type=\"button\" class=\"btn btn-primary btn-sm\" *ngIf=\"vlt._id\" (click)=\"nuevoVuelto()\">\r\n                                            <span class=\"oi oi-plus\" title=\"Nuevo\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                    </div>\r\n                                </form>\r\n                            </th>\r\n                        </tr>\r\n                        <tr>\r\n                            <th>Descripción</th>\r\n                            <th class=\"text-right\">Valor</th>\r\n                            <th>De baja</th>\r\n                        </tr>\r\n                    </thead>\r\n                    <tbody>\r\n                        <tr *ngFor=\"let v of vlts\" (click)=\"getVuelto(v._id)\">\r\n                            <td>{{v.descripcion}}</td>\r\n                            <td class=\"text-right\">{{v.valor | number:'1.2-2'}}</td>\r\n                            <td>{{v.debaja ? 'Sí' : ''}}</td>\r\n                        </tr>\r\n                    </tbody>\r\n                </table>\r\n            </ng-template>\r\n        </ngb-tab>\r\n        <ngb-tab title=\"Razones de cortesía\">\r\n            <ng-template ngbTabContent>\r\n                <table class=\"table table-striped table-hover table-sm\">\r\n                    <thead>\r\n                        <tr>\r\n                            <th colspan=\"2\">\r\n                                <form #frmRCort=\"ngForm\" (ngSubmit)=\"onSubmitRCort()\" class=\"form-inline\">\r\n                                    <input name=\"txtRazon\" id=\"txtDescV\" type=\"text\" class=\"form-control mb-2 mr-sm-2 mb-sm-0 form-control-sm\" style=\"width: 50%\"\r\n                                        #razonCort=\"ngModel\" [(ngModel)]=\"rcort.razon\" placeholder=\"Razón de cortesía\" required [disabled]=\"rcort.debaja\" />\r\n                                    <div class=\"btn-group btn-group-sm\">\r\n                                        <button type=\"submit\" class=\"btn btn-primary btn-sm\" [disabled]=\"!frmRCort.form.valid || rcort.debaja\" *ngIf=\"!rcort._id\">\r\n                                            <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                        <button type=\"button\" class=\"btn btn-primary btn-sm\" [disabled]=\"!frmRCort.form.valid || rcort.debaja\" *ngIf=\"rcort._id\" (click)=\"updRCort()\">\r\n                                            <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                        <button type=\"button\" class=\"btn btn-danger btn-sm\" [disabled]=\"rcort.debaja\" *ngIf=\"rcort._id\" (click)=\"delRCort()\">\r\n                                            <span class=\"oi oi-trash\" title=\"Dar de baja\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                        <button type=\"button\" class=\"btn btn-primary btn-sm\" *ngIf=\"rcort._id\" (click)=\"nuevaRCort()\">\r\n                                            <span class=\"oi oi-plus\" title=\"Nuevo\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                    </div>\r\n                                </form>\r\n                            </th>\r\n                        </tr>\r\n                        <tr>\r\n                            <th>Razón de cortesía</th>                            \r\n                            <th>De baja</th>\r\n                        </tr>\r\n                    </thead>\r\n                    <tbody>\r\n                        <tr *ngFor=\"let r of rcorts\" (click)=\"getRCort(r._id)\">\r\n                            <td>{{r.razon}}</td>\r\n                            <td>{{r.debaja ? 'Sí' : ''}}</td>\r\n                        </tr>\r\n                    </tbody>\r\n                </table>\r\n            </ng-template>\r\n        </ngb-tab>\r\n        <ngb-tab title=\"Tiempos de entrega\">\r\n            <ng-template ngbTabContent>\r\n                <table class=\"table table-striped table-hover table-sm\">\r\n                    <thead>\r\n                        <tr>\r\n                            <th colspan=\"2\">\r\n                                <form #frmTE=\"ngForm\" (ngSubmit)=\"onSubmitTiempoEntrega()\" class=\"form-inline\">\r\n                                    <input name=\"txtTE\" id=\"txtTE\" type=\"text\" class=\"form-control mb-2 mr-sm-2 mb-sm-0 form-control-sm\" style=\"width: 50%\"\r\n                                        #tiempoEnt=\"ngModel\" [(ngModel)]=\"tiempo.tiempo\" placeholder=\"Tiempo de entrega\" required [disabled]=\"tiempo.debaja\"\r\n                                    />\r\n                                    <div class=\"btn-group btn-group-sm\">\r\n                                        <button type=\"submit\" class=\"btn btn-primary btn-sm\" [disabled]=\"!frmTE.form.valid || tiempo.debaja\" *ngIf=\"!tiempo._id\">\r\n                                            <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                        <button type=\"button\" class=\"btn btn-primary btn-sm\" [disabled]=\"!frmTE.form.valid || tiempo.debaja\" *ngIf=\"tiempo._id\" (click)=\"updTiempoEntrega()\">\r\n                                            <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                        <button type=\"button\" class=\"btn btn-danger btn-sm\" [disabled]=\"tiempo.debaja\" *ngIf=\"tiempo._id\" (click)=\"delTiempoEntrega()\">\r\n                                            <span class=\"oi oi-trash\" title=\"Dar de baja\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                        <button type=\"button\" class=\"btn btn-primary btn-sm\" *ngIf=\"tiempo._id\" (click)=\"nuevoTiempoEntrega()\">\r\n                                            <span class=\"oi oi-plus\" title=\"Nuevo\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                    </div>\r\n                                </form>\r\n                            </th>\r\n                        </tr>\r\n                        <tr>\r\n                            <th>Tiempo de entrega</th>\r\n                            <th>De baja</th>\r\n                        </tr>\r\n                    </thead>\r\n                    <tbody>\r\n                        <tr *ngFor=\"let t of tiempos\" (click)=\"getTiempoEntrega(t._id)\">\r\n                            <td>{{t.tiempo}}</td>\r\n                            <td>{{t.debaja ? 'Sí' : ''}}</td>\r\n                        </tr>\r\n                    </tbody>\r\n                </table>\r\n            </ng-template>\r\n        </ngb-tab>\r\n        <ngb-tab title=\"Roles de usuario\">\r\n            <ng-template ngbTabContent>\r\n                <table class=\"table table-striped table-hover table-sm\">\r\n                    <thead>\r\n                        <tr>\r\n                            <th colspan=\"2\">\r\n                                <form #frmRol=\"ngForm\" (ngSubmit)=\"onSubmitRol()\" class=\"form-inline\">\r\n                                    <input name=\"txtRol\" id=\"txtRol\" type=\"text\" class=\"form-control mb-2 mr-sm-2 mb-sm-0 form-control-sm\" style=\"width: 50%\" #tiempoEnt=\"ngModel\"\r\n                                        [(ngModel)]=\"rol.descripcion\" placeholder=\"Rol de usuario\" required [disabled]=\"rol.debaja\"\r\n                                    />\r\n                                    <div class=\"btn-group btn-group-sm\">\r\n                                        <button type=\"submit\" class=\"btn btn-primary btn-sm\" [disabled]=\"!frmRol.form.valid || rol.debaja\" *ngIf=\"!rol._id\">\r\n                                            <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                        <button type=\"button\" class=\"btn btn-primary btn-sm\" [disabled]=\"!frmRol.form.valid || rol.debaja\" *ngIf=\"rol._id\" (click)=\"updRol()\">\r\n                                            <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                        <button type=\"button\" class=\"btn btn-danger btn-sm\" [disabled]=\"rol.debaja\" *ngIf=\"rol._id\" (click)=\"delRol()\">\r\n                                            <span class=\"oi oi-trash\" title=\"Dar de baja\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                        <button type=\"button\" class=\"btn btn-primary btn-sm\" *ngIf=\"rol._id\" (click)=\"nuevoRol()\">\r\n                                            <span class=\"oi oi-plus\" title=\"Nuevo\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                    </div>\r\n                                </form>\r\n                            </th>\r\n                        </tr>\r\n                        <tr>\r\n                            <th>Rol de usuario</th>\r\n                            <th>De baja</th>\r\n                        </tr>\r\n                    </thead>\r\n                    <tbody>\r\n                        <tr *ngFor=\"let rl of roles\" (click)=\"getRol(rl._id)\">\r\n                            <td>{{rl.descripcion}}</td>\r\n                            <td>{{rl.debaja ? 'Sí' : ''}}</td>\r\n                        </tr>\r\n                    </tbody>\r\n                </table>\r\n            </ng-template>\r\n        </ngb-tab>\r\n        <ngb-tab title=\"Presupuesto de ventas\">\r\n        <ng-template ngbTabContent>\r\n            <table class=\"table table-striped table-hover table-sm\">\r\n            <thead>\r\n                <tr>\r\n                <th colspan=\"2\">\r\n                    <form #frmPresV=\"ngForm\" (ngSubmit)=\"onSubmitPresVenta()\" class=\"form-inline\">\r\n                    <input name=\"txtMesPres\" id=\"txtMesPres\" type=\"number\" class=\"form-control mb-2 mr-sm-2 mb-sm-0 form-control-sm\" style=\"width: 20%\"\r\n                        #mesPresupuesto=\"ngModel\" [(ngModel)]=\"presventa.mes\" placeholder=\"Mes\" required [disabled]=\"presventa.debaja\" min=\"1\" max=\"12\"/>\r\n                    <input name=\"txtAnioPres\" id=\"txtAnioPres\" type=\"number\" class=\"form-control mb-2 mr-sm-2 mb-sm-0 form-control-sm\" style=\"width: 20%\"\r\n                        #anioPresupuesto=\"ngModel\" [(ngModel)]=\"presventa.anio\" placeholder=\"Año\" required [disabled]=\"presventa.debaja\" min=\"2017\"/>\r\n                    <input name=\"txtMontoPres\" id=\"txtMontoPres\" type=\"number\" class=\"form-control mb-2 mr-sm-2 mb-sm-0 form-control-sm\" style=\"width: 20%\"\r\n                        #montoPresupuesto=\"ngModel\" [(ngModel)]=\"presventa.presupuesto\" placeholder=\"Monto\" required [disabled]=\"presventa.debaja\"\r\n                    />\r\n                    <div class=\"btn-group btn-group-sm\">\r\n                        <button type=\"submit\" class=\"btn btn-primary btn-sm\" [disabled]=\"!frmPresV.form.valid || presventa.debaja\" *ngIf=\"!presventa._id\">\r\n                        <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                        </button>\r\n                        <button type=\"button\" class=\"btn btn-primary btn-sm\" [disabled]=\"!frmPresV.form.valid || presventa.debaja\" *ngIf=\"presventa._id\" (click)=\"updPresVenta()\">\r\n                        <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                        </button>\r\n                        <button type=\"button\" class=\"btn btn-danger btn-sm\" [disabled]=\"frmPresV.debaja\" *ngIf=\"presventa._id\" (click)=\"delPresVenta()\">\r\n                        <span class=\"oi oi-trash\" title=\"Dar de baja\" aria-hidden=\"true\"></span>\r\n                        </button>\r\n                        <button type=\"button\" class=\"btn btn-primary btn-sm\" *ngIf=\"presventa._id\" (click)=\"nuevoPresVenta()\">\r\n                        <span class=\"oi oi-plus\" title=\"Nuevo\" aria-hidden=\"true\"></span>\r\n                        </button>\r\n                    </div>\r\n                    </form>\r\n                </th>\r\n                </tr>\r\n                <tr>\r\n                <th>Mes</th>\r\n                <th>Año</th>\r\n                <th>Monto</th>\r\n                <th>De baja</th>\r\n                </tr>\r\n            </thead>\r\n            <tbody>\r\n                <tr *ngFor=\"let pvt of presventas\" (click)=\"getPresVenta(pvt._id)\">\r\n                <td>{{pvt.mes}}</td>\r\n                <td>{{pvt.anio | number: '1.0-0'}}</td>\r\n                <td>{{pvt.presupuesto | number: '1.2-2'}}</td>\r\n                <td>{{pvt.debaja ? 'Sí' : ''}}</td>\r\n                </tr>\r\n            </tbody>\r\n            </table>\r\n        </ng-template>\r\n        </ngb-tab>\r\n\r\n    </ngb-tabset>    \r\n</div>\r\n<toaster-container [toasterconfig]=\"toasterconfig\"></toaster-container>"
 
 /***/ }),
 
-/***/ "../../../../../src/app/components/mntvarios/mntvarios.component.ts":
+/***/ "./src/app/components/mntvarios/mntvarios.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MantenimientosVariosComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_tipodireccion__ = __webpack_require__("../../../../../src/app/models/tipodireccion.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_restaurante__ = __webpack_require__("../../../../../src/app/models/restaurante.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_componente__ = __webpack_require__("../../../../../src/app/models/componente.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_formapago__ = __webpack_require__("../../../../../src/app/models/formapago.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__models_emisortarjeta__ = __webpack_require__("../../../../../src/app/models/emisortarjeta.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_banner__ = __webpack_require__("../../../../../src/app/models/banner.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__models_vuelto__ = __webpack_require__("../../../../../src/app/models/vuelto.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__models_razoncortesia__ = __webpack_require__("../../../../../src/app/models/razoncortesia.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__models_tiempoentrega__ = __webpack_require__("../../../../../src/app/models/tiempoentrega.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__models_rolusuario__ = __webpack_require__("../../../../../src/app/models/rolusuario.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__models_presupuestoventas__ = __webpack_require__("../../../../../src/app/models/presupuestoventas.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_tipodireccion_service__ = __webpack_require__("../../../../../src/app/services/tipodireccion.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__services_localstorage_service__ = __webpack_require__("../../../../../src/app/services/localstorage.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__services_restaurante_service__ = __webpack_require__("../../../../../src/app/services/restaurante.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__services_componente_service__ = __webpack_require__("../../../../../src/app/services/componente.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__services_formapago_service__ = __webpack_require__("../../../../../src/app/services/formapago.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__services_emisortarjeta_service__ = __webpack_require__("../../../../../src/app/services/emisortarjeta.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__services_banner_service__ = __webpack_require__("../../../../../src/app/services/banner.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__services_vuelto_service__ = __webpack_require__("../../../../../src/app/services/vuelto.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__services_razoncortesia_service__ = __webpack_require__("../../../../../src/app/services/razoncortesia.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__services_tiempoentrega_service__ = __webpack_require__("../../../../../src/app/services/tiempoentrega.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__services_rolusuario_service__ = __webpack_require__("../../../../../src/app/services/rolusuario.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__services_presupuestoventas_service__ = __webpack_require__("../../../../../src/app/services/presupuestoventas.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25_angular2_toaster__ = __webpack_require__("../../../../angular2-toaster/angular2-toaster.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_tipodireccion__ = __webpack_require__("./src/app/models/tipodireccion.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_restaurante__ = __webpack_require__("./src/app/models/restaurante.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_componente__ = __webpack_require__("./src/app/models/componente.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_formapago__ = __webpack_require__("./src/app/models/formapago.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__models_emisortarjeta__ = __webpack_require__("./src/app/models/emisortarjeta.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__models_banner__ = __webpack_require__("./src/app/models/banner.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__models_vuelto__ = __webpack_require__("./src/app/models/vuelto.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__models_razoncortesia__ = __webpack_require__("./src/app/models/razoncortesia.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__models_tiempoentrega__ = __webpack_require__("./src/app/models/tiempoentrega.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__models_rolusuario__ = __webpack_require__("./src/app/models/rolusuario.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__models_presupuestoventas__ = __webpack_require__("./src/app/models/presupuestoventas.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__services_tipodireccion_service__ = __webpack_require__("./src/app/services/tipodireccion.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__services_localstorage_service__ = __webpack_require__("./src/app/services/localstorage.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__services_restaurante_service__ = __webpack_require__("./src/app/services/restaurante.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__services_componente_service__ = __webpack_require__("./src/app/services/componente.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__services_formapago_service__ = __webpack_require__("./src/app/services/formapago.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__services_emisortarjeta_service__ = __webpack_require__("./src/app/services/emisortarjeta.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__services_banner_service__ = __webpack_require__("./src/app/services/banner.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__services_vuelto_service__ = __webpack_require__("./src/app/services/vuelto.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__services_razoncortesia_service__ = __webpack_require__("./src/app/services/razoncortesia.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__services_tiempoentrega_service__ = __webpack_require__("./src/app/services/tiempoentrega.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__services_rolusuario_service__ = __webpack_require__("./src/app/services/rolusuario.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__services_presupuestoventas_service__ = __webpack_require__("./src/app/services/presupuestoventas.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25_angular2_toaster__ = __webpack_require__("./node_modules/angular2-toaster/angular2-toaster.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3210,7 +3477,7 @@ var MantenimientosVariosComponent = /** @class */ (function () {
     MantenimientosVariosComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-mnt-varios',
-            template: __webpack_require__("../../../../../src/app/components/mntvarios/mntvarios.component.html"),
+            template: __webpack_require__("./src/app/components/mntvarios/mntvarios.component.html"),
             providers: [
                 __WEBPACK_IMPORTED_MODULE_14__services_localstorage_service__["a" /* LocalStorageService */], __WEBPACK_IMPORTED_MODULE_13__services_tipodireccion_service__["a" /* TipoDireccionService */], __WEBPACK_IMPORTED_MODULE_15__services_restaurante_service__["a" /* RestauranteService */], __WEBPACK_IMPORTED_MODULE_16__services_componente_service__["a" /* ComponenteService */], __WEBPACK_IMPORTED_MODULE_17__services_formapago_service__["a" /* FormaPagoService */], __WEBPACK_IMPORTED_MODULE_18__services_emisortarjeta_service__["a" /* EmisorTarjetaService */],
                 __WEBPACK_IMPORTED_MODULE_19__services_banner_service__["a" /* BannerService */], __WEBPACK_IMPORTED_MODULE_20__services_vuelto_service__["a" /* VueltoService */], __WEBPACK_IMPORTED_MODULE_21__services_razoncortesia_service__["a" /* RazonCortesiaService */], __WEBPACK_IMPORTED_MODULE_22__services_tiempoentrega_service__["a" /* TiempoEntregaService */], __WEBPACK_IMPORTED_MODULE_23__services_rolusuario_service__["a" /* RolUsuarioService */], __WEBPACK_IMPORTED_MODULE_24__services_presupuestoventas_service__["a" /* PresupuestoVentasService */]
@@ -3239,29 +3506,29 @@ var MantenimientosVariosComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/components/mnurest/mnurest.component.html":
+/***/ "./src/app/components/mnurest/mnurest.component.html":
 /***/ (function(module, exports) {
 
 module.exports = "<style>\r\n.tree {\r\n  width: 300px;  \r\n}\r\n\r\n.node-content-wrapper {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  align-items: baseline;\r\n}\r\n\r\n.node-content-wrapper {\r\n  flex-grow: 1;\r\n  position: relative;\r\n}\r\n\r\n.pull-right {\r\n  position: absolute;\r\n  right: 10px;\r\n}    \r\n</style>\r\n<div class=\"container-fluid\">\r\n    <div class=\"card\">\r\n        <div class=\"card-header\">Carta</div>\r\n        <div class=\"card-body\">\r\n            <ngb-tabset>\r\n                <ngb-tab title=\"Carta\">\r\n                    <ng-template ngbTabContent>\r\n                        <form #frmMenuRest=\"ngForm\" (ngSubmit)=\"onSubmit()\">\r\n                            <div class=\"row\">\r\n                                <div class=\"col-6\">\r\n                                    <div class=\"form-group\">\r\n                                        <label for=\"txtDescripcion\">Descripción:</label>\r\n                                        <input name=\"txtDescripcion\" id=\"txtDescripcion\" type=\"text\" class=\"form-control\" placeholder=\"Descripción\" #descrMnu=\"ngModel\"\r\n                                            [(ngModel)]=\"mnures.descripcion\" required/>\r\n                                    </div>\r\n                                </div>\r\n                                <div class=\"col-6\">\r\n                                    <div class=\"form-group\">\r\n                                        <label for=\"selPadre\">Padre:</label>\r\n                                        <select name=\"selPadre\" id=\"selPadre\" class=\"form-control\" #padreMnu=\"ngModel\" [(ngModel)]=\"mnures.idpadre\" (ngModelChange)=\"setMenuData($event)\">\r\n                                            <option *ngFor=\"let opc of listaCompletaMenu\" [value]=\"opc._id\">{{opc.descripcion}}</option>\r\n                                        </select>\r\n                                    </div>\r\n                                </div>\r\n                            </div>\r\n                            <div class=\"row\">\r\n                                <div class=\"col-2\">\r\n                                    <div class=\"form-group\">\r\n                                        <label for=\"txtPrecio\">Precio:</label>\r\n                                        <input name=\"txtPrecio\" id=\"txtPrecio\" type=\"number\" class=\"form-control\" placeholder=\"Precio (si aplica)\" #precioMnu=\"ngModel\"\r\n                                            [(ngModel)]=\"mnures.precio\" />\r\n                                    </div>\r\n                                </div>\r\n                                <div class=\"col-2\">\r\n                                    <div class=\"form-group\">\r\n                                        <label for=\"txtPrecioExtras\">Precio/extra:</label>\r\n                                        <input name=\"txtPrecioExtras\" id=\"txtPrecioExtras\" type=\"number\" class=\"form-control\" placeholder=\"Precio por extra(si aplica)\" #precioExtMnu=\"ngModel\"\r\n                                            [(ngModel)]=\"mnures.precioextra\" />\r\n                                    </div>\r\n                                </div>\r\n                                <div class=\"col-2\">\r\n                                    <div class=\"form-group\">\r\n                                        <label for=\"chkConComp\">Con componentes:</label>\r\n                                        <input name=\"chkConComp\" id=\"chkConComp\" type=\"checkbox\" class=\"form-control\" #conCompMnu=\"ngModel\" [(ngModel)]=\"mnures.tienecomponentes\"\r\n                                        />\r\n                                    </div>\r\n                                </div>                                \r\n                                <div class=\"col-2\">\r\n                                    <div class=\"form-group\">\r\n                                        <label for=\"txtLimiCompo\">Máximo:</label>\r\n                                        <input name=\"txtLimiCompo\" id=\"txtLimiCompo\" type=\"number\" class=\"form-control\" placeholder=\"Límite máximo de componentes...\"\r\n                                            #limiCompoMnu=\"ngModel\" [(ngModel)]=\"mnures.limitecomponentes\" [disabled]=\"!mnures.tienecomponentes\"/>\r\n                                    </div>\r\n                                </div>\r\n                                <div class=\"col-2\">\r\n                                    <div class=\"form-group\">\r\n                                        <label for=\"chkConExt\">Con extras:</label>\r\n                                        <input name=\"chkConExt\" id=\"chkConExt\" type=\"checkbox\" class=\"form-control\" #conExtMnu=\"ngModel\" [(ngModel)]=\"mnures.tieneextras\"\r\n                                        />\r\n                                    </div>\r\n                                </div>\r\n                                <div class=\"col-1\">\r\n                                    <div class=\"form-group\">\r\n                                        <label for=\"chkPromo\">Promoción:</label>\r\n                                        <input name=\"chkPromo\" id=\"chkPromo\" type=\"checkbox\" class=\"form-control\" #promoMnu=\"ngModel\" [(ngModel)]=\"mnures.espromocion\"\r\n                                        />\r\n                                    </div>\r\n                                </div>\r\n                                <div class=\"col-1\">\r\n                                    <div class=\"form-group\">\r\n                                        <label for=\"chkDeBaja\">De baja:</label>\r\n                                        <input name=\"chkDeBaja\" id=\"chkDeBaja\" type=\"checkbox\" class=\"form-control\" #debajaMnu=\"ngModel\" [(ngModel)]=\"mnures.debaja\"\r\n                                        />\r\n                                    </div>\r\n                                </div>                                \r\n                            </div>\r\n                            <div class=\"btn-group btn-group-sm\">\r\n                                <button type=\"submit\" class=\"btn btn-primary\" [disabled]=\"!frmMenuRest.form.valid\" *ngIf=\"!mnures._id\">\r\n                                    <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                                </button>\r\n                                <button type=\"button\" class=\"btn btn-primary\" [disabled]=\"!frmMenuRest.form.valid\" *ngIf=\"mnures._id\" (click)=\"updMenuRest()\">\r\n                                    <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                                </button>\r\n                                <button type=\"button\" class=\"btn btn-primary\" [disabled]=\"!frmMenuRest.form.valid\" *ngIf=\"mnures._id && mnures.espromocion\" (click)=\"armarPromocion(modalPromo)\">\r\n                                    <span class=\"oi oi-cog\" title=\"Armar promoción\" aria-hidden=\"true\"></span>&nbsp;Armar promoción\r\n                                </button>\r\n                            </div>\r\n                        </form>\r\n                    </ng-template>\r\n                </ngb-tab>\r\n                <ngb-tab title=\"Componentes de {{mnures.descripcion}}\" *ngIf=\"mnures._id && mnures.tienecomponentes\">\r\n                    <ng-template ngbTabContent>\r\n                        <hr/>\r\n                        <form #frmDetMenu=\"ngForm\" (ngSubmit)=\"onSubmitDetalle()\" class=\"form-inline\">\r\n                            <select name=\"selCompo\" id=\"selCompo\" class=\"form-control form-control-sm mb-2 mr-sm-2 mb-sm-0\" #compoMenu=\"ngModel\" style=\"width: 300px\"\r\n                                [(ngModel)]=\"menuRestComponente.idcomponente\" required>\r\n                                <option *ngFor=\"let cmp of lstComponentes\" [ngValue]=\"cmp._id\">{{cmp.descripcion}}</option>\r\n                            </select>\r\n                            <div class=\"btn-group btn-group-sm\">\r\n                                <button type=\"submit\" class=\"btn btn-primary btn-sm\" [disabled]=\"!frmDetMenu.form.valid\">\r\n                                    <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                                </button>                                \r\n                            </div>\r\n                        </form>\r\n                        <hr/>\r\n                        <table class=\"table table-sm table-striped table-hover\">\r\n                            <thead class=\"thead-light\">\r\n                                <tr>\r\n                                    <th>Componente</th>\r\n                                    <th>&nbsp;</th>\r\n                                </tr>\r\n                            </thead>\r\n                            <tbody>\r\n                                <tr *ngFor=\"let det of lstMenuRestComponente\">\r\n                                    <td>{{det.idcomponente.descripcion}}</td>\r\n                                    <td>\r\n                                        <button type=\"button\" class=\"btn btn-danger btn-sm\" (click)=\"delDetalleMenu(det._id)\">\r\n                                            <span class=\"oi oi-trash\" title=\"Dar de baja\" aria-hidden=\"true\"></span>\r\n                                        </button>\r\n                                    </td>\r\n                                </tr>\r\n                            </tbody>\r\n                        </table>\r\n                    </ng-template>\r\n                </ngb-tab>\r\n            </ngb-tabset>            \r\n        </div>\r\n    </div>\r\n    <hr/>\r\n    <div style=\"height: 700px; width: 400px;\">        \r\n        <tree-root [nodes]=\"arbolMenu\" [options]=\"options\">\r\n            <ng-template #treeNodeWrapperTemplate let-node let-index=\"index\">\r\n                <div class=\"node-wrapper\" [style.padding-left]=\"node.getNodePadding()\">\r\n                <tree-node-expander [node]=\"node\"></tree-node-expander>\r\n                <div class=\"node-content-wrapper\"\r\n                    [class.node-content-wrapper-active]=\"node.isActive\"\r\n                    [class.node-content-wrapper-focused]=\"node.isFocused\"\r\n                    (click)=\"node.mouseAction('click', $event)\"\r\n                    (dblclick)=\"node.mouseAction('dblClick', $event)\"\r\n                    (contextmenu)=\"node.mouseAction('contextMenu', $event)\"\r\n                    (treeDrop)=\"node.onDrop($event)\"\r\n                    [treeAllowDrop]=\"node.allowDrop\"\r\n                    [treeDrag]=\"node\"\r\n                    [treeDragEnabled]=\"node.allowDrag()\">\r\n                    <tree-node-content [node]=\"node\" [index]=\"index\"></tree-node-content>\r\n                    <button type=\"button\" class=\"btn btn-primary btn-sm pull-right\" (click)=\"getItemMenu(node.id)\" style=\"font-size: 8pt !important;\">\r\n                        <span class=\"oi oi-pencil\" title=\"Editar {{ node.data.name }}\" aria-hidden=\"true\"></span>\r\n                    </button>\r\n                </div>\r\n                </div>\r\n            </ng-template>\r\n        </tree-root>\r\n    </div>    \r\n</div>\r\n<ng-template #modalPromo let-c=\"close\" let-d=\"dismiss\">\r\n    <div class=\"modal-header\">\r\n        <h4 class=\"modal-title\">Armar promoción</h4>\r\n        <button type=\"button\" class=\"close\" aria-label=\"Close\" (click)=\"d('Cross click')\">\r\n            <span aria-hidden=\"true\">&times;</span>\r\n        </button>\r\n    </div>\r\n    <div class=\"modal-body\" style=\"height: 700px;\">\r\n        <div class=\"row\">\r\n            <div class=\"col-6\">\r\n                <div class=\"card\">\r\n                    <h5 class=\"card-header\">Menú</h5>\r\n                    <div class=\"card-body\" style=\"padding: 0 !important;\">\r\n                        <ul class=\"list-group list-group-flush\">\r\n                            <li class=\"list-group-item\" *ngFor=\"let crt of carta\">\r\n                                <span style=\"padding-right: 1px !important; padding-top: 1px !important\" *ngFor=\"let btn of crt\">\r\n                                    <button class=\"btn btn-sm btn-outline-secondary\" style=\"font-weight: bold;\" (click)=\"loadCarta((btn.nivel + 1), btn._id, btn)\" *ngIf=\"!btn.espromocion\">\r\n                                        {{btn.descripcion}}\r\n                                    </button>\r\n                                </span>\r\n                            </li>\r\n                        </ul>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <div class=\"col-6\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header\">Promoción</div>\r\n                    <div class=\"card-body\" style=\"padding:0 !important;\">\r\n                        <small>\r\n                            <table class=\"table table-striped table-hover table-sm\">\r\n                                <tbody>\r\n                                    <tr *ngFor=\"let dp of mnures.itemspromo; let i = index\">\r\n                                        <td>{{dp.descripcion}}</td>\r\n                                        <td>\r\n                                            <button type=\"button\" class=\"btn btn-sm btn-danger\" style=\"font-size: 8pt\" (click)=\"removeItemPromo(i)\">\r\n                                                <span class=\"oi oi-trash\" title=\"Eliminar\" aria-hidden=\"true\"></span>\r\n                                            </button>\r\n                                        </td>\r\n                                    </tr>\r\n                                </tbody>\r\n                            </table>\r\n                        </small>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"modal-footer\">\r\n        <button type=\"button\" class=\"btn btn-outline-dark\" (click)=\"c('')\">Terminar y guardar</button>\r\n    </div>\r\n</ng-template>\r\n<toaster-container [toasterconfig]=\"toasterconfig\"></toaster-container>"
 
 /***/ }),
 
-/***/ "../../../../../src/app/components/mnurest/mnurest.component.ts":
+/***/ "./src/app/components/mnurest/mnurest.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MenuRestauranteComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_menurest__ = __webpack_require__("../../../../../src/app/models/menurest.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_menurestcomponente__ = __webpack_require__("../../../../../src/app/models/menurestcomponente.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_detallecomanda__ = __webpack_require__("../../../../../src/app/models/detallecomanda.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_localstorage_service__ = __webpack_require__("../../../../../src/app/services/localstorage.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_menurest_service__ = __webpack_require__("../../../../../src/app/services/menurest.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_menurestcomponente_service__ = __webpack_require__("../../../../../src/app/services/menurestcomponente.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_componente_service__ = __webpack_require__("../../../../../src/app/services/componente.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_angular2_toaster__ = __webpack_require__("../../../../angular2-toaster/angular2-toaster.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ng_bootstrap_ng_bootstrap__ = __webpack_require__("../../../../@ng-bootstrap/ng-bootstrap/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_menurest__ = __webpack_require__("./src/app/models/menurest.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_menurestcomponente__ = __webpack_require__("./src/app/models/menurestcomponente.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_detallecomanda__ = __webpack_require__("./src/app/models/detallecomanda.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_localstorage_service__ = __webpack_require__("./src/app/services/localstorage.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_menurest_service__ = __webpack_require__("./src/app/services/menurest.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_menurestcomponente_service__ = __webpack_require__("./src/app/services/menurestcomponente.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_componente_service__ = __webpack_require__("./src/app/services/componente.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_angular2_toaster__ = __webpack_require__("./node_modules/angular2-toaster/angular2-toaster.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ng_bootstrap_ng_bootstrap__ = __webpack_require__("./node_modules/@ng-bootstrap/ng-bootstrap/index.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3519,7 +3786,7 @@ var MenuRestauranteComponent = /** @class */ (function () {
     MenuRestauranteComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-menu-rest',
-            template: __webpack_require__("../../../../../src/app/components/mnurest/mnurest.component.html"),
+            template: __webpack_require__("./src/app/components/mnurest/mnurest.component.html"),
             encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None,
             providers: [__WEBPACK_IMPORTED_MODULE_6__services_menurest_service__["a" /* MenuRestauranteService */], __WEBPACK_IMPORTED_MODULE_5__services_localstorage_service__["a" /* LocalStorageService */], __WEBPACK_IMPORTED_MODULE_7__services_menurestcomponente_service__["a" /* MenuRestComponenteService */], __WEBPACK_IMPORTED_MODULE_8__services_componente_service__["a" /* ComponenteService */]],
             styles: [".modal-size .modal-content { width: 950px }"]
@@ -3540,24 +3807,24 @@ var MenuRestauranteComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/components/reportes/ventas/ventasvarios.component.html":
+/***/ "./src/app/components/reportes/ventas/ventasvarios.component.html":
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container-fluid\">\r\n    <div class=\"card\">\r\n        <div class=\"card-header\"><h5>Reporte de ventas</h5></div>\r\n        <div class=\"card-body\">\r\n            <form #frmParams=\"ngForm\">\r\n                <div class=\"row\">\r\n                    <div class=\"col-3\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"txtFDel\">Del:</label>\r\n                            <input name=\"txtFDel\" id=\"txtFDel\" type=\"date\" class=\"form-control form-control-sm\" #fDel=\"ngModel\" [(ngModel)]=\"params.fdel\" placeholder=\"Del\" required/>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-3\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"txtFAl\">Al:</label>\r\n                            <input name=\"txtFAl\" id=\"txtFAl\" type=\"date\" class=\"form-control form-control-sm\" #fAl=\"ngModel\" [(ngModel)]=\"params.fal\" placeholder=\"Al\" required/>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"col-4\">\r\n                        <div class=\"form-group\">\r\n                            <label for=\"selReporte\">Por:</label>\r\n                            <select name=\"selReporte\" id=\"selReporte\" class=\"form-control form-control-sm\" #tipoReporte=\"ngModel\"\r\n                                [(ngModel)]=\"reporte\" required>\r\n                                <option value=\"SJRw1w88f\">Operador</option>\r\n                                <option value=\"r1ECnJdUG\">Restaurante</option>\r\n                                <option value=\"ryBWglOLf\">Tipo de pedido</option>\r\n                            </select>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n                <div class=\"btn-group btn-group-sm justify-content-end\">\r\n                    <button type=\"button\" class=\"btn btn-primary btn-sm\" [disabled]=\"!frmParams.form.valid\" (click)=\"getReporte()\">\r\n                        <span class=\"oi oi-print\" title=\"Generar\" aria-hidden=\"true\"></span>\r\n                    </button>                    \r\n                </div>\r\n            </form>\r\n        </div>\r\n    </div>\r\n    <app-rpt-visor-pdf [content]=\"content\"></app-rpt-visor-pdf>\r\n</div>"
 
 /***/ }),
 
-/***/ "../../../../../src/app/components/reportes/ventas/ventasvarios.component.ts":
+/***/ "./src/app/components/reportes/ventas/ventasvarios.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VentasVariosComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__("../../../platform-browser/esm5/platform-browser.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_localstorage_service__ = __webpack_require__("../../../../../src/app/services/localstorage.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_jsreport_service__ = __webpack_require__("../../../../../src/app/services/jsreport.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_moment__ = __webpack_require__("../../../../moment/moment.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__("./node_modules/@angular/platform-browser/esm5/platform-browser.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_localstorage_service__ = __webpack_require__("./src/app/services/localstorage.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_jsreport_service__ = __webpack_require__("./src/app/services/jsreport.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_moment__ = __webpack_require__("./node_modules/moment/moment.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_moment__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3599,7 +3866,7 @@ var VentasVariosComponent = /** @class */ (function () {
     VentasVariosComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-rpt-ventasvarios',
-            template: __webpack_require__("../../../../../src/app/components/reportes/ventas/ventasvarios.component.html"),
+            template: __webpack_require__("./src/app/components/reportes/ventas/ventasvarios.component.html"),
             providers: [__WEBPACK_IMPORTED_MODULE_3__services_localstorage_service__["a" /* LocalStorageService */], __WEBPACK_IMPORTED_MODULE_4__services_jsreport_service__["a" /* JsReportService */]]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */],
@@ -3615,12 +3882,12 @@ var VentasVariosComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/components/reportes/visorpdf.component.ts":
+/***/ "./src/app/components/reportes/visorpdf.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VisorPDFComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3652,28 +3919,28 @@ var VisorPDFComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/components/usuario/usuario.component.html":
+/***/ "./src/app/components/usuario/usuario.component.html":
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container-fluid\">\r\n    <ngb-tabset #t=\"ngbTabset\">\r\n        <ngb-tab id=\"tabListaUsuarios\" title=\"Lista de usuarios\">\r\n            <ng-template ngbTabContent>\r\n                <table class=\"table table-striped table-hover table-sm\">\r\n                    <thead>\r\n                        <tr>\r\n                            <th>Nombre</th>\r\n                            <th>Usuario</th>\r\n                            <th>Correo electrónico</th>                         \r\n                        </tr>\r\n                    </thead>\r\n                    <tbody>\r\n                        <tr *ngFor=\"let usr of usuarios\" (click)=\"getUsuario(usr._id, t)\">\r\n                            <td>{{usr.nombre}}</td>\r\n                            <td>{{usr.usuario}}</td>\r\n                            <td>{{usr.correoe}}</td>\r\n                        </tr>\r\n                    </tbody>\r\n                </table>\r\n            </ng-template>\r\n        </ngb-tab>\r\n        <ngb-tab id=\"tabUsuario\" title=\"Usuario\">\r\n            <ng-template ngbTabContent>\r\n                <form #frmUsuario=\"ngForm\" (ngSubmit)=\"onSubmitUsuario()\">\r\n                    <div class=\"row\">\r\n                        <div class=\"col-4\">\r\n                            <div class=\"form-group\">\r\n                                <label for=\"txtNomUsr\">Nombre:</label>\r\n                                <input name=\"txtNomUsr\" id=\"txtNomUsr\" type=\"text\" class=\"form-control form-control-sm\" #nombreUsr=\"ngModel\"\r\n                                    [(ngModel)]=\"usuario.nombre\" placeholder=\"Nombre completo\" required/>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"col-4\">\r\n                            <div class=\"form-group\">\r\n                                <label for=\"txtCorreoEUsr\">E-mail:</label>\r\n                                <input name=\"txtCorreoEUsr\" id=\"txtCorreoEUsr\" type=\"email\" class=\"form-control form-control-sm\" #emailUsr=\"ngModel\"\r\n                                    [(ngModel)]=\"usuario.correoe\" placeholder=\"E-mail\" required/>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"col-4\">\r\n                            <div class=\"form-group\">\r\n                                <label for=\"txtUsuarioUsr\">Usuario:</label>\r\n                                <input name=\"txtUsuarioUsr\" id=\"txtUsuarioUsr\" type=\"text\" class=\"form-control form-control-sm\" #usuarioUsr=\"ngModel\" [(ngModel)]=\"usuario.usuario\" \r\n                                    placeholder=\"Usuario para la aplicación\" required/>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"row\">\r\n                        <div class=\"col-4\">\r\n                            <div class=\"form-group\">\r\n                                <label for=\"txtPassUsr\">Contraseña:</label>\r\n                                <input name=\"txtPassUsr\" id=\"txtPassUsr\" type=\"password\" class=\"form-control form-control-sm\" #passUsr=\"ngModel\" [(ngModel)]=\"contraseniaTemporal\"\r\n                                    placeholder=\"Contraseña de ingreso a la aplicación\" />\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"col-4\"></div>\r\n                        <div class=\"col-4\"></div>\r\n                    </div>\r\n                    <div class=\"row\">\r\n                        <div class=\"col-4\">\r\n                            <table class=\"table table-light table-striped table-sm\">\r\n                                <thead>\r\n                                    <tr>\r\n                                        <th>Roles</th>\r\n                                        <th>\r\n                                            <select #selRol class=\"form-control form-control-sm\" required>\r\n                                                <option *ngFor=\"let rl of roles\" value=\"{{rl._id}}\">{{rl.descripcion}}</option>\r\n                                            </select>                                            \r\n                                        </th>\r\n                                        <th>\r\n                                            <button type=\"button\" class=\"btn btn-outline-primary btn-sm\" (click)=\"addRolUsr(selRol)\">\r\n                                                <span class=\"oi oi-plus\" title=\"Nuevo\" aria-hidden=\"true\"></span>\r\n                                            </button>\r\n                                        </th>\r\n                                    </tr>\r\n                                </thead>\r\n                                <tbody>\r\n                                    <tr *ngFor=\"let ru of usuario.roles; let i = index\">\r\n                                        <td colspan=\"2\">{{ru.descripcion}}</td>\r\n                                        <td></td>\r\n                                    </tr>\r\n                                </tbody>\r\n                            </table>\r\n                        </div>\r\n                        <div class=\"col-4\">\r\n                            <table class=\"table table-light table-striped table-sm\">\r\n                                <thead>\r\n                                    <tr>\r\n                                        <th>Restaurantes</th>\r\n                                        <th>\r\n                                            <select #selRestaurante class=\"form-control form-control-sm\" required>\r\n                                                <option *ngFor=\"let rst of restaurantes\" value=\"{{rst._id}}\">{{rst.nombre}}</option>\r\n                                            </select>\r\n                                        </th>\r\n                                        <th>\r\n                                            <button type=\"button\" class=\"btn btn-outline-primary btn-sm\" (click)=\"addRestauranteUsr(selRestaurante)\">\r\n                                                <span class=\"oi oi-plus\" title=\"Nuevo\" aria-hidden=\"true\"></span>\r\n                                            </button>\r\n                                        </th>\r\n                                    </tr>\r\n                                </thead>\r\n                                <tbody>\r\n                                    <tr *ngFor=\"let rest of usuario.restaurante; let i = index\">\r\n                                        <td colspan=\"2\">{{rest.nombre}}</td>\r\n                                        <td></td>\r\n                                    </tr>\r\n                                </tbody>\r\n                            </table>\r\n                        </div>\r\n                    </div>\r\n                    <div class=\"btn-group btn-group-sm\">\r\n                        <button type=\"submit\" class=\"btn btn-outline-primary btn-sm\" [disabled]=\"!frmUsuario.form.valid\" *ngIf=\"!usuario._id\">\r\n                            <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                        </button>\r\n                        <button type=\"button\" class=\"btn btn-outline-primary btn-sm\" [disabled]=\"!frmUsuario.form.valid\" (click)=\"updUsuario()\" *ngIf=\"usuario._id\">\r\n                            <span class=\"oi oi-check\" title=\"Guardar\" aria-hidden=\"true\"></span>\r\n                        </button>\r\n                        <button type=\"button\" class=\"btn btn-outline-danger btn-sm\" (click)=\"delUsuario()\" *ngIf=\"usuario._id\">\r\n                            <span class=\"oi oi-trash\" title=\"Eliminar\" aria-hidden=\"true\"></span>\r\n                        </button>\r\n                        <button type=\"button\" class=\"btn btn-outline-primary btn-sm\" (click)=\"nuevoUsuario()\" *ngIf=\"usuario._id\">\r\n                            <span class=\"oi oi-plus\" title=\"Nuevo\" aria-hidden=\"true\"></span>\r\n                        </button>\r\n                    </div>\r\n                </form>\r\n            </ng-template>\r\n        </ngb-tab>\r\n    </ngb-tabset>    \r\n</div>\r\n<toaster-container [toasterconfig]=\"toasterconfig\"></toaster-container>"
 
 /***/ }),
 
-/***/ "../../../../../src/app/components/usuario/usuario.component.ts":
+/***/ "./src/app/components/usuario/usuario.component.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UsuarioComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_usuario__ = __webpack_require__("../../../../../src/app/models/usuario.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_rolusuario__ = __webpack_require__("../../../../../src/app/models/rolusuario.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_restaurante__ = __webpack_require__("../../../../../src/app/models/restaurante.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_localstorage_service__ = __webpack_require__("../../../../../src/app/services/localstorage.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_usuario_service__ = __webpack_require__("../../../../../src/app/services/usuario.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_rolusuario_service__ = __webpack_require__("../../../../../src/app/services/rolusuario.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_restaurante_service__ = __webpack_require__("../../../../../src/app/services/restaurante.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_angular2_toaster__ = __webpack_require__("../../../../angular2-toaster/angular2-toaster.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("./node_modules/@angular/router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_usuario__ = __webpack_require__("./src/app/models/usuario.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_rolusuario__ = __webpack_require__("./src/app/models/rolusuario.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_restaurante__ = __webpack_require__("./src/app/models/restaurante.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_localstorage_service__ = __webpack_require__("./src/app/services/localstorage.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_usuario_service__ = __webpack_require__("./src/app/services/usuario.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_rolusuario_service__ = __webpack_require__("./src/app/services/rolusuario.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_restaurante_service__ = __webpack_require__("./src/app/services/restaurante.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_angular2_toaster__ = __webpack_require__("./node_modules/angular2-toaster/angular2-toaster.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -3852,7 +4119,7 @@ var UsuarioComponent = /** @class */ (function () {
     UsuarioComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'app-mnt-usuario',
-            template: __webpack_require__("../../../../../src/app/components/usuario/usuario.component.html"),
+            template: __webpack_require__("./src/app/components/usuario/usuario.component.html"),
             providers: [__WEBPACK_IMPORTED_MODULE_6__services_usuario_service__["a" /* UsuarioService */], __WEBPACK_IMPORTED_MODULE_7__services_rolusuario_service__["a" /* RolUsuarioService */], __WEBPACK_IMPORTED_MODULE_8__services_restaurante_service__["a" /* RestauranteService */]]
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */],
@@ -3870,7 +4137,7 @@ var UsuarioComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/models/banner.ts":
+/***/ "./src/app/models/banner.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3895,7 +4162,7 @@ var Banner = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/models/cliente.ts":
+/***/ "./src/app/models/cliente.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3918,7 +4185,7 @@ var Cliente = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/models/comanda.ts":
+/***/ "./src/app/models/comanda.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3956,7 +4223,7 @@ var Comanda = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/models/componente.ts":
+/***/ "./src/app/models/componente.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3976,7 +4243,7 @@ var Componente = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/models/datosfactcliente.ts":
+/***/ "./src/app/models/datosfactcliente.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3997,7 +4264,7 @@ var DatoFacturaCliente = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/models/detallecomanda.ts":
+/***/ "./src/app/models/detallecomanda.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4023,7 +4290,7 @@ var DetalleComanda = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/models/detcobro.ts":
+/***/ "./src/app/models/detcobro.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4054,7 +4321,7 @@ var DetalleCobro = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/models/detcobrocomanda.ts":
+/***/ "./src/app/models/detcobrocomanda.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4076,7 +4343,7 @@ var DetalleCobroComanda = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/models/detcompdetcomanda.ts":
+/***/ "./src/app/models/detcompdetcomanda.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4095,7 +4362,7 @@ var DetalleComponenteDetalleComanda = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/models/detfacturara.ts":
+/***/ "./src/app/models/detfacturara.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4114,7 +4381,7 @@ var DetalleFacturarA = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/models/direccioncliente.ts":
+/***/ "./src/app/models/direccioncliente.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4138,7 +4405,7 @@ var DireccionCliente = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/models/emisortarjeta.ts":
+/***/ "./src/app/models/emisortarjeta.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4156,7 +4423,7 @@ var EmisorTarjeta = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/models/extrasnotascomanda.ts":
+/***/ "./src/app/models/extrasnotascomanda.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4177,7 +4444,7 @@ var ExtrasNotasComanda = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/models/formapago.ts":
+/***/ "./src/app/models/formapago.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4199,7 +4466,7 @@ var FormaPago = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/models/menurest.ts":
+/***/ "./src/app/models/menurest.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4226,7 +4493,7 @@ var MenuRestaurante = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/models/menurestcomponente.ts":
+/***/ "./src/app/models/menurestcomponente.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4245,7 +4512,7 @@ var MenuRestComponente = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/models/notascliente.ts":
+/***/ "./src/app/models/notascliente.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4263,7 +4530,7 @@ var NotasCliente = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/models/presupuestoventas.ts":
+/***/ "./src/app/models/presupuestoventas.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4283,7 +4550,7 @@ var PresupuestoVentas = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/models/rangoedades.ts":
+/***/ "./src/app/models/rangoedades.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4301,7 +4568,7 @@ var RangoEdades = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/models/razoncortesia.ts":
+/***/ "./src/app/models/razoncortesia.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4319,7 +4586,7 @@ var RazonCortesia = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/models/restaurante.ts":
+/***/ "./src/app/models/restaurante.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4337,7 +4604,7 @@ var Restaurante = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/models/rolusuario.ts":
+/***/ "./src/app/models/rolusuario.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4355,7 +4622,7 @@ var RolUsuario = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/models/telefonocliente.ts":
+/***/ "./src/app/models/telefonocliente.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4374,7 +4641,7 @@ var TelefonoCliente = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/models/tiempoentrega.ts":
+/***/ "./src/app/models/tiempoentrega.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4392,7 +4659,7 @@ var TiempoEntrega = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/models/tipodireccion.ts":
+/***/ "./src/app/models/tipodireccion.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4410,7 +4677,7 @@ var TipoDireccion = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/models/usuario.ts":
+/***/ "./src/app/models/usuario.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4433,7 +4700,7 @@ var Usuario = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/models/vuelto.ts":
+/***/ "./src/app/models/vuelto.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4452,12 +4719,12 @@ var Vuelto = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/pipes/filterlist.pipe.ts":
+/***/ "./src/app/pipes/filterlist.pipe.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FilterListPipe; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4492,15 +4759,15 @@ var FilterListPipe = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/services/banner.service.ts":
+/***/ "./src/app/services/banner.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BannerService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("../../../../../src/app/services/global.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("./node_modules/@angular/http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("./node_modules/rxjs/_esm5/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("./src/app/services/global.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4576,15 +4843,15 @@ var BannerService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/services/cliente.service.ts":
+/***/ "./src/app/services/cliente.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ClienteService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("../../../../../src/app/services/global.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("./node_modules/@angular/http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("./node_modules/rxjs/_esm5/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("./src/app/services/global.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4796,14 +5063,14 @@ var ClienteService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/services/clock.service.ts":
+/***/ "./src/app/services/clock.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ClockService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__("../../../../rxjs/_esm5/Observable.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_interval__ = __webpack_require__("../../../../rxjs/_esm5/add/observable/interval.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__("./node_modules/rxjs/_esm5/Observable.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_interval__ = __webpack_require__("./node_modules/rxjs/_esm5/add/observable/interval.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -4834,15 +5101,15 @@ var ClockService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/services/comanda.service.ts":
+/***/ "./src/app/services/comanda.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComandaService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("../../../../../src/app/services/global.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("./node_modules/@angular/http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("./node_modules/rxjs/_esm5/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("./src/app/services/global.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5057,15 +5324,15 @@ var ComandaService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/services/componente.service.ts":
+/***/ "./src/app/services/componente.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComponenteService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("../../../../../src/app/services/global.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("./node_modules/@angular/http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("./node_modules/rxjs/_esm5/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("./src/app/services/global.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5142,15 +5409,15 @@ var ComponenteService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/services/diccionariofox.service.ts":
+/***/ "./src/app/services/diccionariofox.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DiccionarioFoxService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("../../../../../src/app/services/global.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("./node_modules/@angular/http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("./node_modules/rxjs/_esm5/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("./src/app/services/global.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5219,15 +5486,15 @@ var DiccionarioFoxService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/services/emisortarjeta.service.ts":
+/***/ "./src/app/services/emisortarjeta.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EmisorTarjetaService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("../../../../../src/app/services/global.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("./node_modules/@angular/http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("./node_modules/rxjs/_esm5/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("./src/app/services/global.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5296,15 +5563,15 @@ var EmisorTarjetaService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/services/formapago.service.ts":
+/***/ "./src/app/services/formapago.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FormaPagoService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("../../../../../src/app/services/global.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("./node_modules/@angular/http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("./node_modules/rxjs/_esm5/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("./src/app/services/global.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5373,7 +5640,7 @@ var FormaPagoService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/services/global.ts":
+/***/ "./src/app/services/global.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -5387,15 +5654,15 @@ var GLOBAL = {
 
 /***/ }),
 
-/***/ "../../../../../src/app/services/jsreport.service.ts":
+/***/ "./src/app/services/jsreport.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return JsReportService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("../../../common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__ = __webpack_require__("../../../platform-browser/esm5/platform-browser.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("./node_modules/rxjs/_esm5/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__ = __webpack_require__("./node_modules/@angular/platform-browser/esm5/platform-browser.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5438,12 +5705,12 @@ var JsReportService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/services/localstorage.service.ts":
+/***/ "./src/app/services/localstorage.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LocalStorageService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5488,15 +5755,15 @@ var LocalStorageService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/services/menu.service.ts":
+/***/ "./src/app/services/menu.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MenuService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("../../../../../src/app/services/global.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("./node_modules/@angular/http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("./node_modules/rxjs/_esm5/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("./src/app/services/global.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5533,15 +5800,15 @@ var MenuService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/services/menurest.service.ts":
+/***/ "./src/app/services/menurest.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MenuRestauranteService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("../../../../../src/app/services/global.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("./node_modules/@angular/http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("./node_modules/rxjs/_esm5/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("./src/app/services/global.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5619,15 +5886,15 @@ var MenuRestauranteService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/services/menurestcomponente.service.ts":
+/***/ "./src/app/services/menurestcomponente.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MenuRestComponenteService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("../../../../../src/app/services/global.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("./node_modules/@angular/http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("./node_modules/rxjs/_esm5/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("./src/app/services/global.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5695,15 +5962,15 @@ var MenuRestComponenteService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/services/presupuestoventas.service.ts":
+/***/ "./src/app/services/presupuestoventas.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PresupuestoVentasService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("../../../../../src/app/services/global.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("./node_modules/@angular/http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("./node_modules/rxjs/_esm5/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("./src/app/services/global.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5772,15 +6039,15 @@ var PresupuestoVentasService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/services/razoncortesia.service.ts":
+/***/ "./src/app/services/razoncortesia.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RazonCortesiaService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("../../../../../src/app/services/global.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("./node_modules/@angular/http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("./node_modules/rxjs/_esm5/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("./src/app/services/global.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5849,15 +6116,15 @@ var RazonCortesiaService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/services/restaurante.service.ts":
+/***/ "./src/app/services/restaurante.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RestauranteService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("../../../../../src/app/services/global.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("./node_modules/@angular/http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("./node_modules/rxjs/_esm5/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("./src/app/services/global.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5926,15 +6193,15 @@ var RestauranteService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/services/rolusuario.service.ts":
+/***/ "./src/app/services/rolusuario.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RolUsuarioService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("../../../../../src/app/services/global.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("./node_modules/@angular/http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("./node_modules/rxjs/_esm5/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("./src/app/services/global.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6003,15 +6270,15 @@ var RolUsuarioService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/services/tiempoentrega.service.ts":
+/***/ "./src/app/services/tiempoentrega.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TiempoEntregaService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("../../../../../src/app/services/global.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("./node_modules/@angular/http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("./node_modules/rxjs/_esm5/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("./src/app/services/global.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6080,15 +6347,15 @@ var TiempoEntregaService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/services/tipocomanda.service.ts":
+/***/ "./src/app/services/tipocomanda.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TipoComandaService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("../../../../../src/app/services/global.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("./node_modules/@angular/http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("./node_modules/rxjs/_esm5/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("./src/app/services/global.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6157,15 +6424,15 @@ var TipoComandaService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/services/tipodireccion.service.ts":
+/***/ "./src/app/services/tipodireccion.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TipoDireccionService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("../../../../../src/app/services/global.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("./node_modules/@angular/http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("./node_modules/rxjs/_esm5/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("./src/app/services/global.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6234,15 +6501,15 @@ var TipoDireccionService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/services/usuario.service.ts":
+/***/ "./src/app/services/usuario.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UsuarioService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("../../../../../src/app/services/global.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("./node_modules/@angular/http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("./node_modules/rxjs/_esm5/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("./src/app/services/global.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6316,15 +6583,15 @@ var UsuarioService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/app/services/vuelto.service.ts":
+/***/ "./src/app/services/vuelto.service.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VueltoService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("../../../../../src/app/services/global.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("./node_modules/@angular/http/esm5/http.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__("./node_modules/rxjs/_esm5/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__global__ = __webpack_require__("./src/app/services/global.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6400,7 +6667,7 @@ var VueltoService = /** @class */ (function () {
 
 /***/ }),
 
-/***/ "../../../../../src/environments/environment.ts":
+/***/ "./src/environments/environment.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6416,15 +6683,15 @@ var environment = {
 
 /***/ }),
 
-/***/ "../../../../../src/main.ts":
+/***/ "./src/main.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__("../../../platform-browser-dynamic/esm5/platform-browser-dynamic.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__("../../../../../src/app/app.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__("../../../../../src/environments/environment.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__("./node_modules/@angular/platform-browser-dynamic/esm5/platform-browser-dynamic.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__("./src/app/app.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__("./src/environments/environment.ts");
 
 
 
@@ -6438,271 +6705,10 @@ Object(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ "../../../../moment/locale recursive ^\\.\\/.*$":
-/***/ (function(module, exports, __webpack_require__) {
-
-var map = {
-	"./af": "../../../../moment/locale/af.js",
-	"./af.js": "../../../../moment/locale/af.js",
-	"./ar": "../../../../moment/locale/ar.js",
-	"./ar-dz": "../../../../moment/locale/ar-dz.js",
-	"./ar-dz.js": "../../../../moment/locale/ar-dz.js",
-	"./ar-kw": "../../../../moment/locale/ar-kw.js",
-	"./ar-kw.js": "../../../../moment/locale/ar-kw.js",
-	"./ar-ly": "../../../../moment/locale/ar-ly.js",
-	"./ar-ly.js": "../../../../moment/locale/ar-ly.js",
-	"./ar-ma": "../../../../moment/locale/ar-ma.js",
-	"./ar-ma.js": "../../../../moment/locale/ar-ma.js",
-	"./ar-sa": "../../../../moment/locale/ar-sa.js",
-	"./ar-sa.js": "../../../../moment/locale/ar-sa.js",
-	"./ar-tn": "../../../../moment/locale/ar-tn.js",
-	"./ar-tn.js": "../../../../moment/locale/ar-tn.js",
-	"./ar.js": "../../../../moment/locale/ar.js",
-	"./az": "../../../../moment/locale/az.js",
-	"./az.js": "../../../../moment/locale/az.js",
-	"./be": "../../../../moment/locale/be.js",
-	"./be.js": "../../../../moment/locale/be.js",
-	"./bg": "../../../../moment/locale/bg.js",
-	"./bg.js": "../../../../moment/locale/bg.js",
-	"./bm": "../../../../moment/locale/bm.js",
-	"./bm.js": "../../../../moment/locale/bm.js",
-	"./bn": "../../../../moment/locale/bn.js",
-	"./bn.js": "../../../../moment/locale/bn.js",
-	"./bo": "../../../../moment/locale/bo.js",
-	"./bo.js": "../../../../moment/locale/bo.js",
-	"./br": "../../../../moment/locale/br.js",
-	"./br.js": "../../../../moment/locale/br.js",
-	"./bs": "../../../../moment/locale/bs.js",
-	"./bs.js": "../../../../moment/locale/bs.js",
-	"./ca": "../../../../moment/locale/ca.js",
-	"./ca.js": "../../../../moment/locale/ca.js",
-	"./cs": "../../../../moment/locale/cs.js",
-	"./cs.js": "../../../../moment/locale/cs.js",
-	"./cv": "../../../../moment/locale/cv.js",
-	"./cv.js": "../../../../moment/locale/cv.js",
-	"./cy": "../../../../moment/locale/cy.js",
-	"./cy.js": "../../../../moment/locale/cy.js",
-	"./da": "../../../../moment/locale/da.js",
-	"./da.js": "../../../../moment/locale/da.js",
-	"./de": "../../../../moment/locale/de.js",
-	"./de-at": "../../../../moment/locale/de-at.js",
-	"./de-at.js": "../../../../moment/locale/de-at.js",
-	"./de-ch": "../../../../moment/locale/de-ch.js",
-	"./de-ch.js": "../../../../moment/locale/de-ch.js",
-	"./de.js": "../../../../moment/locale/de.js",
-	"./dv": "../../../../moment/locale/dv.js",
-	"./dv.js": "../../../../moment/locale/dv.js",
-	"./el": "../../../../moment/locale/el.js",
-	"./el.js": "../../../../moment/locale/el.js",
-	"./en-au": "../../../../moment/locale/en-au.js",
-	"./en-au.js": "../../../../moment/locale/en-au.js",
-	"./en-ca": "../../../../moment/locale/en-ca.js",
-	"./en-ca.js": "../../../../moment/locale/en-ca.js",
-	"./en-gb": "../../../../moment/locale/en-gb.js",
-	"./en-gb.js": "../../../../moment/locale/en-gb.js",
-	"./en-ie": "../../../../moment/locale/en-ie.js",
-	"./en-ie.js": "../../../../moment/locale/en-ie.js",
-	"./en-nz": "../../../../moment/locale/en-nz.js",
-	"./en-nz.js": "../../../../moment/locale/en-nz.js",
-	"./eo": "../../../../moment/locale/eo.js",
-	"./eo.js": "../../../../moment/locale/eo.js",
-	"./es": "../../../../moment/locale/es.js",
-	"./es-do": "../../../../moment/locale/es-do.js",
-	"./es-do.js": "../../../../moment/locale/es-do.js",
-	"./es-us": "../../../../moment/locale/es-us.js",
-	"./es-us.js": "../../../../moment/locale/es-us.js",
-	"./es.js": "../../../../moment/locale/es.js",
-	"./et": "../../../../moment/locale/et.js",
-	"./et.js": "../../../../moment/locale/et.js",
-	"./eu": "../../../../moment/locale/eu.js",
-	"./eu.js": "../../../../moment/locale/eu.js",
-	"./fa": "../../../../moment/locale/fa.js",
-	"./fa.js": "../../../../moment/locale/fa.js",
-	"./fi": "../../../../moment/locale/fi.js",
-	"./fi.js": "../../../../moment/locale/fi.js",
-	"./fo": "../../../../moment/locale/fo.js",
-	"./fo.js": "../../../../moment/locale/fo.js",
-	"./fr": "../../../../moment/locale/fr.js",
-	"./fr-ca": "../../../../moment/locale/fr-ca.js",
-	"./fr-ca.js": "../../../../moment/locale/fr-ca.js",
-	"./fr-ch": "../../../../moment/locale/fr-ch.js",
-	"./fr-ch.js": "../../../../moment/locale/fr-ch.js",
-	"./fr.js": "../../../../moment/locale/fr.js",
-	"./fy": "../../../../moment/locale/fy.js",
-	"./fy.js": "../../../../moment/locale/fy.js",
-	"./gd": "../../../../moment/locale/gd.js",
-	"./gd.js": "../../../../moment/locale/gd.js",
-	"./gl": "../../../../moment/locale/gl.js",
-	"./gl.js": "../../../../moment/locale/gl.js",
-	"./gom-latn": "../../../../moment/locale/gom-latn.js",
-	"./gom-latn.js": "../../../../moment/locale/gom-latn.js",
-	"./gu": "../../../../moment/locale/gu.js",
-	"./gu.js": "../../../../moment/locale/gu.js",
-	"./he": "../../../../moment/locale/he.js",
-	"./he.js": "../../../../moment/locale/he.js",
-	"./hi": "../../../../moment/locale/hi.js",
-	"./hi.js": "../../../../moment/locale/hi.js",
-	"./hr": "../../../../moment/locale/hr.js",
-	"./hr.js": "../../../../moment/locale/hr.js",
-	"./hu": "../../../../moment/locale/hu.js",
-	"./hu.js": "../../../../moment/locale/hu.js",
-	"./hy-am": "../../../../moment/locale/hy-am.js",
-	"./hy-am.js": "../../../../moment/locale/hy-am.js",
-	"./id": "../../../../moment/locale/id.js",
-	"./id.js": "../../../../moment/locale/id.js",
-	"./is": "../../../../moment/locale/is.js",
-	"./is.js": "../../../../moment/locale/is.js",
-	"./it": "../../../../moment/locale/it.js",
-	"./it.js": "../../../../moment/locale/it.js",
-	"./ja": "../../../../moment/locale/ja.js",
-	"./ja.js": "../../../../moment/locale/ja.js",
-	"./jv": "../../../../moment/locale/jv.js",
-	"./jv.js": "../../../../moment/locale/jv.js",
-	"./ka": "../../../../moment/locale/ka.js",
-	"./ka.js": "../../../../moment/locale/ka.js",
-	"./kk": "../../../../moment/locale/kk.js",
-	"./kk.js": "../../../../moment/locale/kk.js",
-	"./km": "../../../../moment/locale/km.js",
-	"./km.js": "../../../../moment/locale/km.js",
-	"./kn": "../../../../moment/locale/kn.js",
-	"./kn.js": "../../../../moment/locale/kn.js",
-	"./ko": "../../../../moment/locale/ko.js",
-	"./ko.js": "../../../../moment/locale/ko.js",
-	"./ky": "../../../../moment/locale/ky.js",
-	"./ky.js": "../../../../moment/locale/ky.js",
-	"./lb": "../../../../moment/locale/lb.js",
-	"./lb.js": "../../../../moment/locale/lb.js",
-	"./lo": "../../../../moment/locale/lo.js",
-	"./lo.js": "../../../../moment/locale/lo.js",
-	"./lt": "../../../../moment/locale/lt.js",
-	"./lt.js": "../../../../moment/locale/lt.js",
-	"./lv": "../../../../moment/locale/lv.js",
-	"./lv.js": "../../../../moment/locale/lv.js",
-	"./me": "../../../../moment/locale/me.js",
-	"./me.js": "../../../../moment/locale/me.js",
-	"./mi": "../../../../moment/locale/mi.js",
-	"./mi.js": "../../../../moment/locale/mi.js",
-	"./mk": "../../../../moment/locale/mk.js",
-	"./mk.js": "../../../../moment/locale/mk.js",
-	"./ml": "../../../../moment/locale/ml.js",
-	"./ml.js": "../../../../moment/locale/ml.js",
-	"./mr": "../../../../moment/locale/mr.js",
-	"./mr.js": "../../../../moment/locale/mr.js",
-	"./ms": "../../../../moment/locale/ms.js",
-	"./ms-my": "../../../../moment/locale/ms-my.js",
-	"./ms-my.js": "../../../../moment/locale/ms-my.js",
-	"./ms.js": "../../../../moment/locale/ms.js",
-	"./mt": "../../../../moment/locale/mt.js",
-	"./mt.js": "../../../../moment/locale/mt.js",
-	"./my": "../../../../moment/locale/my.js",
-	"./my.js": "../../../../moment/locale/my.js",
-	"./nb": "../../../../moment/locale/nb.js",
-	"./nb.js": "../../../../moment/locale/nb.js",
-	"./ne": "../../../../moment/locale/ne.js",
-	"./ne.js": "../../../../moment/locale/ne.js",
-	"./nl": "../../../../moment/locale/nl.js",
-	"./nl-be": "../../../../moment/locale/nl-be.js",
-	"./nl-be.js": "../../../../moment/locale/nl-be.js",
-	"./nl.js": "../../../../moment/locale/nl.js",
-	"./nn": "../../../../moment/locale/nn.js",
-	"./nn.js": "../../../../moment/locale/nn.js",
-	"./pa-in": "../../../../moment/locale/pa-in.js",
-	"./pa-in.js": "../../../../moment/locale/pa-in.js",
-	"./pl": "../../../../moment/locale/pl.js",
-	"./pl.js": "../../../../moment/locale/pl.js",
-	"./pt": "../../../../moment/locale/pt.js",
-	"./pt-br": "../../../../moment/locale/pt-br.js",
-	"./pt-br.js": "../../../../moment/locale/pt-br.js",
-	"./pt.js": "../../../../moment/locale/pt.js",
-	"./ro": "../../../../moment/locale/ro.js",
-	"./ro.js": "../../../../moment/locale/ro.js",
-	"./ru": "../../../../moment/locale/ru.js",
-	"./ru.js": "../../../../moment/locale/ru.js",
-	"./sd": "../../../../moment/locale/sd.js",
-	"./sd.js": "../../../../moment/locale/sd.js",
-	"./se": "../../../../moment/locale/se.js",
-	"./se.js": "../../../../moment/locale/se.js",
-	"./si": "../../../../moment/locale/si.js",
-	"./si.js": "../../../../moment/locale/si.js",
-	"./sk": "../../../../moment/locale/sk.js",
-	"./sk.js": "../../../../moment/locale/sk.js",
-	"./sl": "../../../../moment/locale/sl.js",
-	"./sl.js": "../../../../moment/locale/sl.js",
-	"./sq": "../../../../moment/locale/sq.js",
-	"./sq.js": "../../../../moment/locale/sq.js",
-	"./sr": "../../../../moment/locale/sr.js",
-	"./sr-cyrl": "../../../../moment/locale/sr-cyrl.js",
-	"./sr-cyrl.js": "../../../../moment/locale/sr-cyrl.js",
-	"./sr.js": "../../../../moment/locale/sr.js",
-	"./ss": "../../../../moment/locale/ss.js",
-	"./ss.js": "../../../../moment/locale/ss.js",
-	"./sv": "../../../../moment/locale/sv.js",
-	"./sv.js": "../../../../moment/locale/sv.js",
-	"./sw": "../../../../moment/locale/sw.js",
-	"./sw.js": "../../../../moment/locale/sw.js",
-	"./ta": "../../../../moment/locale/ta.js",
-	"./ta.js": "../../../../moment/locale/ta.js",
-	"./te": "../../../../moment/locale/te.js",
-	"./te.js": "../../../../moment/locale/te.js",
-	"./tet": "../../../../moment/locale/tet.js",
-	"./tet.js": "../../../../moment/locale/tet.js",
-	"./th": "../../../../moment/locale/th.js",
-	"./th.js": "../../../../moment/locale/th.js",
-	"./tl-ph": "../../../../moment/locale/tl-ph.js",
-	"./tl-ph.js": "../../../../moment/locale/tl-ph.js",
-	"./tlh": "../../../../moment/locale/tlh.js",
-	"./tlh.js": "../../../../moment/locale/tlh.js",
-	"./tr": "../../../../moment/locale/tr.js",
-	"./tr.js": "../../../../moment/locale/tr.js",
-	"./tzl": "../../../../moment/locale/tzl.js",
-	"./tzl.js": "../../../../moment/locale/tzl.js",
-	"./tzm": "../../../../moment/locale/tzm.js",
-	"./tzm-latn": "../../../../moment/locale/tzm-latn.js",
-	"./tzm-latn.js": "../../../../moment/locale/tzm-latn.js",
-	"./tzm.js": "../../../../moment/locale/tzm.js",
-	"./uk": "../../../../moment/locale/uk.js",
-	"./uk.js": "../../../../moment/locale/uk.js",
-	"./ur": "../../../../moment/locale/ur.js",
-	"./ur.js": "../../../../moment/locale/ur.js",
-	"./uz": "../../../../moment/locale/uz.js",
-	"./uz-latn": "../../../../moment/locale/uz-latn.js",
-	"./uz-latn.js": "../../../../moment/locale/uz-latn.js",
-	"./uz.js": "../../../../moment/locale/uz.js",
-	"./vi": "../../../../moment/locale/vi.js",
-	"./vi.js": "../../../../moment/locale/vi.js",
-	"./x-pseudo": "../../../../moment/locale/x-pseudo.js",
-	"./x-pseudo.js": "../../../../moment/locale/x-pseudo.js",
-	"./yo": "../../../../moment/locale/yo.js",
-	"./yo.js": "../../../../moment/locale/yo.js",
-	"./zh-cn": "../../../../moment/locale/zh-cn.js",
-	"./zh-cn.js": "../../../../moment/locale/zh-cn.js",
-	"./zh-hk": "../../../../moment/locale/zh-hk.js",
-	"./zh-hk.js": "../../../../moment/locale/zh-hk.js",
-	"./zh-tw": "../../../../moment/locale/zh-tw.js",
-	"./zh-tw.js": "../../../../moment/locale/zh-tw.js"
-};
-function webpackContext(req) {
-	return __webpack_require__(webpackContextResolve(req));
-};
-function webpackContextResolve(req) {
-	var id = map[req];
-	if(!(id + 1)) // check for number or string
-		throw new Error("Cannot find module '" + req + "'.");
-	return id;
-};
-webpackContext.keys = function webpackContextKeys() {
-	return Object.keys(map);
-};
-webpackContext.resolve = webpackContextResolve;
-module.exports = webpackContext;
-webpackContext.id = "../../../../moment/locale recursive ^\\.\\/.*$";
-
-/***/ }),
-
 /***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__("../../../../../src/main.ts");
+module.exports = __webpack_require__("./src/main.ts");
 
 
 /***/ })
