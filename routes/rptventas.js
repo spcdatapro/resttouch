@@ -8,5 +8,6 @@ var md_auth = require('../middlewares/authenticated');
 api.post('/rpt/operador', md_auth.ensureAuth, RptVentas.ventasPorOperador);
 api.post('/rpt/restaurante', md_auth.ensureAuth, RptVentas.ventasPorRestaurante);
 api.post('/rpt/tipopedido', md_auth.ensureAuth, RptVentas.ventasPorTipoComanda);
+api.post('/rpt/mensualdet', md_auth.ensureAuth, RptVentas.ventasMensualDetallado);
 
 module.exports = api;

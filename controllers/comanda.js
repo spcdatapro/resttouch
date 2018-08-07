@@ -2,6 +2,7 @@
 
 var mongoose = require('mongoose');
 var moment = require('moment');
+const fs = require('fs');
 
 // Modelos
 var Comanda = require('../models/comanda');
@@ -514,10 +515,28 @@ function traduceFacturarA(facta, pedido) {
     return tmp;
 }
 
-function listaComandasRestaurante(req, res) {
+async function resetRecibidasToPendente(idrestaurante, fdel, fal) {
+    let limite = fs.readFileSync('timelimit.txt', 'utf-8');
+    const cutoff = moment().subtract(+limite, 'minutes').toDate();
+    const filtro = {
+        idrestaurante: idrestaurante,
+        idestatuscomanda: "59fea7524218672b285ab0e3",
+        debaja: false,
+        fecha: { $gte: fdel, $lte: fal },
+        fechafintoma: { $lte: cutoff }
+    };
+    
+    //console.log(filtro);
+    await Comanda.update(filtro, { $set: { idestatuscomanda: "59fea7304218672b285ab0e2" } }, { multi: true}).exec();    
+    return true;
+}
+
+async function listaComandasRestaurante(req, res) {
     var lst = [], idrestaurante = req.params.idrestaurante, errores = [];
     var fdel = moment().startOf('day').toDate();
     var fal = moment().endOf('day').toDate();
+
+    await resetRecibidasToPendente(idrestaurante, fdel, fal);
     
     EmisoresTarjeta.find({}, (errore, listaet) => {
         DiccionarioFox.find({}, (e, dictfox) => {
@@ -698,7 +717,7 @@ function getComandaByTracking(req, res) {
 
 }
 
-function setBody(idestatus){
+function setBody(idestatus, ipaddr){
     var descripcion = '';
 
     switch (idestatus) {
@@ -719,15 +738,16 @@ function setBody(idestatus){
             'bitacoraestatus': {
                 fecha: moment().toDate(),
                 idestatuscomanda: mongoose.Types.ObjectId(idestatus),
-                estatus: descripcion
+                estatus: descripcion,
+                ip: ipaddr
             }
         }
     };
 }
 
 function comandaConProblemas(req, res){
-    var idcom = req.params.id;
-    var body = setBody("5a72403fc5bb328b700edc58");
+    var idcom = req.params.id, ipaddr = req.params.ipaddr ? req.params.ipaddr : null;
+    var body = setBody("5a72403fc5bb328b700edc58", ipaddr);
 
     Comanda.findByIdAndUpdate(idcom, body, { new: true }, (err, comandaUpd) => {
         if (err) {
@@ -743,8 +763,9 @@ function comandaConProblemas(req, res){
 }
 
 function confirmarComanda(req, res){
-    var idcom = req.params.id;
-    var body = setBody("59fea7524218672b285ab0e3");
+    var idcom = req.params.id,
+        ipaddr = req.params.ipaddr ? req.params.ipaddr : null;
+    var body = setBody("59fea7524218672b285ab0e3", ipaddr);
 
     Comanda.findByIdAndUpdate(idcom, body, { new: true }, (err, comandaUpd) => {
         if (err) {
@@ -760,8 +781,9 @@ function confirmarComanda(req, res){
 }
 
 function confirmarComandaEncargado(req, res) {
-    var idcom = req.params.id;
-    var body = setBody("5a512f55228d627facf8c643");
+    var idcom = req.params.id,
+        ipaddr = req.params.ipaddr ? req.params.ipaddr : null;
+    var body = setBody("5a512f55228d627facf8c643", ipaddr);
 
     Comanda.findByIdAndUpdate(idcom, body, { new: true }, (err, comandaUpd) => {
         if (err) {
@@ -796,8 +818,9 @@ function resetEstatusComandas(req, res) {
 */
 
 function cobroAprobadoComanda(req, res) {
-    var idcom = req.params.id;
-    var body = setBody("59fea7894218672b285ab0e4");
+    var idcom = req.params.id,
+        ipaddr = req.params.ipaddr ? req.params.ipaddr : null;
+    var body = setBody("59fea7894218672b285ab0e4", ipaddr);
 
     Comanda.findByIdAndUpdate(idcom, body, { new: true }, (err, comandaUpd) => {
         if (err) {
@@ -813,8 +836,9 @@ function cobroAprobadoComanda(req, res) {
 }
 
 function cobroRechazadoComanda(req, res) {
-    var idcom = req.params.id;
-    var body = setBody("59fea79e4218672b285ab0e5");
+    var idcom = req.params.id,
+        ipaddr = req.params.ipaddr ? req.params.ipaddr : null;
+    var body = setBody("59fea79e4218672b285ab0e5", ipaddr);
 
     Comanda.findByIdAndUpdate(idcom, body, { new: true }, (err, comandaUpd) => {
         if (err) {
@@ -830,8 +854,9 @@ function cobroRechazadoComanda(req, res) {
 }
 
 function produccionComanda(req, res) {
-    var idcom = req.params.id;
-    var body = setBody("59fea7bc4218672b285ab0e6");
+    var idcom = req.params.id,
+        ipaddr = req.params.ipaddr ? req.params.ipaddr : null;
+    var body = setBody("59fea7bc4218672b285ab0e6", ipaddr);
 
     Comanda.findByIdAndUpdate(idcom, body, { new: true }, (err, comandaUpd) => {
         if (err) {
@@ -847,8 +872,10 @@ function produccionComanda(req, res) {
 }
 
 function enCaminoComanda(req, res) {
-    var idcom = req.params.id, idmotorista = req.params.idmotorista;
-    var body = setBody("59fea7dd4218672b285ab0e7");
+    var idcom = req.params.id,
+        idmotorista = req.params.idmotorista,
+        ipaddr = req.params.ipaddr ? req.params.ipaddr : null;
+    var body = setBody("59fea7dd4218672b285ab0e7", ipaddr);
     body.idmotorista = idmotorista;
 
     Comanda.findByIdAndUpdate(idcom, body, { new: true }, (err, comandaUpd) => {
@@ -865,8 +892,9 @@ function enCaminoComanda(req, res) {
 }
 
 function entregadaComanda(req, res) {
-    var idcom = req.params.id;
-    var body = setBody("59fea7f34218672b285ab0e8");
+    var idcom = req.params.id,
+        ipaddr = req.params.ipaddr ? req.params.ipaddr : null;
+    var body = setBody("59fea7f34218672b285ab0e8", ipaddr);
 
     Comanda.findByIdAndUpdate(idcom, body, { new: true }, (err, comandaUpd) => {
         if (err) {

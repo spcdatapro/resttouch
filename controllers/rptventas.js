@@ -1,14 +1,16 @@
 'use strict'
 
-var mongoose = require('mongoose');
-var moment = require('moment');
+const mongoose = require('mongoose');
+const moment = require('moment');
+const axios = require('axios');
 
 // Modelos
-var Comanda = require('../models/comanda');
-var Usuario = require('../models/usuario');
-var PresupuestoVentas = require('../models/presupuestoventas');
-var Restaurante = require('../models/restaurante');
-var TipoComanda = require('../models/tipocomanda');
+const Comanda = require('../models/comanda');
+const Usuario = require('../models/usuario');
+const PresupuestoVentas = require('../models/presupuestoventas');
+const Restaurante = require('../models/restaurante');
+const TipoComanda = require('../models/tipocomanda');
+const Ventas = require('../models/ventas');
 
 async function ventasPorOperador(req, res) {
     var body = req.body;
@@ -16,7 +18,10 @@ async function ventasPorOperador(req, res) {
     var fal = moment(body.fal).endOf('day').toDate();
 
     var aggOpts = [
-        { $match: { fecha: { $gte: fdel, $lte: fal } } },
+        { $match: { 
+            idestatuscomanda: "59fea7f34218672b285ab0e8",
+            fecha: { $gte: fdel, $lte: fal } 
+        } },
         { 
             $group: {
                 _id: "$idusuario",
@@ -35,14 +40,14 @@ async function ventasPorOperador(req, res) {
             res.status(500).send({ mensaje: 'Error en el servidor al calcular las ventas por operador. ERROR: ' + error });
         } else {
             if (lista.length == 0) {
-                res.status(200).send({ mensaje: 'No se encontraron ventas con estos parámetros.' });                
+                res.status(200).send({ mensaje: 'No se encontraron ventas con estos parámetros 1.', lista: lista });
             } else {
                 Usuario.populate(lista, { path: "_id", select:"_id nombre", sort: { "nombre": 1 } }, (error2, lstVentas) => {
                     if (error2) {
                         res.status(500).send({ mensaje: 'Error en el servidor al calcular las ventas por operador. ERROR: ' + error2 });
                     } else {
                         if (lstVentas.length == 0) {
-                            res.status(200).send({ mensaje: 'No se encontraron ventas con estos parámetros.' });
+                            res.status(200).send({ mensaje: 'No se encontraron ventas con estos parámetros 2.', lista: lstVentas });
                         } else {
 
                             var datos = [], total = 0.00, totalneto = 0.00, totalcantidad = 0;
@@ -87,6 +92,7 @@ async function ventasPorOperador(req, res) {
             }
         }
     });
+    
 
 }
 
@@ -96,7 +102,10 @@ async function ventasPorRestaurante(req, res) {
     var fal = moment(body.fal).endOf('day').toDate();
 
     var aggOpts = [
-        { $match: { fecha: { $gte: fdel, $lte: fal } } },
+        { $match: { 
+            idestatuscomanda: "59fea7f34218672b285ab0e8",
+            fecha: { $gte: fdel, $lte: fal } 
+        } },
         {
             $group: {
                 _id: "$idrestaurante",
@@ -175,7 +184,10 @@ async function ventasPorTipoComanda(req, res) {
     var fal = moment(body.fal).endOf('day').toDate();
 
     var aggOpts = [
-        { $match: { fecha: { $gte: fdel, $lte: fal } } },
+        { $match: { 
+            idestatuscomanda: "59fea7f34218672b285ab0e8",
+            fecha: { $gte: fdel, $lte: fal } 
+        } },
         {
             $group: {
                 _id: "$idtipocomanda",
@@ -248,6 +260,36 @@ async function ventasPorTipoComanda(req, res) {
 
 }
 
+async function ventasMensualDetallado(req, res){
+    const params = {
+        mes: +req.body.mes > 0 ? +req.body.mes : moment().month() + 1, 
+        anio: +req.body.anio > 0 ? +req.body.anio : moment().year()
+    };
+    let datos = { 
+        generales: {
+            mes: '', 
+            anio: params.anio,
+            hoy: moment().format('DD/MM/YYYY HH:mm:ss')
+        }, 
+        ventas: [] 
+    };
+
+    await axios.get('http://localhost:3789/api/ventas/gen/' + datos.generales.mes + '/' + datos.generales.anio);
+
+    let pedidos = await Ventas.find({mes: params.mes, anio: params.anio}).exec();
+    
+    if(pedidos.length > 0){
+        datos.generales.mes = pedidos[0].nombremes;
+        datos.ventas = pedidos[0].restaurantes;
+    }
+
+    res.status(200).send({
+        mensaje: 'Ventas mensual detallado',
+        ventas: datos
+    });
+
+}
+
 module.exports = {
-    ventasPorOperador, ventasPorRestaurante, ventasPorTipoComanda
+    ventasPorOperador, ventasPorRestaurante, ventasPorTipoComanda, ventasMensualDetallado
 }

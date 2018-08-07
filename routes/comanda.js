@@ -17,15 +17,15 @@ api.get('/com/lstcomusr/:idusuario', md_auth.ensureAuth, ComandaController.lstCo
 // API para FOX
 api.get('/com/lstcomres/:idrestaurante', ComandaController.listaComandasRestaurante);
 api.get('/com/getcomtrack/:tracking', ComandaController.getComandaByTracking);
-api.get('/com/comerror/:id', ComandaController.comandaConProblemas);
-api.get('/com/confcom/:id', ComandaController.confirmarComanda);
-api.get('/com/confcomenc/:id', ComandaController.confirmarComandaEncargado);
+api.get('/com/comerror/:id/:ipaddr?', ComandaController.comandaConProblemas);
+api.get('/com/confcom/:id/:ipaddr?', ComandaController.confirmarComanda);
+api.get('/com/confcomenc/:id/:ipaddr?', ComandaController.confirmarComandaEncargado);
 //api.get('/com/rescom', ComandaController.resetEstatusComandas);
-api.get('/com/comaprob/:id', ComandaController.cobroAprobadoComanda);
-api.get('/com/comrech/:id', ComandaController.cobroRechazadoComanda);
-api.get('/com/comprod/:id', ComandaController.produccionComanda);
-api.get('/com/comencamino/:id/:idmotorista', ComandaController.enCaminoComanda);
-api.get('/com/comentregada/:id', ComandaController.entregadaComanda);
+api.get('/com/comaprob/:id/:ipaddr?', ComandaController.cobroAprobadoComanda);
+api.get('/com/comrech/:id/:ipaddr?', ComandaController.cobroRechazadoComanda);
+api.get('/com/comprod/:id/:ipaddr?', ComandaController.produccionComanda);
+api.get('/com/comencamino/:id/:idmotorista/:ipaddr?', ComandaController.enCaminoComanda);
+api.get('/com/comentregada/:id/:ipaddr?', ComandaController.entregadaComanda);
 // FIN de API para FOX
 
 // Detalle comanda
