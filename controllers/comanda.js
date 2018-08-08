@@ -515,6 +515,7 @@ function traduceFacturarA(facta, pedido) {
     return tmp;
 }
 
+/*
 async function resetRecibidasToPendente(idrestaurante, fdel, fal) {
     let limite = fs.readFileSync('timelimit.txt', 'utf-8');
     const cutoff = moment().subtract(+limite, 'minutes').toDate();
@@ -528,6 +529,48 @@ async function resetRecibidasToPendente(idrestaurante, fdel, fal) {
     
     //console.log(filtro);
     await Comanda.update(filtro, { $set: { idestatuscomanda: "59fea7304218672b285ab0e2" } }, { multi: true}).exec();    
+    return true;
+}
+*/
+
+async function resetRecibidasToPendente(idrestaurante, fdel, fal) {
+    let limite = fs.readFileSync('timelimit.txt', 'utf-8');
+    const cutoff = moment().subtract(+limite, 'minutes').toDate();
+
+    const aggOpts = [
+        { 
+            $match: { 
+                idrestaurante: idrestaurante, 
+                idestatuscomanda: "59fea7524218672b285ab0e3",
+                debaja: false,
+                fecha: { $gte: fdel, $lte: fal }
+            }
+        },
+        { $unwind: "$bitacoraestatus" },
+        { $sort: { "bitacoraestatus.fecha": -1 } },
+        { $match: { "bitacoraestatus.idestatuscomanda": "59fea7524218672b285ab0e3" } },
+        {
+            $group: {
+                "_id": "$_id",
+                "estatus": { "$first": "$bitacoraestatus.estatus" },
+                "fechaestatus": { "$first": "$bitacoraestatus.fecha" }
+            }
+        },
+        {
+            $match: {
+                fechaestatus: { $lte: cutoff }
+            }
+        }
+    ];
+    
+    const pedidos = await Comanda.aggregate(aggOpts).exec();
+    if (pedidos && pedidos.length > 0) {
+        for (let i = 0; i < pedidos.length; i++) {
+            pedido = pedidos[i];
+            await Comanda.findByIdAndUpdate(pedido._id, { $set: { idestatuscomanda: "59fea7304218672b285ab0e2" } }).exec();
+        }
+    }
+
     return true;
 }
 
