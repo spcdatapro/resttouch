@@ -540,15 +540,15 @@ async function resetRecibidasToPendente(idrestaurante, fdel, fal) {
     const aggOpts = [
         { 
             $match: { 
-                idrestaurante: idrestaurante, 
-                idestatuscomanda: "59fea7524218672b285ab0e3",
+                idrestaurante: mongoose.Types.ObjectId(idrestaurante),
+                idestatuscomanda: mongoose.Types.ObjectId("59fea7524218672b285ab0e3"),
                 debaja: false,
                 fecha: { $gte: fdel, $lte: fal }
             }
         },
         { $unwind: "$bitacoraestatus" },
         { $sort: { "bitacoraestatus.fecha": -1 } },
-        { $match: { "bitacoraestatus.idestatuscomanda": "59fea7524218672b285ab0e3" } },
+        { $match: { "bitacoraestatus.idestatuscomanda": mongoose.Types.ObjectId("59fea7524218672b285ab0e3") } },
         {
             $group: {
                 "_id": "$_id",
@@ -566,7 +566,7 @@ async function resetRecibidasToPendente(idrestaurante, fdel, fal) {
     const pedidos = await Comanda.aggregate(aggOpts).exec();
     if (pedidos && pedidos.length > 0) {
         for (let i = 0; i < pedidos.length; i++) {
-            pedido = pedidos[i];
+            let pedido = pedidos[i];
             await Comanda.findByIdAndUpdate(pedido._id, { $set: { idestatuscomanda: "59fea7304218672b285ab0e2" } }).exec();
         }
     }

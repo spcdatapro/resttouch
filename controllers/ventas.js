@@ -1,6 +1,7 @@
 'use strict'
 
 const moment = require('moment');
+const mongoose = require('mongoose');
 const Ventas = require('../models/ventas');
 const Comanda = require('../models/comanda');
 const Restaurante = require('../models/restaurante');
@@ -197,7 +198,7 @@ async function construyeRepositorio(req, res){
                         let aggOpts = [{
                                 $match: {
                                     idrestaurante: restaurante.idrestaurante,
-                                    idestatuscomanda: "59fea7f34218672b285ab0e8",
+                                    idestatuscomanda: mongoose.Types.ObjectId("59fea7f34218672b285ab0e8"),
                                     fecha: {
                                         $gte: new Date(hini.toISOString()),
                                         $lte: new Date(hfin.toISOString())

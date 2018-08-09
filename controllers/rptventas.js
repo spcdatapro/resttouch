@@ -19,7 +19,7 @@ async function ventasPorOperador(req, res) {
 
     var aggOpts = [
         { $match: { 
-            idestatuscomanda: "59fea7f34218672b285ab0e8",
+            idestatuscomanda: mongoose.Types.ObjectId("59fea7f34218672b285ab0e8"),
             fecha: { $gte: fdel, $lte: fal } 
         } },
         { 
@@ -103,7 +103,7 @@ async function ventasPorRestaurante(req, res) {
 
     var aggOpts = [
         { $match: { 
-            idestatuscomanda: "59fea7f34218672b285ab0e8",
+            idestatuscomanda: mongoose.Types.ObjectId("59fea7f34218672b285ab0e8"),
             fecha: { $gte: fdel, $lte: fal } 
         } },
         {
@@ -185,7 +185,7 @@ async function ventasPorTipoComanda(req, res) {
 
     var aggOpts = [
         { $match: { 
-            idestatuscomanda: "59fea7f34218672b285ab0e8",
+            idestatuscomanda: mongoose.Types.ObjectId("59fea7f34218672b285ab0e8"),
             fecha: { $gte: fdel, $lte: fal } 
         } },
         {
