@@ -402,7 +402,8 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_usuario_usuario_component__ = __webpack_require__("./src/app/components/usuario/usuario.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__components_reportes_visorpdf_component__ = __webpack_require__("./src/app/components/reportes/visorpdf.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__components_reportes_ventas_ventasvarios_component__ = __webpack_require__("./src/app/components/reportes/ventas/ventasvarios.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pipes_filterlist_pipe__ = __webpack_require__("./src/app/pipes/filterlist.pipe.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__components_comanda_pedido_tigo_pedido_tigo_component__ = __webpack_require__("./src/app/components/comanda/pedido-tigo/pedido-tigo.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pipes_filterlist_pipe__ = __webpack_require__("./src/app/pipes/filterlist.pipe.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -434,6 +435,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 // Pipes
 
 var AppModule = /** @class */ (function () {
@@ -442,9 +444,9 @@ var AppModule = /** @class */ (function () {
     AppModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_11__app_component__["a" /* AppComponent */], __WEBPACK_IMPORTED_MODULE_12__components_login_login_component__["a" /* LoginComponent */], __WEBPACK_IMPORTED_MODULE_13__components_cliente_lstclientes_component__["a" /* ListadoClientesComponent */], __WEBPACK_IMPORTED_MODULE_14__components_cliente_cliente_component__["a" /* ClienteComponent */], __WEBPACK_IMPORTED_MODULE_24__pipes_filterlist_pipe__["a" /* FilterListPipe */], __WEBPACK_IMPORTED_MODULE_15__components_comanda_lstcomandas_component__["a" /* ListaComandasComponent */],
+                __WEBPACK_IMPORTED_MODULE_11__app_component__["a" /* AppComponent */], __WEBPACK_IMPORTED_MODULE_12__components_login_login_component__["a" /* LoginComponent */], __WEBPACK_IMPORTED_MODULE_13__components_cliente_lstclientes_component__["a" /* ListadoClientesComponent */], __WEBPACK_IMPORTED_MODULE_14__components_cliente_cliente_component__["a" /* ClienteComponent */], __WEBPACK_IMPORTED_MODULE_25__pipes_filterlist_pipe__["a" /* FilterListPipe */], __WEBPACK_IMPORTED_MODULE_15__components_comanda_lstcomandas_component__["a" /* ListaComandasComponent */],
                 __WEBPACK_IMPORTED_MODULE_17__components_mnurest_mnurest_component__["a" /* MenuRestauranteComponent */], __WEBPACK_IMPORTED_MODULE_18__components_mntvarios_mntvarios_component__["a" /* MantenimientosVariosComponent */], __WEBPACK_IMPORTED_MODULE_16__components_comanda_comanda_component__["a" /* ComandaComponent */], __WEBPACK_IMPORTED_MODULE_19__components_diccionariofox_diccionariofox_component__["a" /* DiccionarioFoxComponent */], __WEBPACK_IMPORTED_MODULE_20__components_clock_clock_component__["a" /* ClockComponent */], __WEBPACK_IMPORTED_MODULE_21__components_usuario_usuario_component__["a" /* UsuarioComponent */],
-                __WEBPACK_IMPORTED_MODULE_22__components_reportes_visorpdf_component__["a" /* VisorPDFComponent */], __WEBPACK_IMPORTED_MODULE_23__components_reportes_ventas_ventasvarios_component__["a" /* VentasVariosComponent */]
+                __WEBPACK_IMPORTED_MODULE_22__components_reportes_visorpdf_component__["a" /* VisorPDFComponent */], __WEBPACK_IMPORTED_MODULE_23__components_reportes_ventas_ventasvarios_component__["a" /* VentasVariosComponent */], __WEBPACK_IMPORTED_MODULE_24__components_comanda_pedido_tigo_pedido_tigo_component__["a" /* PedidoTigoComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_7__ng_bootstrap_ng_bootstrap__["b" /* NgbModule */].forRoot(), __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */], __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormsModule */], __WEBPACK_IMPORTED_MODULE_4__angular_http__["c" /* HttpModule */], __WEBPACK_IMPORTED_MODULE_5__app_routing__["b" /* routing */], __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */], __WEBPACK_IMPORTED_MODULE_6_angular2_toaster__["b" /* ToasterModule */], __WEBPACK_IMPORTED_MODULE_8_angular_tree_component__["a" /* TreeModule */],
@@ -479,8 +481,10 @@ var AppModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_diccionariofox_diccionariofox_component__ = __webpack_require__("./src/app/components/diccionariofox/diccionariofox.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_usuario_usuario_component__ = __webpack_require__("./src/app/components/usuario/usuario.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_reportes_ventas_ventasvarios_component__ = __webpack_require__("./src/app/components/reportes/ventas/ventasvarios.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_comanda_pedido_tigo_pedido_tigo_component__ = __webpack_require__("./src/app/components/comanda/pedido-tigo/pedido-tigo.component.ts");
 
 // Componentes
+
 
 
 
@@ -493,6 +497,7 @@ var AppModule = /** @class */ (function () {
 var appRoutes = [
     { path: '', redirectTo: 'login', pathMatch: 'full' },
     { path: 'comandas', component: __WEBPACK_IMPORTED_MODULE_3__components_comanda_lstcomandas_component__["a" /* ListaComandasComponent */] },
+    { path: 'tigo', component: __WEBPACK_IMPORTED_MODULE_10__components_comanda_pedido_tigo_pedido_tigo_component__["a" /* PedidoTigoComponent */] },
     { path: 'comanda/:idcliente/:telefono', component: __WEBPACK_IMPORTED_MODULE_4__components_comanda_comanda_component__["a" /* ComandaComponent */] },
     { path: 'comanda/:idcliente/:telefono/:historica', component: __WEBPACK_IMPORTED_MODULE_4__components_comanda_comanda_component__["a" /* ComandaComponent */] },
     { path: 'clientes', component: __WEBPACK_IMPORTED_MODULE_2__components_cliente_lstclientes_component__["a" /* ListadoClientesComponent */] },
@@ -2330,6 +2335,172 @@ var ListaComandasComponent = /** @class */ (function () {
             __WEBPACK_IMPORTED_MODULE_12_angular2_toaster__["c" /* ToasterService */]])
     ], ListaComandasComponent);
     return ListaComandasComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/comanda/pedido-tigo/pedido-tigo.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/components/comanda/pedido-tigo/pedido-tigo.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container-fluid\" style=\"margin-top: 10px\">\n  <div class=\"row\">\n    <table class=\"table table-bordered table-hover table-sm\">\n      <thead>\n        <th>No.</th>\n        <th>Fecha</th>\n        <th>Cliente</th>\n        <th>Notas</th>\n        <th>Atiende</th>\n        <th></th>\n      </thead>\n      <tbody>\n        <tr *ngFor=\"let cmd of listaComandas\">\n          <td>{{cmd.tracking | number:'1.0-0'}}</td>\n          <td>{{cmd.fecha | date:'dd/MM/yyyy HH:mm:ss'}}</td>\n          <td>{{cmd.idcliente.nombre}}</td>\n          <td>\n            <p>{{cmd.notas}}</p>\n          </td>\n          <td>\n            <select name=\"selAtiende\" id=\"selAtiende\" #atiende=\"ngModel\" [(ngModel)]=\"cmd.idrestaurante\" class=\"form-control form-control-sm\" required>\n              <option *ngFor=\"let rst of restaurantes\" value=\"{{rst._id}}\">{{rst.nombre}}</option>\n            </select>\n          </td>\n          <td>\n            <button type=\"button\" class=\"btn btn-outline-primary btn-sm\" (click)=\"saveComanda(cmd)\">\n                <span class=\"oi oi-check\" title=\"Guardar {{cmd.tracking}}\" aria-hidden=\"true\"></span>\n            </button>\n        </td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/components/comanda/pedido-tigo/pedido-tigo.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PedidoTigoComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_localstorage_service__ = __webpack_require__("./src/app/services/localstorage.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_restaurante_service__ = __webpack_require__("./src/app/services/restaurante.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_comanda_service__ = __webpack_require__("./src/app/services/comanda.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Observable__ = __webpack_require__("./node_modules/rxjs/_esm5/Observable.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_interval__ = __webpack_require__("./node_modules/rxjs/_esm5/add/observable/interval.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_angular2_toaster__ = __webpack_require__("./node_modules/angular2-toaster/angular2-toaster.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_moment__ = __webpack_require__("./node_modules/moment/moment.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_moment___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_moment__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+// import { ClienteService } from '../../../services/cliente.service';
+// import { TipoDireccionService } from '../../../services/tipodireccion.service';
+
+
+// import { MenuRestauranteService } from '../../../services/menurest.service';
+// import { MenuRestComponenteService } from '../../../services/menurestcomponente.service';
+// import { ComponenteService } from '../../../services/componente.service';
+// import { FormaPagoService } from '../../../services/formapago.service';
+// import { EmisorTarjetaService } from '../../../services/emisortarjeta.service';
+
+// import { TipoComandaService } from '../../../services/tipocomanda.service';
+// import { BannerService } from '../../../services/banner.service';
+// import { VueltoService } from '../../../services/vuelto.service';
+// import { RazonCortesiaService } from '../../../services/razoncortesia.service';
+// import { TiempoEntregaService } from '../../../services/tiempoentrega.service';
+// Otros
+// import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
+
+
+
+
+var PedidoTigoComponent = /** @class */ (function () {
+    function PedidoTigoComponent(
+        // private _route: ActivatedRoute,
+        // private _router: Router,
+        // private _clienteService: ClienteService,
+        _ls, 
+        // private _tipoDireccionService: TipoDireccionService,
+        _restauranteService, 
+        // private _menuRestauranteService: MenuRestauranteService,
+        // private _menuRestCompoService: MenuRestComponenteService,
+        // private _componenteService: ComponenteService,
+        // private _formaPagoService: FormaPagoService,
+        // private _emisorTarjetaService: EmisorTarjetaService,
+        _comandaService, 
+        // private _tipoComandaService: TipoComandaService,
+        // private _bannerService: BannerService,
+        // private _vueltoService: VueltoService,
+        // private _razonCortesiaService: RazonCortesiaService,
+        // private _tiempoEntregaService: TiempoEntregaService,
+        // private modalService: NgbModal,
+        toasterService) {
+        this._ls = _ls;
+        this._restauranteService = _restauranteService;
+        this._comandaService = _comandaService;
+        this.toasterService = toasterService;
+        this.token = this._ls.get('restouchusr').token;
+    }
+    PedidoTigoComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.loadRestaurantes();
+        this.loadComandasTigo();
+        this.repetidor = __WEBPACK_IMPORTED_MODULE_4_rxjs_Observable__["a" /* Observable */].interval(45000).subscribe(function (tick) { return _this.loadComandasTigo(); });
+    };
+    PedidoTigoComponent.prototype.ngOnDestroy = function () {
+        this.repetidor.unsubscribe();
+    };
+    PedidoTigoComponent.prototype.loadComandasTigo = function () {
+        var _this = this;
+        var parametros = {
+            fdel: __WEBPACK_IMPORTED_MODULE_7_moment__(this.fdel).format('YYYY-MM-DD'),
+            fal: __WEBPACK_IMPORTED_MODULE_7_moment__(this.fal).format('YYYY-MM-DD'),
+            restaurantes: [],
+            detigo: true
+        };
+        // console.log(parametros);
+        this._comandaService.listaComandasPost(this.token, parametros).subscribe(function (result) {
+            if (result.lista) {
+                _this.listaComandas = result.lista;
+                // console.log(this.listaComandas);
+            }
+            else {
+                _this.listaComandas = [];
+            }
+        }, function (error) {
+            var respuesta = JSON.parse(error._body);
+            _this.toasterService.pop('error', 'Error', 'Error: ' + respuesta.mensaje);
+        });
+    };
+    PedidoTigoComponent.prototype.loadRestaurantes = function () {
+        var _this = this;
+        this._restauranteService.listaRestaurantes(this.token).subscribe(function (response) {
+            if (response.lista) {
+                _this.restaurantes = response.lista;
+            }
+            else {
+                _this.toasterService.pop('error', 'Error', 'Error: ' + response.mensaje);
+            }
+        }, function (error) {
+            var respuesta = JSON.parse(error._body);
+            _this.toasterService.pop('error', 'Error', 'Error: ' + respuesta.mensaje);
+        });
+    };
+    PedidoTigoComponent.prototype.saveComanda = function (objComanda) {
+        var _this = this;
+        // console.log(objComanda);
+        this._comandaService.modificarComanda({ _id: objComanda._id, idrestaurante: objComanda.idrestaurante }, this.token).subscribe(function (response) {
+            // console.log(response);
+            if (response.entidad) {
+                _this.loadComandasTigo();
+            }
+            else {
+                _this.toasterService.pop('error', 'Error', 'Error: ' + response.mensaje);
+            }
+        });
+    };
+    PedidoTigoComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            selector: 'app-pedido-tigo',
+            template: __webpack_require__("./src/app/components/comanda/pedido-tigo/pedido-tigo.component.html"),
+            encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewEncapsulation"].None,
+            providers: [
+                __WEBPACK_IMPORTED_MODULE_1__services_localstorage_service__["a" /* LocalStorageService */], __WEBPACK_IMPORTED_MODULE_2__services_restaurante_service__["a" /* RestauranteService */], __WEBPACK_IMPORTED_MODULE_3__services_comanda_service__["a" /* ComandaService */]
+            ],
+            styles: [__webpack_require__("./src/app/components/comanda/pedido-tigo/pedido-tigo.component.css")]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__services_localstorage_service__["a" /* LocalStorageService */],
+            __WEBPACK_IMPORTED_MODULE_2__services_restaurante_service__["a" /* RestauranteService */],
+            __WEBPACK_IMPORTED_MODULE_3__services_comanda_service__["a" /* ComandaService */],
+            __WEBPACK_IMPORTED_MODULE_6_angular2_toaster__["c" /* ToasterService */]])
+    ], PedidoTigoComponent);
+    return PedidoTigoComponent;
 }());
 
 
@@ -5713,7 +5884,6 @@ var FormaPagoService = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GLOBAL; });
 var GLOBAL = {
     // url: 'http://localhost:3789/api/' // Comentar para servidor de pruebas/produccion
-    // url: 'http://104.236.58.180:3789/api/' // Descomentar para servidor de produccion
     url: 'http://' + window.location.hostname + ':3789/api/' // Descomentar para servidor de produccion
 };
 

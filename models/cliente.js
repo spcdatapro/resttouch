@@ -10,6 +10,7 @@ var ClienteSchema = Schema({
     correoelectronico: String,
     tienehijos: Boolean,
     rangoedadeshijos: [],
+    detigo: { type: Boolean, default: false },
     debaja: Boolean
 });
 

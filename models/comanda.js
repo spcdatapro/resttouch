@@ -13,7 +13,7 @@ var ComandaSchema = Schema({
     idusuario: { type: Schema.ObjectId, ref: 'usuario', required: true },
     fechainitoma: Date,
     fechafintoma: Date,
-    idestatuscomanda: { type: Schema.ObjectId, ref: 'estatuscomanda', required: true },
+    idestatuscomanda: { type: Schema.ObjectId, ref: 'estatuscomanda', required: false },
     notas: String,
     cantidaditems: Number,
     totalcomanda: Number,
@@ -22,10 +22,11 @@ var ComandaSchema = Schema({
     detcobrocomanda: Array,
     detfacturara: Array,
     idtiempoentrega: { type: Schema.ObjectId, ref: 'tiempoentrega', required: true },
-    idrestaurante: { type: Schema.ObjectId, ref: 'restaurante', required: true },
+    idrestaurante: { type: Schema.ObjectId, ref: 'restaurante', required: false },
     idmotorista: { type: Schema.ObjectId, ref: 'usuario' },
     imgpago: Array,
     bitacoraestatus: Array,
+    detigo: { type: Boolean, default: false },
     debaja: { type: Boolean, default: false }
 });
 

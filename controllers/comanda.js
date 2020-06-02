@@ -1,28 +1,35 @@
 'use strict'
 
-var mongoose = require('mongoose');
-var moment = require('moment');
+const mongoose = require('mongoose');
+const moment = require('moment');
 const fs = require('fs');
 
 // Modelos
-var Comanda = require('../models/comanda');
-var DetalleComanda = require('../models/detallecomanda');
-var DetCompDetComanda = require('../models/detcompdetcomanda');
-var ExtrasNotasComanda = require('../models/extrasnotascomanda');
-var DetalleCobroComanda = require('../models/detcobrocomanda');
-var EstatusComanda = require('../models/estatuscomanda');
-var DiccionarioFox = require('../models/diccionariofox');
-var EmisoresTarjeta = require('../models/emisortarjeta');
+const Comanda = require('../models/comanda');
+const DetalleComanda = require('../models/detallecomanda');
+const DetCompDetComanda = require('../models/detcompdetcomanda');
+const ExtrasNotasComanda = require('../models/extrasnotascomanda');
+const DetalleCobroComanda = require('../models/detcobrocomanda');
+const EstatusComanda = require('../models/estatuscomanda');
+const DiccionarioFox = require('../models/diccionariofox');
+const EmisoresTarjeta = require('../models/emisortarjeta');
+
+const TelefonoCliente = require('../models/telefonocliente');
+const Cliente = require('../models/cliente');
+const DireccionCliente = require('../models/direccioncliente');
+const DatosFacturaCliente = require('../models/datosfacturacliente');
+const TipoComanda = require('../models/tipocomanda');
+const Carta = require('../models/menurest');
 
 // Acciones
 // Comanda
-function crearComanda(req, res){
+function crearComanda(req, res) {
     var com = new Comanda();
-    var params = req.body;    
+    var params = req.body;
 
     com.idcliente = params.idcliente;
     com.idtelefonocliente = params.idtelefonocliente;
-    com.iddireccioncliente = params.iddireccioncliente;    
+    com.iddireccioncliente = params.iddireccioncliente;
     com.fecha = params.fecha;
     com.idtipocomanda = params.idtipocomanda;
     com.idusuario = params.idusuario;
@@ -39,8 +46,8 @@ function crearComanda(req, res){
     com.idrestaurante = params.idrestaurante;
     com.idmotorista = params.idmotorista;
     com.imgpago = params.imgpago;
-    com.debaja = params.debaja;   
-    com.bitacoraestatus = [ { idestatuscomanda: mongoose.Types.ObjectId("59fea7304218672b285ab0e2"), estatus: "Pendiente", fecha: moment().toDate() } ];
+    com.debaja = params.debaja;
+    com.bitacoraestatus = [{ idestatuscomanda: mongoose.Types.ObjectId("59fea7304218672b285ab0e2"), estatus: "Pendiente", fecha: moment().toDate() }];
 
     com.save((err, comandaSvd) => {
         if (err) {
@@ -56,7 +63,7 @@ function crearComanda(req, res){
 
 }
 
-function modificarComanda(req, res){
+function modificarComanda(req, res) {
     var idcom = req.params.id;
     var body = req.body;
 
@@ -69,11 +76,11 @@ function modificarComanda(req, res){
             } else {
                 res.status(200).send({ mensaje: 'Comanda modificada exitosamente.', entidad: comandaUpd });
             }
-        }        
+        }
     });
 }
 
-function eliminarComanda(req, res){
+function eliminarComanda(req, res) {
     var idcom = req.params.id;
     var body = req.body;
 
@@ -87,10 +94,10 @@ function eliminarComanda(req, res){
                 res.status(200).send({ mensaje: 'Comanda eliminada exitosamente.', entidad: comandaDel });
             }
         }
-    });    
+    });
 }
 
-function listaComandas(req, res){
+function listaComandas(req, res) {
     var idestatuscomanda = req.params.idestatuscomanda, fltr = { debaja: false };
     var idrestaurante = req.params.idrestaurante;
     var fdel = moment(req.params.fdel).startOf('day').toDate();
@@ -98,7 +105,7 @@ function listaComandas(req, res){
 
     if (idestatuscomanda && idestatuscomanda != '0') { fltr.idestatuscomanda = idestatuscomanda; }
     if (idrestaurante) { fltr.idrestaurante = idrestaurante; }
-    if (fdel && fal) {fltr.fecha = {$lte: fal, $gte: fdel}; }
+    if (fdel && fal) { fltr.fecha = { $lte: fal, $gte: fdel }; }
 
     // console.log(fltr);
 
@@ -117,7 +124,7 @@ function listaComandas(req, res){
             if (err) {
                 res.status(500).send({ mensaje: 'Error en el servidor al listar las comandas. ERROR: ' + err });
             } else {
-                if(lista.length == 0) {
+                if (lista.length == 0) {
                     res.status(200).send({ mensaje: 'No se encontraron comandas.' });
                 } else {
 
@@ -125,14 +132,14 @@ function listaComandas(req, res){
                         item.fecha = moment(item.fecha).toDate();
                         item.imgpago = [];
                         item.detcobrocomanda.forEach((fp) => {
-                            if(item.imgpago.length == 0) {
-                                item.imgpago.push(fp.estarjeta ? 'tarjeta' :  'efectivo');
+                            if (item.imgpago.length == 0) {
+                                item.imgpago.push(fp.estarjeta ? 'tarjeta' : 'efectivo');
                             } else {
                                 if (item.imgpago.indexOf(fp.estarjeta ? 'tarjeta' : 'efectivo') < 0) {
                                     item.imgpago.push(fp.estarjeta ? 'tarjeta' : 'efectivo');
                                 }
                             }
-                        });                        
+                        });
                     });
                     //console.log(lista[0]);
                     // console.log(lista);
@@ -147,7 +154,7 @@ function listaComandasPost(req, res) {
 
     var fltr = { debaja: false };
 
-    if (filtros.fdel && filtros.fal) { 
+    if (filtros.fdel && filtros.fal) {
         var fdel = moment(filtros.fdel).startOf('day').toDate();
         var fal = moment(filtros.fal).endOf('day').toDate();
         fltr.fecha = { $gte: fdel, $lte: fal };
@@ -157,9 +164,16 @@ function listaComandasPost(req, res) {
         fltr.idestatuscomanda = filtros.idestatuscomanda;
     }
 
-    if (filtros.restaurantes && filtros.restaurantes.length > 0) { 
-        fltr.idrestaurante = {$in: filtros.restaurantes};
-    }    
+    if (filtros.restaurantes && filtros.restaurantes.length > 0) {
+        fltr.idrestaurante = { $in: filtros.restaurantes };
+    } else {
+        fltr.idrestaurante = { $exists: true, $ne: null };
+    }
+
+    if (filtros.detigo) {
+        fltr.detigo = true;
+        fltr.idrestaurante = { $exists: true, $eq: null };
+    }
 
     // console.log(fltr);
 
@@ -206,7 +220,7 @@ function listaComandasPost(req, res) {
 function lstComandasUsuario(req, res) {
     var idusuario = req.params.idusuario;
 
-    Comanda.find({ idestatuscomanda: "59fea7dd4218672b285ab0e7", idmotorista: idusuario, debaja: false}, null, { sort: { fecha: 1 } })
+    Comanda.find({ idestatuscomanda: "59fea7dd4218672b285ab0e7", idmotorista: idusuario, debaja: false }, null, { sort: { fecha: 1 } })
         .populate('idcliente', ['_id', 'nombre'])
         .populate('idtipocomanda', ['_id', 'descripcion', 'imagen'])
         .populate('idusuario', ['_id', 'nombre'])
@@ -247,7 +261,7 @@ function lstComandasUsuario(req, res) {
 }
 
 function getComanda(req, res) {
-    var idcom = req.params.id;    
+    var idcom = req.params.id;
 
     Comanda.findById(idcom)
         .populate('idcliente', ['_id', 'nombre'])
@@ -274,7 +288,7 @@ function getComanda(req, res) {
 function lstComandasCliente(req, res) {
     var idcliente = req.params.idcliente;
 
-    Comanda.find({idcliente: idcliente, debaja: false}, null, { sort: { fecha: -1 } })
+    Comanda.find({ idcliente: idcliente, debaja: false }, null, { sort: { fecha: -1 } })
         .populate('idcliente', ['_id', 'nombre'])
         .populate('idtipocomanda', ['_id', 'descripcion', 'imagen'])
         .populate('idusuario', ['_id', 'nombre'])
@@ -295,14 +309,14 @@ function lstComandasCliente(req, res) {
                     res.status(200).send({ mensaje: 'Lista de comandas.', lista: lista });
                 }
             }
-        });    
+        });
 }
 
 // API para FOX
 
 function searchItem(dict, valor) {
     const vacio = { _id: null, descripcion: "", idmongodb: "", idcomponente: "", "idfox": "", detalle: "", power: "", idparticion: "", idtipoprecio: "" };
-    for(let i = 0; i < dict.length; i++) {
+    for (let i = 0; i < dict.length; i++) {
         if (dict[i].idmongodb) {
             if (dict[i].idmongodb.toString().trim() == valor.toString().trim()) {
                 return dict[i];
@@ -327,7 +341,7 @@ function searchEmisorTarjeta(emisores, idabuscar) {
     var emisor = '';
     emisores.forEach((et) => {
         if (idabuscar != null && idabuscar != undefined) {
-            if ((et._id.toString().trim() == idabuscar.toString().trim())){
+            if ((et._id.toString().trim() == idabuscar.toString().trim())) {
                 emisor = et.nombre;
             }
         }
@@ -381,7 +395,7 @@ function traduceDetalleComanda(dc, dict) {
                     idext = compo.extrasnotas.length == 0 ? 0 : contador;
                     contador++;
                     compo.extrasnotas.forEach((en, k) => {
-                        if(en.esextra) {
+                        if (en.esextra) {
                             let extFox = searchItem(dict, en.idcomponente);
                             if (extFox._id) {
                                 detalle.push({
@@ -460,7 +474,7 @@ function traduceDetalleComanda(dc, dict) {
                 }
 
             });
-        }        
+        }
     });
 
     return detalle;
@@ -470,12 +484,12 @@ function conteoProductos(det) {
     var conteo = 0;
 
     if (det) {
-        det.forEach(function(item){
-            try{
+        det.forEach(function (item) {
+            try {
                 if (+item.idproducto > 0) {
                     conteo++;
                 }
-            }catch(e){ }
+            } catch (e) { }
         });
     }
 
@@ -496,16 +510,16 @@ function traduceFormasPago(dp, emisores) {
                 str += searchEmisorTarjeta(emisores, dfp.idemisor) + ', número: ';
                 str += (dfp.numero ? dfp.numero.toString() : '') + ', vence: ';
                 str += (dfp.mesvence ? dfp.mesvence.toString() : '') + '/' + (dfp.aniovence ? dfp.aniovence.toString() : '');
-            }            
+            }
             detalle.push({ descripcion: str });
         });
-    });    
-    return detalle;    
+    });
+    return detalle;
 }
 
 function traduceFacturarA(facta, pedido) {
     var tmp = { monto: pedido.totalcomanda, direccion: 'Ciudad', nit: 'C/F', nombre: 'C/F' };
-    if(facta){
+    if (facta) {
         facta.monto = facta.monto ? facta.monto : 0;
         facta.direccion = facta.direccion ? facta.direccion : '';
         facta.nit = facta.nit ? facta.nit : '';
@@ -538,8 +552,8 @@ async function resetRecibidasToPendente(idrestaurante, fdel, fal) {
     const cutoff = moment().subtract(+limite, 'minutes').toDate();
 
     const aggOpts = [
-        { 
-            $match: { 
+        {
+            $match: {
                 idrestaurante: mongoose.Types.ObjectId(idrestaurante),
                 idestatuscomanda: mongoose.Types.ObjectId("59fea7524218672b285ab0e3"),
                 debaja: false,
@@ -551,18 +565,16 @@ async function resetRecibidasToPendente(idrestaurante, fdel, fal) {
         { $match: { "bitacoraestatus.idestatuscomanda": mongoose.Types.ObjectId("59fea7524218672b285ab0e3") } },
         {
             $group: {
-                "_id": "$_id",
-                "estatus": { "$first": "$bitacoraestatus.estatus" },
-                "fechaestatus": { "$first": "$bitacoraestatus.fecha" }
+                _id: "$_id",
+                estatus: { "$first": "$bitacoraestatus.estatus" },
+                fechaestatus: { "$first": "$bitacoraestatus.fecha" }
             }
         },
         {
-            $match: {
-                fechaestatus: { $lte: cutoff }
-            }
+            $match: { fechaestatus: { $lte: cutoff } }
         }
     ];
-    
+
     const pedidos = await Comanda.aggregate(aggOpts).exec();
     if (pedidos && pedidos.length > 0) {
         for (let i = 0; i < pedidos.length; i++) {
@@ -570,7 +582,6 @@ async function resetRecibidasToPendente(idrestaurante, fdel, fal) {
             await Comanda.findByIdAndUpdate(pedido._id, { $set: { idestatuscomanda: "59fea7304218672b285ab0e2" } }).exec();
         }
     }
-
     return true;
 }
 
@@ -580,7 +591,7 @@ async function listaComandasRestaurante(req, res) {
     var fal = moment().endOf('day').toDate();
 
     await resetRecibidasToPendente(idrestaurante, fdel, fal);
-    
+
     EmisoresTarjeta.find({}, (errore, listaet) => {
         DiccionarioFox.find({}, (e, dictfox) => {
             if (e) {
@@ -590,8 +601,8 @@ async function listaComandasRestaurante(req, res) {
                     res.status(200).send({ mensaje: 'No se encontro nada en el diccionario de fox.' });
                 } else {
                     const diccionario = dictfox;
-                    Comanda.find({ 
-                        idestatuscomanda: { $in: ["59fea7304218672b285ab0e2", "5a72403fc5bb328b700edc58"] }, 
+                    Comanda.find({
+                        idestatuscomanda: { $in: ["59fea7304218672b285ab0e2", "5a72403fc5bb328b700edc58"] },
                         debaja: false,
                         fecha: { $gte: fdel, $lte: fal }
                     }, null, { sort: { fecha: 1 } })
@@ -621,8 +632,8 @@ async function listaComandasRestaurante(req, res) {
                                             } else if (rst.idrestaurante && rst.iddireccioncliente.idrestaurante) {
                                                 rst.iddireccioncliente.idrestaurante = rst.idrestaurante;
                                             } else if (!rst.idrestaurante && !rst.iddireccioncliente.idrestaurante) {
-                                                rst.idrestaurante = { 
-                                                    _id: '' 
+                                                rst.idrestaurante = {
+                                                    _id: ''
                                                 };
                                             }
 
@@ -657,7 +668,7 @@ async function listaComandasRestaurante(req, res) {
                                             }
                                         } catch (errTry) {
                                             errores.push(errTry.message);
-                                        }                                        
+                                        }
                                     });
                                     res.status(200).send({ mensaje: 'Lista de comandas.', lista: lst, errores: errores });
                                 }
@@ -665,8 +676,8 @@ async function listaComandasRestaurante(req, res) {
                         });
                 }
             }
-        });        
-    });       
+        });
+    });
 }
 
 function getComandaByTracking(req, res) {
@@ -740,7 +751,7 @@ function getComandaByTracking(req, res) {
                                                 facturara: traduceFacturarA(rst.detfacturara[0], rst),
                                                 bitacoraestatus: rst.bitacoraestatus,
                                                 estatuscomanda: rst.idestatuscomanda.descripcion
-                                            });                                            
+                                            });
                                         } catch (errTry) {
                                             errores.push(errTry.message);
                                         }
@@ -760,7 +771,7 @@ function getComandaByTracking(req, res) {
 
 }
 
-function setBody(idestatus, ipaddr){
+function setBody(idestatus, ipaddr) {
     var descripcion = '';
 
     switch (idestatus) {
@@ -788,7 +799,7 @@ function setBody(idestatus, ipaddr){
     };
 }
 
-function comandaConProblemas(req, res){
+function comandaConProblemas(req, res) {
     var idcom = req.params.id, ipaddr = req.params.ipaddr ? req.params.ipaddr : null;
     var body = setBody("5a72403fc5bb328b700edc58", ipaddr);
 
@@ -805,7 +816,7 @@ function comandaConProblemas(req, res){
     });
 }
 
-function confirmarComanda(req, res){
+function confirmarComanda(req, res) {
     var idcom = req.params.id,
         ipaddr = req.params.ipaddr ? req.params.ipaddr : null;
     var body = setBody("59fea7524218672b285ab0e3", ipaddr);
@@ -820,7 +831,7 @@ function confirmarComanda(req, res){
                 res.status(200).send({ mensaje: 'Comanda confirmada exitosamente.', entidad: comandaUpd });
             }
         }
-    });    
+    });
 }
 
 function confirmarComandaEncargado(req, res) {
@@ -955,7 +966,7 @@ function entregadaComanda(req, res) {
 // Fin de API para FOX
 
 // Detalle comanda
-function crearDetComanda(req, res){
+function crearDetComanda(req, res) {
     var detcom = new DetalleComanda();
     var params = req.body;
 
@@ -980,7 +991,7 @@ function crearDetComanda(req, res){
 
 }
 
-function modificarDetComanda(req, res){
+function modificarDetComanda(req, res) {
     var iddetcom = req.params.id;
     var body = req.body;
 
@@ -997,7 +1008,7 @@ function modificarDetComanda(req, res){
     });
 }
 
-function eliminarDetComanda(req, res){
+function eliminarDetComanda(req, res) {
     var iddetcom = req.params.id;
     var body = req.body;
 
@@ -1011,13 +1022,13 @@ function eliminarDetComanda(req, res){
                 res.status(200).send({ mensaje: 'Detalle de comanda eliminado exitosamente.', entidad: detcomDel });
             }
         }
-    });    
+    });
 }
 
-function listaDetComanda(req, res){
+function listaDetComanda(req, res) {
     var idcomanda = req.params.idcomanda;
 
-    DetalleComanda.find({idcomanda: idcomanda, debaja: false}).populate('idmenurest').exec((err, lista) => {
+    DetalleComanda.find({ idcomanda: idcomanda, debaja: false }).populate('idmenurest').exec((err, lista) => {
         if (err) {
             res.status(500).send({ mensaje: 'Error en el servidor al listar el detalle de la comanda.' });
         } else {
@@ -1043,7 +1054,7 @@ function getDetComanda(req, res) {
                 res.status(200).send({ mensaje: 'Detalle de comanda.', entidad: detcom });
             }
         }
-    });    
+    });
 }
 
 // Detalle de componentes para el detalle de comanda
@@ -1069,7 +1080,7 @@ function crearDetCompDetComanda(req, res) {
 
 }
 
-function modificarDetCompDetComanda(req, res){
+function modificarDetCompDetComanda(req, res) {
     var iddet = req.params.id;
     var body = req.body;
 
@@ -1083,7 +1094,7 @@ function modificarDetCompDetComanda(req, res){
                 res.status(200).send({ mensaje: 'Detalle de componente modificado exitosamente.', entidad: entidadUpd });
             }
         }
-    });    
+    });
 }
 
 function eliminarDetCompDetComanda(req, res) {
@@ -1198,7 +1209,7 @@ function eliminarExtraNotaComanda(req, res) {
 
 function listaExtrasNotasComanda(req, res) {
     var iddetcomanda = req.params.iddetcomanda, iddetcompdetcom = req.params.iddetcompdetcom;
-    var fltr = {iddetallecomanda: null, iddetcompdetcomanda: null, debaja: false };
+    var fltr = { iddetallecomanda: null, iddetcompdetcomanda: null, debaja: false };
     if (iddetcomanda) { fltr.iddetallecomanda = iddetcomanda; fltr.iddetcompdetcomanda = null; }
     if (iddetcompdetcom) { fltr.iddetcompdetcomanda = iddetcompdetcom; fltr.iddetcomanda = null; }
 
@@ -1238,7 +1249,7 @@ function crearDetCobroCom(req, res) {
 
     detcobcom.idcomanda = params.idcomanda;
     detcobcom.idformapago = params.idformapago;
-    detcobcom.debaja = params.debaja;    
+    detcobcom.debaja = params.debaja;
 
     detcobcom.save((err, entidadSvd) => {
         if (err) {
@@ -1320,13 +1331,13 @@ function getDetCobroCom(req, res) {
     });
 }
 
-function contadorPorEstatus(req, res) {    
+function contadorPorEstatus(req, res) {
     var fdel = moment(req.params.fdel).startOf('day').toDate();
     var fal = moment(req.params.fal).endOf('day').toDate();
-    
+
     var aggOpts = [
-        { $match: {fecha: {$gte: fdel, $lte: fal}} },
-        { $group: {_id: "$idestatuscomanda", count: { $sum: 1 }} }];
+        { $match: { fecha: { $gte: fdel, $lte: fal }, idrestaurante: { $exists: true, $ne: null } } },
+        { $group: { _id: "$idestatuscomanda", count: { $sum: 1 } } }];
 
     Comanda.aggregate(aggOpts).exec((err, lista) => {
         if (err) {
@@ -1335,9 +1346,9 @@ function contadorPorEstatus(req, res) {
             if (lista.length == 0) {
                 res.status(200).send({ mensaje: 'No se encontraron comanda para contar por estatus.' });
             } else {
-                EstatusComanda.populate(lista, {path: "_id", select: "orden descripcion color", sort: { "orden": 1 } }, (error, listaLlena) => {
-                    if(error){
-                        res.status(500).send({ mensaje: 'Error en el servidor al contar comandas por estatus. ERROR: ' + error });                        
+                EstatusComanda.populate(lista, { path: "_id", select: "orden descripcion color", sort: { "orden": 1 } }, (error, listaLlena) => {
+                    if (error) {
+                        res.status(500).send({ mensaje: 'Error en el servidor al contar comandas por estatus. ERROR: ' + error });
                     } else {
                         if (listaLlena.length == 0) {
                             res.status(200).send({ mensaje: 'No se encontraron comanda para contar por estatus.' });
@@ -1346,16 +1357,208 @@ function contadorPorEstatus(req, res) {
                             res.status(200).send({ mensaje: 'Conteo de comandas por estatus.', lista: listaLlena });
                         }
                     }
-                });               
+                });
             }
-        }        
+        }
     });
 }
+
+
+//Inicia API para TIGO
+/*
+function crearComanda(req, res){
+    var com = new Comanda();
+    var params = req.body;    
+
+    com.idcliente = params.idcliente;
+    com.idtelefonocliente = params.idtelefonocliente;
+    com.iddireccioncliente = params.iddireccioncliente;    
+    com.fecha = params.fecha;
+    com.idtipocomanda = params.idtipocomanda;
+    com.idusuario = params.idusuario;
+    com.fechainitoma = params.fechainitoma;
+    com.fechafintoma = params.fechafintoma;
+    com.idestatuscomanda = params.idestatuscomanda;
+    com.notas = params.notas;
+    com.cantidaditems = params.cantidaditems;
+    com.totalcomanda = params.totalcomanda;
+    com.detallecomanda = params.detallecomanda;
+    com.detcobrocomanda = params.detcobrocomanda;
+    com.detfacturara = params.detfacturara;
+    com.idtiempoentrega = params.idtiempoentrega;
+    com.idrestaurante = params.idrestaurante;
+    com.idmotorista = params.idmotorista;
+    com.imgpago = params.imgpago;
+    com.debaja = params.debaja;   
+    com.bitacoraestatus = [ { idestatuscomanda: mongoose.Types.ObjectId("59fea7304218672b285ab0e2"), estatus: "Pendiente", fecha: moment().toDate() } ];
+
+    com.save((err, comandaSvd) => {
+        if (err) {
+            res.status(500).send({ mensaje: 'Error en el servidor al crear la comanda. Error: ' + err });
+        } else {
+            if (!comandaSvd) {
+                res.status(200).send({ mensaje: 'No se pudo grabar la comanda.' });
+            } else {
+                res.status(200).send({ mensaje: 'Comanda grabada exitosamente.', entidad: comandaSvd });
+            }
+        }
+    });
+
+}
+*/
+
+async function nuevoClienteTigo(datos) {
+    let cliente = new Cliente();
+    let telefono = new TelefonoCliente();
+    let direccion = new DireccionCliente();
+    let datosfact = new DatosFacturaCliente();
+
+    try {
+        cliente.nombre = datos.nombre_cliente;
+        cliente.detigo = true;
+        cliente.debaja = false;
+        const clienteSvd = await cliente.save();
+
+        telefono.idcliente = clienteSvd._id;
+        telefono.telefono = datos.telefono;
+        telefono.debaja = false;
+        const telefonoSvd = await telefono.save();
+
+        direccion.idcliente = clienteSvd._id;
+        direccion.idtipodireccion = "59e7785cf46aa32910c255a2";
+        direccion.idrestaurante = null;
+        direccion.direccion = datos.direccion_entrega;
+        direccion.zona = datos.zona;
+        direccion.colonia = datos.colonia;
+        direccion.codigoacceso = datos.codigo_acceso;
+        direccion.debaja = false;
+        const direccionSvd = await direccion.save();
+
+        datosfact.idcliente = clienteSvd._id;
+        datosfact.nit = datos.nit;
+        datosfact.nombre = datos.nombre_factura;
+        datosfact.direccion = datos.direccion_factura;
+        datosfact.debaja = false;
+        const facturaSvd = await datosfact.save();
+
+        return {
+            exito: true,
+            mensaje: 'Cliente grabado exitosamente.',
+            entidad: {
+                cliente: clienteSvd,
+                telefono: telefonoSvd,
+                direccion: direccionSvd,
+                facturacion: facturaSvd
+            }
+        };
+    } catch (e) {
+        return {
+            exito: false,
+            mensaje: e,
+            entidad: null
+        };
+    }
+}
+
+
+async function webHookInsert(req, res) {
+    const objTigo = req.body;
+    let com = new Comanda();
+
+    const result = await nuevoClienteTigo(objTigo);
+    const clienteTigo = result.entidad;
+
+    if (clienteTigo) {
+        try{
+            const tipocmd = await TipoComanda.find({ descripcion: objTigo.tipo_orden }).exec();
+
+            com.idcliente = clienteTigo.cliente._id;
+            com.idtelefonocliente = clienteTigo.telefono._id;
+            com.iddireccioncliente = clienteTigo.direccion._id;
+            com.fecha = moment().toDate();
+            com.idtipocomanda = tipocmd !== null && tipocmd !== undefined ? tipocmd[0]._id : "59fff327596e572d9cdac917";
+            com.idusuario = "59d8051d5d8d082af82dedd7";
+            com.fechainitoma = moment().toDate();
+            com.fechafintoma = moment().toDate();
+            com.idestatuscomanda = "59fea7304218672b285ab0e2";
+            com.notas = '';
+            com.cantidaditems = objTigo.pedido.count;
+            com.totalcomanda = objTigo.total_pedido;
+            com.detallecomanda = [];
+            com.detcobrocomanda = [];
+            com.detfacturara = [{
+                nit: clienteTigo.facturacion.nit,
+                nombre: clienteTigo.facturacion.nombre,
+                direccion: clienteTigo.facturacion.direccion,
+                monto: objTigo.total_pedido
+            }];
+            com.idtiempoentrega = "5a3a2ce36a72bb242199a1e4";
+            com.idrestaurante = null;
+            com.idmotorista = null;
+            com.imgpago = null;
+            com.debaja = false;
+            com.bitacoraestatus = [{ idestatuscomanda: mongoose.Types.ObjectId("59fea7304218672b285ab0e2"), estatus: "Pendiente", fecha: moment().toDate() }];
+            com.detigo = true;
+    
+            for (let item of objTigo.pedido) {
+                const itemMenu = await Carta.findById(item.id_vesuvio);
+                // console.log('ES PROMO = ', itemMenu.espromocion);            
+                if (itemMenu.espromocion) {
+                    // console.log('ITEMS = ', itemMenu.itemspromo);
+                    com.notas += `Promocion: ${item.descripcion}. `;
+                    itemMenu.itemspromo.forEach((ip, i) => {
+                        com.detallecomanda.push({
+                            idmenurest: ip.idmenurest,
+                            cantidad: ip.cantidad,
+                            descripcion: ip.descripcion,
+                            precio: (i !== 0 ? 0 : item.precio_unitario),
+                            precioextra: ip.precioextra,
+                            tieneextras: ip.tieneextras,
+                            limitecomponentes: ip.limitecomponentes,
+                            extrasnotas: ip.extrasnotas,
+                            componentes: ip.componentes,
+                            notas: ip.notas,
+                            debaja: false
+                        });
+                    });
+                } else {
+                    com.detallecomanda.push({
+                        idmenurest: item.id_vesuvio,
+                        cantidad: item.cantidad,
+                        descripcion: item.descripcion,
+                        precio: item.precio_unitario,
+                        precioextra: null,
+                        tieneextras: null,
+                        limitecomponentes: null,
+                        extrasnotas: [],
+                        componentes: [],
+                        notas: null,
+                        debaja: false
+                    });
+                }
+            }
+    
+            const comandaTigo = await com.save();
+            res.status(200).send({ exito: true, mensaje: 'Comanda grabada exitosamente.', entidad: comandaTigo });
+            // res.status(200).send({ exito: true, mensaje: 'Para pruebas...', entidad: com }); //Esto es solo para pruebas del endpoint.
+        } catch(error) {
+            res.status(500).send({ exito: false, mensaje: error, entidad: null });
+        }
+    } else {
+        res.status(500).send({ exito: false, mensaje: result.mensaje, entidad: null });
+    }
+}
+
+//Finaliza API para TIGO
+
+
+
+
 
 module.exports = {
     crearComanda, modificarComanda, eliminarComanda, listaComandas, getComanda, lstComandasCliente, contadorPorEstatus, lstComandasUsuario, listaComandasPost,
     // api para FOX
-    listaComandasRestaurante, confirmarComanda, 
+    listaComandasRestaurante, confirmarComanda,
     //resetEstatusComandas, 
     cobroAprobadoComanda, cobroRechazadoComanda,
     produccionComanda, enCaminoComanda, entregadaComanda, confirmarComandaEncargado, getComandaByTracking, comandaConProblemas,
@@ -1363,6 +1566,8 @@ module.exports = {
     crearDetComanda, modificarDetComanda, eliminarDetComanda, listaDetComanda, getDetComanda,
     crearDetCompDetComanda, modificarDetCompDetComanda, eliminarDetCompDetComanda, listaDetCompDetComanda, getDetCompDetComanda,
     crearExtraNotaComanda, modificarExtraNotaComanda, eliminarExtraNotaComanda, listaExtrasNotasComanda, getExtraNotaComanda,
-    crearDetCobroCom, modificarDetCobroCom, eliminarDetCobroCom, listaDetCobroCom, getDetCobroCom
-    
+    crearDetCobroCom, modificarDetCobroCom, eliminarDetCobroCom, listaDetCobroCom, getDetCobroCom,
+    // API para TIGO
+    webHookInsert
+    // Fin de API para TIGO    
 }

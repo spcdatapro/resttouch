@@ -57,5 +57,8 @@ api.put('/com/ddcc/:id', md_auth.ensureAuth, ComandaController.eliminarDetCobroC
 api.get('/com/getdetcob/:id', md_auth.ensureAuth, ComandaController.getDetCobroCom);
 api.get('/com/lstdetcob/:idcomanda', md_auth.ensureAuth, ComandaController.listaDetCobroCom);
 
+//API para TIGO
+api.post('/tigo', ComandaController.webHookInsert);
+
 
 module.exports = api;
