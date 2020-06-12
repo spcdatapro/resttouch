@@ -1502,39 +1502,43 @@ async function webHookInsert(req, res) {
     
             for (let item of objTigo.pedido) {
                 const itemMenu = await Carta.findById(item.id_vesuvio);
-                // console.log('ES PROMO = ', itemMenu.espromocion);            
-                if (itemMenu.espromocion) {
-                    // console.log('ITEMS = ', itemMenu.itemspromo);
-                    com.notas += `Promocion: ${item.descripcion}. `;
-                    itemMenu.itemspromo.forEach((ip, i) => {
+                // console.log('ES PROMO = ', itemMenu.espromocion);
+                if(itemMenu !== null && itemMenu !== undefined) {
+                    if (itemMenu.espromocion) {
+                        // console.log('ITEMS = ', itemMenu.itemspromo);
+                        com.notas += `Promocion: ${item.descripcion}. `;
+                        itemMenu.itemspromo.forEach((ip, i) => {
+                            com.detallecomanda.push({
+                                idmenurest: ip.idmenurest,
+                                cantidad: item.cantidad,
+                                descripcion: ip.descripcion,
+                                precio: (i !== 0 ? 0 : item.precio_unitario),
+                                precioextra: ip.precioextra,
+                                tieneextras: ip.tieneextras,
+                                limitecomponentes: ip.limitecomponentes,
+                                extrasnotas: ip.extrasnotas,
+                                componentes: ip.componentes,
+                                notas: ip.notas,
+                                debaja: false
+                            });
+                        });
+                    } else {
                         com.detallecomanda.push({
-                            idmenurest: ip.idmenurest,
-                            cantidad: ip.cantidad,
-                            descripcion: ip.descripcion,
-                            precio: (i !== 0 ? 0 : item.precio_unitario),
-                            precioextra: ip.precioextra,
-                            tieneextras: ip.tieneextras,
-                            limitecomponentes: ip.limitecomponentes,
-                            extrasnotas: ip.extrasnotas,
-                            componentes: ip.componentes,
-                            notas: ip.notas,
+                            idmenurest: item.id_vesuvio,
+                            cantidad: item.cantidad,
+                            descripcion: item.descripcion,
+                            precio: item.precio_unitario,
+                            precioextra: null,
+                            tieneextras: null,
+                            limitecomponentes: null,
+                            extrasnotas: [],
+                            componentes: [],
+                            notas: null,
                             debaja: false
                         });
-                    });
+                    }
                 } else {
-                    com.detallecomanda.push({
-                        idmenurest: item.id_vesuvio,
-                        cantidad: item.cantidad,
-                        descripcion: item.descripcion,
-                        precio: item.precio_unitario,
-                        precioextra: null,
-                        tieneextras: null,
-                        limitecomponentes: null,
-                        extrasnotas: [],
-                        componentes: [],
-                        notas: null,
-                        debaja: false
-                    });
+                    throw "No se encontró el producto seleccionado...";
                 }
             }
     
@@ -1542,6 +1546,7 @@ async function webHookInsert(req, res) {
             res.status(200).send({ exito: true, mensaje: 'Comanda grabada exitosamente.', entidad: comandaTigo });
             // res.status(200).send({ exito: true, mensaje: 'Para pruebas...', entidad: com }); //Esto es solo para pruebas del endpoint.
         } catch(error) {
+            console.log('ERROR: ', error);
             res.status(500).send({ exito: false, mensaje: error, entidad: null });
         }
     } else {
