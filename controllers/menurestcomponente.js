@@ -10,6 +10,7 @@ function crear(req, res) {
 
     mnurestcomp.idmenurest = params.idmenurest;
     mnurestcomp.idcomponente = params.idcomponente;
+    mnurestcomp.precio = params.precio;
     mnurestcomp.debaja = params.debaja;
 
     mnurestcomp.save((err, entidadSvd) => {

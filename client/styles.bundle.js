@@ -159,7 +159,7 @@ module.exports = "/* Bootstrap */\n\n@font-face {\n  font-family: 'Icons';\n  sr
 /***/ "./node_modules/raw-loader/index.js!./node_modules/postcss-loader/lib/index.js??embedded!./src/styles.css":
 /***/ (function(module, exports) {
 
-module.exports = "/* You can add global styles to this file, and also import other style files */\n.rtcolors{\n    background-color: #DA332D;\n    color: #000000;    \n}\n.rtxt{ text-align: right !important; }\n.ltxt{ text-align: left !important; }\n.ctxt{ text-align: center !important; }\n.bld{ font-weight: bold !important; }"
+module.exports = "/* You can add global styles to this file, and also import other style files */\n.rtcolors{\n    background-color: #DA332D;\n    color: #000000;    \n}\n.borderTest {\n    border: 1px solid black;\n}\n.rtxt{ text-align: right !important; }\n.ltxt{ text-align: left !important; }\n.ctxt{ text-align: center !important; }\n.bld{ font-weight: bold !important; }"
 
 /***/ }),
 

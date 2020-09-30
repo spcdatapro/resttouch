@@ -9,6 +9,7 @@ var FormaPagoSchema = Schema({
     escortesia: Boolean,
     condocumento: Boolean,
     orden: Number,
+    codigo: { type: Number, default: 0 },
     debaja: Boolean
 });
 

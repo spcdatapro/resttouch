@@ -13,6 +13,7 @@ function crear(req, res) {
     fpago.escortesia = params.escortesia;
     fpago.condocumento = params.condocumento;
     fpago.orden = params.orden;
+    fpago.codigo = params.codigo;
     fpago.debaja = params.debaja;
 
     fpago.save((err, entidadSvd) => {

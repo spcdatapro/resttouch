@@ -3,6 +3,7 @@
 const mongoose = require('mongoose');
 const moment = require('moment');
 const fs = require('fs');
+const axios = require('axios');
 
 // Modelos
 const Comanda = require('../models/comanda');
@@ -13,14 +14,14 @@ const DetalleCobroComanda = require('../models/detcobrocomanda');
 const EstatusComanda = require('../models/estatuscomanda');
 const DiccionarioFox = require('../models/diccionariofox');
 const EmisoresTarjeta = require('../models/emisortarjeta');
-
 const TelefonoCliente = require('../models/telefonocliente');
 const Cliente = require('../models/cliente');
 const DireccionCliente = require('../models/direccioncliente');
 const DatosFacturaCliente = require('../models/datosfacturacliente');
 const TipoComanda = require('../models/tipocomanda');
 const Carta = require('../models/menurest');
-
+const Restaurante = require('../models/restaurante');
+const FormaPago = require('../models/formapago');
 // Acciones
 // Comanda
 function crearComanda(req, res) {
@@ -49,18 +50,113 @@ function crearComanda(req, res) {
     com.debaja = params.debaja;
     com.bitacoraestatus = [{ idestatuscomanda: mongoose.Types.ObjectId("59fea7304218672b285ab0e2"), estatus: "Pendiente", fecha: moment().toDate() }];
 
-    com.save((err, comandaSvd) => {
+    com.save(async (err, comandaSvd) => {
         if (err) {
             res.status(500).send({ mensaje: 'Error en el servidor al crear la comanda. Error: ' + err });
         } else {
             if (!comandaSvd) {
                 res.status(200).send({ mensaje: 'No se pudo grabar la comanda.' });
             } else {
-                res.status(200).send({ mensaje: 'Comanda grabada exitosamente.', entidad: comandaSvd });
+                const rest = await Restaurante.findById(comandaSvd.idrestaurante).exec();
+                if (rest) {
+                    if (rest.webhook && rest.empresa && rest.sede) {
+                        sendToRestTouch(res, rest, comandaSvd);
+                    } else {
+                        res.status(200).send({ mensaje: 'Comanda grabada exitosamente.', entidad: comandaSvd });
+                    }
+                }
             }
         }
     });
 
+}
+
+async function sendToRestTouch(response, restaurante, comanda) {
+    const config = JSON.parse(fs.readFileSync('./config.json'));
+
+    const obj = {
+        key: restaurante.empresa,
+        sede: restaurante.sede,
+        mesa: null,
+        moneda: 'GTQ',
+        numero_orden: comanda.tracking,
+        cliente: {},
+        metodo_pago: [],
+        direccion_entrega: "",
+        detalle: []
+    };
+
+    const cliente = await Cliente.findById(comanda.idcliente).exec();
+    const telefono = await TelefonoCliente.findById(comanda.idtelefonocliente).exec();
+    const tmpnit = comanda.detfacturara[0].nit.trim().toUpperCase().replace(/[^a-zA-Z0-9]/gi, '') || 'CF';
+    if (cliente) { 
+        obj.cliente = {
+            nombre: cliente.nombre,
+            apellidos: '',
+            correo: cliente.correoelectronico,
+            telefono: telefono.telefono || '',
+            nit: tmpnit,
+            direccion: comanda.detfacturara[0].direccion
+        }
+    }
+
+    comanda.detcobrocomanda.forEach(async(dcc) => {
+        const fp = await FormaPago.findById(dcc.idformapago).exec();
+        let totfp = 0;
+        dcc.detcobro.forEach(dc => totfp += dc.monto);
+        obj.metodo_pago.push({
+            id: dcc.idformapago,
+            nombre: dcc.descripcion,
+            observaciones: null,
+            codigo: fp.codigo,
+            monto: totfp
+        });
+    });
+
+    comanda.detallecomanda.forEach((det) => {
+
+        let precioExtra = 0;
+        let componentes = '';
+
+        det.componentes.forEach(c => {
+            precioExtra += c.precio;
+            if(componentes !== '') {
+                componentes += '; ';
+            }
+
+            componentes += c.descripcion + (c.extrasnotas.length > 0 ? ' (' : '');
+
+            let descext = '';
+            c.extrasnotas.forEach(en => {                
+                if (descext !== '') {
+                    descext += ', '
+                }
+                precioExtra += (en.precio || 0);
+                descext += en.notas;
+            });
+
+            componentes += descext + (c.extrasnotas.length > 0 ? ')' : '');
+        });
+        
+        obj.detalle.push({
+            codigo: det.idmenurest, 
+            cantidad: det.cantidad,
+            precio: det.precio + precioExtra,
+            total: det.cantidad * (det.precio + precioExtra),
+            nombre: det.descripcion,
+            nota: componentes
+        });
+    });
+
+    axios.post(`${config.produccion ? config.url_base : config.url_base_dev}/api/orden/rtg`, obj).then(res => {
+        if (res.data.exito) {
+            response.status(200).send({ mensaje: 'Comanda grabada exitosamente.', entidad: comanda });
+        } else {
+            response.status(200).send({ mensaje: `ERROR: ${res.data.mensaje}`, entidad: null });
+        }
+    }).catch((e) => {
+        response.status(200).send({ mensaje: `ERROR: ${e}`, entidad: null });
+    });
 }
 
 function modificarComanda(req, res) {
@@ -1469,7 +1565,7 @@ async function webHookInsert(req, res) {
     const clienteTigo = result.entidad;
 
     if (clienteTigo) {
-        try{
+        try {
             const tipocmd = await TipoComanda.find({ descripcion: objTigo.tipo_orden }).exec();
 
             com.idcliente = clienteTigo.cliente._id;
@@ -1499,11 +1595,11 @@ async function webHookInsert(req, res) {
             com.debaja = false;
             com.bitacoraestatus = [{ idestatuscomanda: mongoose.Types.ObjectId("59fea7304218672b285ab0e2"), estatus: "Pendiente", fecha: moment().toDate() }];
             com.detigo = true;
-    
+
             for (let item of objTigo.pedido) {
                 const itemMenu = await Carta.findById(item.id_vesuvio);
                 // console.log('ES PROMO = ', itemMenu.espromocion);
-                if(itemMenu !== null && itemMenu !== undefined) {
+                if (itemMenu !== null && itemMenu !== undefined) {
                     if (itemMenu.espromocion) {
                         // console.log('ITEMS = ', itemMenu.itemspromo);
                         com.notas += `Promocion: ${item.descripcion}. `;
@@ -1541,11 +1637,11 @@ async function webHookInsert(req, res) {
                     throw "No se encontró el producto seleccionado...";
                 }
             }
-    
+
             const comandaTigo = await com.save();
             res.status(200).send({ exito: true, mensaje: 'Comanda grabada exitosamente.', entidad: comandaTigo });
             // res.status(200).send({ exito: true, mensaje: 'Para pruebas...', entidad: com }); //Esto es solo para pruebas del endpoint.
-        } catch(error) {
+        } catch (error) {
             console.log('ERROR: ', error);
             res.status(500).send({ exito: false, mensaje: error, entidad: null });
         }
