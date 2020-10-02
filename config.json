@@ -1,5 +1,5 @@
 {
-    "produccion": false,
+    "produccion": true,
     "url_base_dev": "http://localhost:8988",
     "url_base":"https://restouch.c807.com:8988"
 }
