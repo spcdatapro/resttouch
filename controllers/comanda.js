@@ -89,7 +89,8 @@ async function sendToRestTouch(response, restaurante, comanda) {
     const cliente = await Cliente.findById(comanda.idcliente).exec();
     const telefono = await TelefonoCliente.findById(comanda.idtelefonocliente).exec();
     const tmpnit = comanda.detfacturara[0].nit.trim().toUpperCase().replace(/[^a-zA-Z0-9]/gi, '') || 'CF';
-    if (cliente) { 
+    const dir = await DireccionCliente.findById(comanda.iddireccioncliente).exec();
+    if (cliente) {
         obj.cliente = {
             nombre: cliente.nombre,
             apellidos: '',
@@ -100,7 +101,7 @@ async function sendToRestTouch(response, restaurante, comanda) {
         }
     }
 
-    comanda.detcobrocomanda.forEach(async(dcc) => {
+    comanda.detcobrocomanda.forEach(async (dcc) => {
         const fp = await FormaPago.findById(dcc.idformapago).exec();
         let totfp = 0;
         dcc.detcobro.forEach(dc => totfp += dc.monto);
@@ -120,14 +121,14 @@ async function sendToRestTouch(response, restaurante, comanda) {
 
         det.componentes.forEach(c => {
             precioExtra += c.precio;
-            if(componentes !== '') {
+            if (componentes !== '') {
                 componentes += '; ';
             }
 
             componentes += c.descripcion + (c.extrasnotas.length > 0 ? ' (' : '');
 
             let descext = '';
-            c.extrasnotas.forEach(en => {                
+            c.extrasnotas.forEach(en => {
                 if (descext !== '') {
                     descext += ', '
                 }
@@ -137,9 +138,9 @@ async function sendToRestTouch(response, restaurante, comanda) {
 
             componentes += descext + (c.extrasnotas.length > 0 ? ')' : '');
         });
-        
+
         obj.detalle.push({
-            codigo: det.idmenurest, 
+            codigo: det.idmenurest,
             cantidad: det.cantidad,
             precio: det.precio + precioExtra,
             total: det.cantidad * (det.precio + precioExtra),
@@ -147,6 +148,10 @@ async function sendToRestTouch(response, restaurante, comanda) {
             nota: componentes
         });
     });
+
+    if (dir) {
+        obj.direccion_entrega = `${dir.direccion}, zona ${(dir.zona || '')}, colonia ${(dir.colonia || 'N/A')}, código de acceso ${(dir.codigoacceso || 'N/A')}`;
+    }
 
     axios.post(`${config.produccion ? config.url_base : config.url_base_dev}/api/orden/rtg`, obj).then(res => {
         if (res.data.exito) {
