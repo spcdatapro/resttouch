@@ -118,6 +118,16 @@ async function sendToRestTouch(response, restaurante, comanda) {
 
         let precioExtra = 0;
         let componentes = '';
+        let notasComponente = '';
+
+        if (det.extrasnotas.length > 0) {
+            det.extrasnotas.forEach(en => {
+                if (notasComponente != '') {
+                    notasComponente += ', ';
+                }
+                notasComponente += en.notas || '';
+            });
+        }
 
         det.componentes.forEach(c => {
             precioExtra += c.precio;
@@ -145,7 +155,7 @@ async function sendToRestTouch(response, restaurante, comanda) {
             precio: det.precio + precioExtra,
             total: det.cantidad * (det.precio + precioExtra),
             nombre: det.descripcion,
-            nota: componentes
+            nota: `${componentes}. ${notasComponente}`
         });
     });
 
