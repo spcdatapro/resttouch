@@ -83,6 +83,7 @@ async function sendToRestTouch(response, restaurante, comanda) {
         cliente: {},
         metodo_pago: [],
         direccion_entrega: "",
+        notas_generales: comanda.notas || '',
         detalle: []
     };
 
